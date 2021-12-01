@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>領収書作成WEBサービス - 無料でPDFの領収書を発行</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src='./pdfmake.min.js'></script>
+<script src='./vfs_fonts.js'></script>
+<script>
+	// ここでフォントを設定
+	pdfMake.fonts = {
+		GenShin: {
+			normal: 'GenShinGothic-Normal-Sub.ttf',
+			bold: 'GenShinGothic-Normal-Sub.ttf',
+			italics: 'GenShinGothic-Normal-Sub.ttf',
+			bolditalics: 'GenShinGothic-Normal-Sub.ttf'
+		}
+	}
+	function init() { 
+		var today = new Date();
+		console.log(today.getFullYear());
+		document.getElementById("ryosyu_year").value = today.getFullYear();
+		document.getElementById("ryosyu_month").value = today.getMonth()+1,
+		document.getElementById("ryosyu_day").value = today.getDate(),
+		document.getElementById("ryosyu_atena").placeholder="山田 太郎",
+		document.getElementById("ryosyu_atena_sign").value="様",
+		document.getElementById("ryosyu_kingaku").placeholder="120,000",
+		document.getElementById("ryosyu_tadashi").placeholder="お品代として",
+		document.getElementById("ryosyu_jyusyo").placeholder="〒100-0000\n東京都東京区1-1-1　〇〇ビル1234\n株式会社 〇〇〇〇〇〇〇〇\nTEL:999-9999-999 FAX:999-9999-9999";
+	        pdfPreview();
+	}
+	//********************************************
+	//画像アップロード／表示
+	//https://qiita.com/kon_yu/items/d176eaef22d3892bc49b
+	//********************************************
+	var stampImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAIAAAAP3aGbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAT6SURBVHhe7dQBDQAADMOg+ze962gCIrgBRAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIyhAVkCAvIEBaQISwgQ1hAhrCADGEBGcICMoQFZAgLyBAWkCEsIENYQIawgAxhARnCAjKEBWQIC8gQFpAhLCBDWECGsIAMYQEZwgIitgd8Pxp1inGQLwAAAABJRU5ErkJggg=='
+	var $ = document; 
+	var $form = $.querySelector('form');
+
+	$.addEventListener('DOMContentLoaded', function() {
+		$.querySelector('input[type="file"]').addEventListener('change', function(e) {
+			var file = e.target.files[0],
+			reader = new FileReader(),
+			$preview =  $.querySelector(".preview"),
+			t = this;
+
+			if(file.type.indexOf("image") < 0){
+				return false;
+			}
+
+			reader.onload = (function(file) {
+				return function(e) {
+				while ($preview.firstChild) $preview.removeChild($preview.firstChild);
+
+					var img = document.createElement( 'img' );
+					img.setAttribute('src',  e.target.result);
+					img.setAttribute('width', '150px');
+					img.setAttribute('title',  file.name);
+					$preview.appendChild(img);
+					stampImage=e.target.result;
+				}; 
+			})(file);
+
+			reader.readAsDataURL(file);
+		}); 
+	});
+</script>
+</head>
+ 
+<body onload="init();">
+
+<script>
+    
+  //pdfを作成するためのデータを生成する
+  function GeneratePdfDocDefinition(){
+    var ryosyu_no = document.getElementById("ryosyu_no").value,
+        ryosyu_year = document.getElementById("ryosyu_year").value,
+        ryosyu_month = document.getElementById("ryosyu_month").value,
+        ryosyu_day = document.getElementById("ryosyu_day").value,
+        ryosyu_atena = document.getElementById("ryosyu_atena").value,
+        ryosyu_atena_sign = document.getElementById("ryosyu_atena_sign").value,
+        ryosyu_kingaku = document.getElementById("ryosyu_kingaku").value,
+        ryosyu_tadashi = document.getElementById("ryosyu_tadashi").value,
+        ryosyu_jyusyo = document.getElementById("ryosyu_jyusyo").value;
+      
+    ryosyu_pdf_name="領収書_" + ryosyu_atena + "様_" + ryosyu_year + "年" + ryosyu_month + "月" + ryosyu_day +"日";
+      
+    docDefinition= {
+	    content: [{
+	    //***************************************領収書＋領収書番号
+	    table: {
+	          widths: ['50%','20%','30%'],
+	          body:[[
+		          {
+		          text: '領収書',
+		          style: 'header',
+                  border: [false, false, false, false],
+		          },
+		          {
+		          text: '',
+		          style: 'ryosyu_no_sign',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: 'No. '+ryosyu_no,
+		          style: 'ryosyu_no',
+                  border: [false, false, false, true],
+		          }
+	          ]]
+	    },
+        style: 'tableExample',
+        
+        },{
+		//***************************************
+	    //***************************************年月日
+	    table: {
+	          widths: ['80%','20%'],
+	          body:[[
+		          {
+		          text: "発行日 ",
+		          style: 'ryosyu_yyyymmdd_sign',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: ryosyu_year + "年" + ryosyu_month + "月" + ryosyu_day + "日",
+		          style: 'ryosyu_yyyymmdd',
+                  border: [false, false, false, false],
+		          },
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************宛名
+	    table: {
+	          widths: ['10%','auto','*'],
+	          body:[[
+		          {
+		          text: "",
+		          style: 'ryosyu_atena',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: ryosyu_atena,
+		          style: 'ryosyu_atena',
+                  border: [false, false, false, true],
+		          },
+                  {
+		          text: ryosyu_atena_sign,
+		          style: 'ryosyu_atena_sign',
+                  border: [false, false, false, false],
+		          }
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************宛名と金額の空行
+	    table: {
+	          widths: ['100%'],
+	          body:[[
+		          {
+		          text: "",
+                  margin: [0, 1, 0, 1],
+                  border: [false, false, false, false],
+		          },
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************金額
+	    table: {
+	          widths: ['10%','10%','auto','*','10%'],
+	          body:[[
+		          {
+		          text: "",
+		          style: 'ryosyu_kingaku_space',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "",
+		          style: 'ryosyu_kingaku',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "¥" + ryosyu_kingaku + "-",
+		          style: 'ryosyu_kingaku',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "",
+		          style: 'ryosyu_kingaku',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "",
+		          style: 'ryosyu_kingaku_space',
+                  border: [false, false, false, false],
+		          },
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************但し書き
+	    table: {
+	          widths: ['20%','80%'],
+	          body:[[
+		          {
+		          text: "",
+		          style: 'ryosyu_tadashi',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "但し　" + ryosyu_tadashi,
+		          style: 'ryosyu_tadashi',
+                  border: [false, false, false, false],
+		          }
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************但し書き説明
+	    table: {
+	          widths: ['20%','80%'],
+	          body:[[
+		          {
+		          text: "",
+		          style: 'ryosyu_tadashi',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: "上記正に領収いたしました",
+		          style: 'ryosyu_tadashi',
+                  border: [false, false, false, false],
+		          }
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    //***************************************住所
+	    table: {
+	          widths: ['20%','60%','20%'],
+	          body:[[
+		          {
+		          text: "",
+		          style: 'ryosyu_jyusyo',
+                  border: [false, false, false, false],
+		          },
+                  {
+		          text: ryosyu_jyusyo,
+		          style: 'ryosyu_jyusyo',
+                  border: [false, false, false, false],
+		          },
+                  {
+                    image: stampImage,
+                    width: 70,
+                    border: [false, false, false, false],
+                  },
+	          ]]
+	    },
+        style: 'tableExample',
+            
+        },{
+		//***************************************
+	    }],
+		styles: {
+		    header: {
+				font: 'GenShin',
+				fontSize: 22,
+		    },
+            ryosyu_no_sign: {
+				font: 'GenShin',
+				fontSize: 14,
+				alignment: 'right',
+			},
+		    ryosyu_no: {
+				font: 'GenShin',
+				fontSize: 14,
+			},
+		    ryosyu_yyyymmdd_sign: {
+				font: 'GenShin',
+				fontSize: 14,
+				alignment: 'right'
+			},
+		    ryosyu_yyyymmdd: {
+				font: 'GenShin',
+				fontSize: 14,
+				alignment: 'left'
+			},
+		    ryosyu_atena: {
+				font: 'GenShin',
+				fontSize: 22,
+				alignment: 'left'
+			},
+		    ryosyu_atena_sign: {
+				font: 'GenShin',
+				fontSize: 22,
+				alignment: 'left'
+			},
+		    ryosyu_kingaku_space: {
+				font: 'GenShin',
+				fontSize: 25,
+				alignment: 'left'
+			},
+		    ryosyu_kingaku: {
+				font: 'GenShin',
+				fontSize: 25,
+                fillColor: '#CCC',
+				alignment: 'left'
+			},
+		    ryosyu_tadashi: {
+				font: 'GenShin',
+				fontSize: 11,
+				alignment: 'left'
+			},
+		    ryosyu_jyusyo: {
+				font: 'GenShin',
+				fontSize: 11,
+				alignment: 'left'
+			},
+            tableExample: {
+			 margin: [0, 1, 0, 1]
+            },
+			defaultStyle: {
+				font: 'GenShin'
+			}
+		}
+    };      
+      
+  }
+    
+  function GeneratePdfFromHtml(){
+    GeneratePdfDocDefinition();
+    pdfMake.createPdf(docDefinition).download(ryosyu_pdf_name + ".pdf");
+  }
+    
+   function pdfPreview(){
+    GeneratePdfDocDefinition();
+    pdfMake.createPdf(docDefinition).getDataUrl(function (outDoc) {
+        document.getElementById('pdfV').src = outDoc;
+    });
+   }
+</script>
+
+
+<!--
+*****************************************
+HTML画面デザイン
+*****************************************
+!-->
+<h1>領収書作成WEBサービス - 無料でPDFの領収書を発行</h1>
+<form>
+<header style="background-color:#EEE"><h3>領収書の入力項目</h3></header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1">
+        <label class="float-right">No.</label>
+    </div>
+    <div class="col-sm-5">
+        <div class="form-group">
+          <div class="form-inline">
+
+            <input type="text" class="form-control" id="ryosyu_no" placeholder="123-456789"></input>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <div class="form-inline">
+                <label>発行日</label>
+                <input type="text" class="form-control" id="ryosyu_year" maxlength="4" size="4"></input><label>年</label>
+                <input type="text" class="form-control" id="ryosyu_month" maxlength=2 size="2"></input><label>月</label>
+                <input type="text" class="form-control" id="ryosyu_day" maxlength=2 size="2"></input><label>日</label>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-9">
+        <div class="form-group">
+          <div class="form-inline">
+            <input type="text" class="form-control" id="ryosyu_atena"></input>
+            <input type="text" class="form-control" id="ryosyu_atena_sign" size=2></input>
+          </div>
+        </div>
+   </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="row">
+      <div class="col-sm-1"><label class="float-right">￥</label></div>
+    <div class="col-sm-5">
+        <div class="form-group">
+          <div class="form-inline">
+            <input type="text" class="form-control" id="ryosyu_kingaku" size="20"></input>－
+          </div>
+        </div>
+   </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+          <div class="form-inline">
+            <label class="float-right">但し</label>
+            <input  type="text" class="form-control" id="ryosyu_tadashi" size=20></input>
+        </div>
+      </div>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <textarea type="text" class="form-control" id="ryosyu_jyusyo" cols=60 rows=4></textarea>
+   </div>
+    <div class="col-sm-6">
+    　　<label class="btn btn-primary float-left">
+      ＋印鑑を選択<input type="file" style="display:none;">
+        </label>
+      <div class="preview" ></div>
+    </div>
+  </div>
+</div>
+
+
+<header style="background-color:#EEE"><h3>プレビュー／ダウンロード</h3></header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4 clearfix">
+
+        <button type="button" class="btn btn-primary float-right" onClick="pdfPreview()">領収書の表示更新</button>
+
+    </div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-primary" onClick="GeneratePdfFromHtml()">領収書ダウンロード</button>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+<iframe id='pdfV' style="width:80%; height: 500px" > </iframe>
+
+
+</form>
+</body>
+</html>

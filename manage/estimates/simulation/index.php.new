@@ -1,0 +1,579 @@
+<?php
+session_start();
+require('../../../common/dbconnect.php');
+require('sim_func.php');
+
+if ($_SESSION['loginID'] == "") {
+	header("Location:/");
+	exit();
+}
+
+$error = "";
+if ($_POST['send2'] == "見積書作成") {
+	// print_r($_POST);
+	// exit();
+
+	if ($_POST['qu_custom_name'] != "" || $_POST['qu_custom_name'] != "") {
+		$qu_custom_id = 0;
+		if ($_POST['qu_custom_name'] != "") {
+			$qu_custom_id = $_POST['qu_custom_name'];
+		}
+		if ($_POST['qu_custom_no'] != "") {
+			if ($qu_custom_id == 0) {
+				$qu_custom_id = $_POST['qu_custom_no'];
+			} else if ($qu_custom_id != $_POST['qu_custom_no']) {
+				$error = "customErr";
+			}
+		}
+	}
+	if ($qu_custom_id == 0) {
+		$error = "customNoErr";
+	}
+
+	if ($error == "") {
+		$outdate = array();
+		preg_match("@([0-9]{4,})/([0-9]{1,2})@", $_POST['qu_startDate'], $outdate);
+		if (count($outdate) != 3) {
+			$error = "str_date";
+		} else {
+			$qu_startDate = sprintf("%04d%02d%02d", $outdate[1], $outdate[2], $_POST['qu_paymentDate']);
+			$start_date = sprintf("%04d%02d01", $outdate[1], $outdate[2]);
+			$start_date = date('Ymt', strtotime(date($start_date)));
+			if ($start_date < $qu_startDate) {
+				$error = "str_date2";
+			}
+		}
+	}
+	// print_r($outdate);
+	// echo "<br>count=". count($outdate), " qu_startDate=". $_POST['qu_startDate']. "<br>";
+	if ($error == "") {
+		preg_match("@([0-9]{4,})/([0-9]{1,2})@", $_POST['qu_endDate'], $outdate);
+		if (count($outdate) != 3) {
+			$error = "end_date";
+		} else {
+			$qu_endDate = sprintf("%04d%02d%02d", $outdate[1], $outdate[2], $_POST['qu_paymentDate']);
+		}
+	}
+	if ($error == "") {
+		$q_alltotal    = str_replace('￥', '', $_POST['q_alltotal']);
+		$q_alltotal    = str_replace(',', '', $q_alltotal);
+		$q_cost        = str_replace('￥', '', $_POST['q_cost']);
+		$q_cost        = str_replace(',', '', $q_cost);
+		$qu_price      = str_replace('￥', '', $_POST['qu_price']);
+		$qu_price      = str_replace(',', '', $qu_price);
+		$qu_commit     = str_replace('￥', '', $_POST['qu_commit']);
+		$qu_commit     = str_replace(',', '', $qu_commit);
+		$qu_amount_pay = str_replace('￥', '', $_POST['qu_amount_pay']);
+		$qu_amount_pay = str_replace(',', '', $qu_amount_pay);
+		$syohkei       = str_replace('￥', '', $_POST['syohkei']);
+		$syohkei       = str_replace(',', '', $syohkei);
+
+		$sql = sprintf('INSERT INTO `quotation` SET c_id="%d", u_id="%d",
+			qu_bunrui="%s", qu_custom_name="%s", qu_custom_no="%d",
+			qu_name="%s", qu_location="%s", qu_paymentDate="%s",
+			qu_deliveryDate="%s", qu_deposit="%s", qu_price="%s",
+			qu_commission="%s", qu_commit="%s", qu_initPayAmount="%s",
+			qu_amount_pay="%s", qu_installments="%s", qu_startDate="%s",
+			qu_endDate="%s", q_cost="%s", q_alltotal="%s", in_companyName="%s",
+			in_postal="%s", in_address1="%s", in_address2="%s",
+			in_address3="%s", in_tel="%s", in_email="%s",
+			in_contactName="%s", syohkei="%s"',
+			mysqli_real_escape_string($db, $qu_custom_id),
+			mysqli_real_escape_string($db, $_SESSION['loginID']),
+			mysqli_real_escape_string($db, $_POST['qu_bunrui']),
+			mysqli_real_escape_string($db, $_POST['qu_custom_name']),
+			mysqli_real_escape_string($db, $_POST['qu_custom_no']),
+			mysqli_real_escape_string($db, $_POST['qu_name']),
+			mysqli_real_escape_string($db, $_POST['qu_location']),
+			mysqli_real_escape_string($db, $_POST['qu_paymentDate']),
+			mysqli_real_escape_string($db, $_POST['qu_deliveryDate']),
+			mysqli_real_escape_string($db, $_POST['qu_deposit']),
+			mysqli_real_escape_string($db, $qu_price),
+			mysqli_real_escape_string($db, $_POST['qu_commission']),
+			mysqli_real_escape_string($db, $qu_commit),
+			mysqli_real_escape_string($db, $_POST['qu_initPayAmount']),
+			mysqli_real_escape_string($db, $qu_amount_pay),
+			mysqli_real_escape_string($db, $_POST['qu_installments']),
+			mysqli_real_escape_string($db, $qu_startDate),
+			mysqli_real_escape_string($db, $qu_endDate),
+			mysqli_real_escape_string($db, $q_cost),
+			mysqli_real_escape_string($db, $q_alltotal),
+			mysqli_real_escape_string($db, $_POST['in_companyName']),
+			mysqli_real_escape_string($db, $_POST['in_postal']),
+			mysqli_real_escape_string($db, $_POST['in_address1']),
+			mysqli_real_escape_string($db, $_POST['in_address2']),
+			mysqli_real_escape_string($db, $_POST['in_address3']),
+			mysqli_real_escape_string($db, $_POST['in_tel']),
+			mysqli_real_escape_string($db, $_POST['in_email']),
+			mysqli_real_escape_string($db, $_POST['in_contactName']),
+			mysqli_real_escape_string($db, $syohkei)
+		);
+		mysqli_query($db,$sql) or die(mysqli_error($db));
+
+		$sql = sprintf('SELECT * FROM `quotation` WHERE u_id="%d"
+			ORDER BY qu_id DESC LIMIT 1',
+			mysqli_real_escape_string($db, $_SESSION['loginID'])
+		);
+		$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+		$row0 = mysqli_fetch_assoc($record);
+
+		$sql = sprintf('INSERT INTO `q_memo` SET qu_id="%d", q_memo="%s"',
+			mysqli_real_escape_string($db, $row0['qu_id']),
+			mysqli_real_escape_string($db, $_POST['memo'])
+		);
+		$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+
+		for($ix=0; $ix<60; $ix++) {
+			if ($_POST["item-name". $ix] != "" && $_POST["item-num". $ix] != 0) {
+				// echo "ix=". $ix. " item-name=". $_POST["item-name". $ix]. "<br>";
+
+				$sql = sprintf('INSERT INTO `q_items` SET qu_id="%d", q_name="%s",
+					q_number="%s", q_unit="%s", q_price="%s", q_total="%s"',
+					mysqli_real_escape_string($db, $row0['qu_id']),
+					mysqli_real_escape_string($db, $_POST["item-name". $ix]),
+					mysqli_real_escape_string($db, $_POST["item-num". $ix]),
+					mysqli_real_escape_string($db, $_POST["item-cat". $ix]),
+					mysqli_real_escape_string($db, $_POST["item-unit". $ix]),
+					mysqli_real_escape_string($db, $_POST["item-total". $ix])
+				);
+				mysqli_query($db,$sql) or die(mysqli_error($db));
+			}
+		}
+		// header("Location:/manage/estimates/new/make_pdf.php?id=". $row0['qu_id']);
+		// exit();
+		$url = "<script type='text/javascript'>window.open('/manage/estimates/new/pdfmake.php?id=". $row0['qu_id']. "', '_blank');</script>";
+		echo $url;
+	}
+}
+
+if ($_GET['id'] == "") {
+	header("Location:/");
+	exit();
+} else {
+	$qu_id = $_GET['id'];
+	$sql = sprintf('SELECT * FROM `quotation` WHERE qu_id="%d"',
+		mysqli_real_escape_string($db, $_GET['id'])
+	);
+	$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+	$row3 = mysqli_fetch_assoc($record);
+
+	$sql = sprintf('SELECT * FROM `simulation` WHERE qu_id="%d"',
+		mysqli_real_escape_string($db, $_GET['id'])
+	);
+	$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+	if ($row0 = mysqli_fetch_assoc($record)) {
+		// データあり
+	} else {
+		// データなし
+		$sql = sprintf('INSERT INTO `simulation` SET qu_id="%d", c_id="%d",
+			u_id="%d", qu_price="%s", qu_startDate="%s", pt1_commit="%s",
+			pt1_deposit="%s", pt1_commission="%s", pt1_initPayAmount="%s",
+			pt1_amount_pay="%s", pt1_installments="%s", pt1_alltotal="%s"',
+			mysqli_real_escape_string($db, $_GET['id']),
+			mysqli_real_escape_string($db, $row3['c_id']),
+			mysqli_real_escape_string($db, $row3['u_id']),
+			mysqli_real_escape_string($db, $row3['qu_price']),	   // 商品価格
+			mysqli_real_escape_string($db, $row3['qu_startDate']),	   // 実行日
+			mysqli_real_escape_string($db, $row3['qu_commit']),	   // 事務管理手数料総額
+			mysqli_real_escape_string($db, $row3['qu_deposit']),	   // 頭金
+			mysqli_real_escape_string($db, $row3['qu_commission']),	   // 事務管理手数料率
+			mysqli_real_escape_string($db, $row3['qu_initPayAmount']), // 初回お支払額
+			mysqli_real_escape_string($db, $row3['qu_amount_pay']),	   // 月々お支払額
+			mysqli_real_escape_string($db, $row3['qu_installments']),  // 分割回数
+			mysqli_real_escape_string($db, $row3['q_alltotal'])	   // 総支払額
+		);
+		mysqli_query($db,$sql) or die(mysqli_error($db));
+	}
+
+	$sql = sprintf('SELECT * FROM `simulation` WHERE qu_id="%d"',
+		mysqli_real_escape_string($db, $_GET['id'])
+	);
+	$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+	$row7 = mysqli_fetch_assoc($record);
+
+	// 商品価格
+	if (ctype_digit($row7['qu_price'])) {
+		$qu_price = number_format($row7['qu_price']);
+	} else {
+		$qu_price = $row7['qu_price'];
+	}
+
+	$pt1_out = partition($row7['qu_startDate'], $row7['pt1_installments'], $row7['pt1_alltotal'], $row7['pt1_deposit'], $row7['pt1_initPayAmount']);
+	$pt2_out = partition($row7['qu_startDate'], $row7['pt2_installments'], $row7['pt2_alltotal'], $row7['pt2_deposit'], $row7['pt2_initPayAmount']);
+	$pt3_out = partition($row7['qu_startDate'], $row7['pt3_installments'], $row7['pt3_alltotal'], $row7['pt3_deposit'], $row7['pt3_initPayAmount']);
+
+	// 実行日
+	$qu_startDate = date("Y年m月d日", strtotime($row7['qu_startDate']));
+
+	// 事務管理手数料総額
+	if (ctype_digit($row7['pt1_commit'])) {
+		$pt1_commit = number_format($row7['pt1_commit']);
+	} else {
+		$pt1_commit = $row7['pt1_commit'];
+	}
+	if (ctype_digit($row7['pt2_commit'])) {
+		$pt2_commit = number_format($row7['pt2_commit']);
+	} else {
+		$pt2_commit = $row7['pt2_commit'];
+	}
+	if (ctype_digit($row7['pt3_commit'])) {
+		$pt3_commit = number_format($row7['pt3_commit']);
+	} else {
+		$pt3_commit = $row7['pt3_commit'];
+	}
+
+	// 頭金
+	if (ctype_digit($row7['pt1_deposit'])) {
+		$pt1_deposit = number_format($row7['pt1_deposit']);
+	} else {
+		$pt1_deposit = $row7['pt1_deposit'];
+	}
+	if (ctype_digit($row7['pt2_deposit'])) {
+		$pt2_deposit = number_format($row7['pt2_deposit']);
+	} else {
+		$pt2_deposit = $row7['pt2_deposit'];
+	}
+	if (ctype_digit($row7['pt3_deposit'])) {
+		$pt3_deposit = number_format($row7['pt3_deposit']);
+	} else {
+		$pt3_deposit = $row7['pt3_deposit'];
+	}
+
+	// 事務管理手数料率
+	$pt1_commission = $row7['pt1_commission'];
+	$pt2_commission = $row7['pt2_commission'];
+	$pt3_commission = $row7['pt3_commission'];
+
+	// 初回お支払額
+	if (ctype_digit($row7['pt1_initPayAmount'])) {
+		$pt1_initPayAmount = number_format($row7['pt1_initPayAmount']);
+	} else {
+		$pt1_initPayAmount = $row7['pt1_initPayAmount'];
+	}
+	if (ctype_digit($row7['pt2_initPayAmount'])) {
+		$pt2_initPayAmount = number_format($row7['pt2_initPayAmount']);
+	} else {
+		$pt2_initPayAmount = $row7['pt2_initPayAmount'];
+	}
+	if (ctype_digit($row7['pt3_initPayAmount'])) {
+		$pt3_initPayAmount = number_format($row7['pt3_initPayAmount']);
+	} else {
+		$pt3_initPayAmount = $row7['pt3_initPayAmount'];
+	}
+
+	// 月々お支払額
+	if (ctype_digit($row7['pt1_amount_pay'])) {
+		$pt1_amount_pay = number_format($row7['pt1_amount_pay']);
+	} else {
+		$pt1_amount_pay = $row7['pt1_amount_pay'];
+	}
+	if (ctype_digit($row7['pt2_amount_pay'])) {
+		$pt2_amount_pay = number_format($row7['pt2_amount_pay']);
+	} else {
+		$pt2_amount_pay = $row7['pt2_amount_pay'];
+	}
+	if (ctype_digit($row7['pt3_amount_pay'])) {
+		$pt3_amount_pay = number_format($row7['pt3_amount_pay']);
+	} else {
+		$pt3_amount_pay = $row7['pt3_amount_pay'];
+	}
+
+	// 分割回数
+	$pt1_installments = $row7['pt1_installments'];
+	$pt2_installments = $row7['pt2_installments'];
+	$pt3_installments = $row7['pt3_installments'];
+
+	// 総支払額
+	if (ctype_digit($row7['pt1_alltotal'])) {
+		$pt1_alltotal = number_format($row7['pt1_alltotal']);
+	} else {
+		$pt1_alltotal = $row7['pt1_alltotal'];
+	}
+	if (ctype_digit($row7['pt2_alltotal'])) {
+		$pt2_alltotal = number_format($row7['pt2_alltotal']);
+	} else {
+		$pt2_alltotal = $row7['pt2_alltotal'];
+	}
+	if (ctype_digit($row7['pt3_alltotal'])) {
+		$pt3_alltotal = number_format($row7['pt3_alltotal']);
+	} else {
+		$pt3_alltotal = $row7['pt3_alltotal'];
+	}
+}
+?>
+<?php require_once('../../common/head.php'); ?>
+<?php require_once('../../common/header.php'); ?>
+	<main>
+		<div class="main_wrap">
+			<div class="main_wrap_inner">
+				<div class="pankuzu">
+					<div class="container">
+						<ul>
+							<li><a href="/manage/estimates/"><span>見積書一覧</span></a></li>
+							<!-- <li><a href="/manage/estimates/detail/"><span>見積書</span></a></li> -->
+							<li><span>シミュレーション</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main_title">
+					<div class="container">
+						<div class="main_title_headline">
+							<h1>お支払いシミュレーション</h1>
+						</div>
+					</div>
+				</div>
+				<div class="main_content input_area simulation_data">
+					<div class="container">
+						<div class="main_content_inner simulation_data_inner">
+							<div class="simulation_data_comparison">
+								<div class="simulation_data_comparison_inner">
+									<table>
+										<thead>
+											<tr>
+												<th>
+													<span class="name">工事 / 商品価格</span>
+													<span class="number">¥<?php echo $qu_price; ?></span>(税込)
+												</th>
+												<th>パターン1</th>
+												<th>パターン2</th>
+												<th>パターン3</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>頭金</th>
+												<td>¥<?php echo $pt1_deposit; ?></td>
+												<?php if ($pt2_deposit == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt2_deposit; ?></td>
+												<?php } ?>
+												<?php if ($pt3_deposit == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt3_deposit; ?></td>
+												<?php } ?>
+											</tr>
+											<tr>
+												<th>事務管理手数料率</th>
+												<td><?php echo $pt1_commission; ?>%</td>
+												<?php if ($pt2_commission == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td><?php echo $pt2_commission; ?></td>
+												<?php } ?>
+												<?php if ($pt3_commission == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td><?php echo $pt3_commission; ?></td>
+												<?php } ?>
+											</tr>
+											<tr>
+												<th>初回お支払額</th>
+												<td>¥<?php echo $pt1_initPayAmount; ?></td>
+												<?php if ($pt2_initPayAmount == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt2_initPayAmount; ?></td>
+												<?php } ?>
+												<?php if ($pt3_initPayAmount == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt3_initPayAmount; ?></td>
+												<?php } ?>
+											</tr>
+											<tr>
+												<th>月々お支払額</th>
+												<td>¥<?php echo $pt1_amount_pay; ?></td>
+												<?php if ($pt2_amount_pay == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt2_amount_pay; ?></td>
+												<?php } ?>
+												<?php if ($pt3_amount_pay == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt3_amount_pay; ?></td>
+												<?php } ?>
+											</tr>
+											<tr>
+												<th>分割回数</th>
+												<td><?php echo $pt1_installments; ?></td>
+												<?php if ($pt2_installments == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td><?php echo $pt2_installments; ?></td>
+												<?php } ?>
+												<?php if ($pt3_installments == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td><?php echo $pt3_installments; ?></td>
+												<?php } ?>
+											</tr>
+											<tr>
+												<th>総支払額</th>
+												<td>¥<?php echo $pt1_alltotal; ?></td>
+												<?php if ($pt2_alltotal == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt2_alltotal; ?></td>
+												<?php } ?>
+												<?php if ($pt3_alltotal == "") { ?>
+													<td>-</td>
+												<?php } else { ?>
+													<td>\<?php echo $pt3_alltotal; ?></td>
+												<?php } ?>
+											</tr>
+										</tbody>
+									</table>
+									<div class="submit_button"><a href="/manage/estimates/simulation/edit/?id=<?php echo $qu_id; ?>">パターン編集</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_title pb-none">
+					<div class="container">
+						<div class="main_title_headline">
+							<h1>お支払いスケジュール</h1>
+						</div>
+						<div class="simulation_data_tab">
+							<div class="simulation_data_tab_inner cf">
+								<div id="tab_one" class="data_tab_box selectTab">パターン1</div>
+								<div id="tab_two" class="data_tab_box">パターン2</div>
+								<div id="tab_three" class="data_tab_box">パターン3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_content input_area simulation_data">
+					<div class="container">
+						<div class="main_content_inner simulation_data_inner">
+							<div class="simulation_data_panel">
+								<div class="simulation_data_panel_inner">
+									<div id="panel_one" class="data_panel_box openPanel">
+										<div class="main_title_link">
+											<ul class="cf">
+												<li><a class="list_link" href="/manage/edit/">見積書へ反映</a></li>
+												<li><a class="list_link" href="javascript:void(0)" onclick="window.print();return false;">印刷</a></li>
+											</ul>
+										</div>
+										<div class="data_info_box">
+											<div class="data_info_box_inner">
+												<table>
+													<tbody>
+														<tr>
+															<th>実行日</th>
+															<td><?php echo $qu_startDate; ?></td>
+															<th>月々お支払額</th>
+															<td>¥<?php echo $pt1_amount_pay; ?></td>
+														</tr>
+														<tr>
+															<th>ご利用予定金額</th>
+															<td>¥<?php echo $qu_price; ?></td>
+															<th>分割回数</th>
+															<td><?php echo $pt1_installments; ?></td>
+														</tr>
+														<tr>
+															<th>頭金</th>
+															<td>¥<?php echo $pt1_deposit; ?></td>
+															<th>事務管理手数料総額</th>
+															<td>¥<?php echo $pt1_commit; ?></td>
+														</tr>
+														<tr>
+															<th>事務管理手数料率</th>
+															<td><?php echo $pt1_commission; ?>%</td>
+															<th>総支払額</th>
+															<td>¥<?php echo $pt1_alltotal; ?></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="simulation_data_panel_table">
+											<p class="table_supplement">（単位：円）</p>
+											<table class="common_table">
+												<thead>
+													<tr>
+														<th class="text-center">回数</th>
+														<th class="text-center">返済日</th>
+														<th class="text-center">ご利用金額</th>
+														<th class="text-center">月々お支払額</th>
+														<th class="text-center">お支払い残高</th>
+													</tr>
+												</thead>
+												<tbody>
+													<?php for($ix=0; $ix<$pt1_out[0][5]; $ix++) { ?>
+														<tr>
+															<td class="text-center"><?php echo $pt1_out[$ix][0]; ?></td>
+															<td><?php echo $pt1_out[$ix][1]; ?></td>
+															<td class="text-right"><?php echo $pt1_out[$ix][2]; ?></td>
+															<td class="text-right"><?php echo $pt1_out[$ix][3]; ?></td>
+															<td class="text-right"><?php echo $pt1_out[$ix][4]; ?></td>
+														</tr>
+													<?php } ?>
+													<!--
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													-->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="panel_two" class="data_panel_box">
+										<div class="none">
+											<p>まだ登録がありません。</p>
+											<div class="submit_button">
+												<a href="/manage/estimates/simulation/edit/">パターン登録</a>
+											</div>
+										</div>
+									</div>
+									<div id="panel_three" class="data_panel_box">
+										<div class="none">
+											<p>まだ登録がありません。</p>
+											<div class="submit_button">
+												<a href="/manage/estimates/simulation/edit/">パターン登録</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<?php require_once('../../common/script.php'); ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		// タブとパネル
+		$(function(){
+			$('.data_tab_box').click(function(){
+				$('.selectTab').removeClass('selectTab');
+				$(this).addClass('selectTab');
+				if($("#tab_one").hasClass('selectTab')) {
+					$("#panel_one").addClass("openPanel");
+					$("#panel_two").removeClass("openPanel");
+					$("#panel_three").removeClass("openPanel");
+				};
+				if($("#tab_two").hasClass('selectTab')) {
+					$("#panel_two").addClass("openPanel");
+					$("#panel_one").removeClass("openPanel");
+					$("#panel_three").removeClass("openPanel");
+				};
+				if($("#tab_three").hasClass('selectTab')) {
+					$("#panel_three").addClass("openPanel");
+					$("#panel_one").removeClass("openPanel");
+					$("#panel_two").removeClass("openPanel");
+				};
+			});
+		});
+	</script>
+</body>
+</html>

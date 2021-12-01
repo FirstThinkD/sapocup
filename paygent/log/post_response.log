@@ -1,0 +1,1046 @@
+2020/04/15 17:11:05 kind=025 resultStatus=0
+2020/04/15 17:11:05 kind=280 resultStatus=0
+2020/04/15 19:09:47 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 19:09:47 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 19:10:42 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 19:10:42 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 19:30:58 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 19:30:58 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 19:45:44 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 19:45:44 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 20:22:04 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 20:22:05 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 21:15:38 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 21:15:38 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 23:30:54 customer_id=10000002 kind=025 resultStatus=0
+2020/04/15 23:30:54 customer_id=10000002 kind=280 resultStatus=0
+2020/04/15 23:43:57 customer_id=10000055 kind=025 resultStatus=0
+2020/04/15 23:43:57 customer_id=10000055 kind=280 resultStatus=0
+2020/04/15 23:53:57 customer_id=10000056 kind=025 resultStatus=0
+2020/04/15 23:53:57 customer_id=10000056 kind=280 resultStatus=0
+2020/04/16 00:17:26 customer_id=10000057 kind=025 resultStatus=0
+2020/04/16 00:17:26 customer_id=10000057 kind=280 resultStatus=0
+2020/04/16 00:38:25 customer_id=10000058 kind=025 resultStatus=0
+2020/04/16 00:38:25 customer_id=10000058 kind=280 resultStatus=0
+2020/04/16 14:33:39 customer_id=10000059 kind=025 resultStatus=0
+2020/04/16 14:33:39 customer_id=10000059 kind=280 resultStatus=0
+2020/04/16 14:39:10 customer_id=10000060 kind=025 resultStatus=0
+2020/04/16 14:39:10 customer_id=10000060 kind=280 resultStatus=0
+2020/04/16 17:11:49 customer_id=10000061 kind=025 resultStatus=0
+2020/04/16 17:11:49 customer_id=10000061 kind=280 resultStatus=0
+2020/04/16 20:18:31 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 20:18:31 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 20:27:42 customer_id=10000063 kind=025 resultStatus=0
+2020/04/16 20:27:42 customer_id=10000063 kind=280 resultStatus=0
+2020/04/16 21:42:40 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 21:44:17 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 21:45:33 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 21:56:56 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 21:56:56 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 22:01:43 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 22:01:43 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 22:26:48 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 22:26:48 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 22:46:06 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 22:46:06 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 22:46:27 customer_id=10000062 kind=025 resultStatus=0
+2020/04/16 22:46:27 customer_id=10000062 kind=280 resultStatus=0
+2020/04/16 23:38:26 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/16 23:38:26 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/16 23:40:41 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/16 23:40:41 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/16 23:48:13 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/16 23:48:14 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/16 23:49:47 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/16 23:49:48 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/16 23:50:39 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/16 23:50:39 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/18 00:38:20 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/18 00:38:20 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/18 00:38:41 customer_id=10000062 running_id=1032801 kind=116 resultStatus=0
+2020/04/18 00:38:41 customer_id=10000062 running_id=1032801 kind=280 resultStatus=0
+2020/04/18 01:34:27 customer_id=10000063 running_id=1032802 kind=116 resultStatus=0
+2020/04/18 01:34:27 customer_id=10000063 running_id=1032802 kind=280 resultStatus=0
+2020/04/18 01:34:34 customer_id=10000063 running_id=1032802 kind=116 resultStatus=0
+2020/04/18 01:34:34 customer_id=10000063 running_id=1032802 kind=280 resultStatus=0
+2020/04/18 01:34:41 customer_id=10000063 running_id=1032802 kind=116 resultStatus=0
+2020/04/18 01:34:41 customer_id=10000063 running_id=1032802 kind=280 resultStatus=0
+2020/04/18 01:34:48 customer_id=10000063 running_id=1032802 kind=116 resultStatus=0
+2020/04/18 01:34:48 customer_id=10000063 running_id=1032802 kind=280 resultStatus=0
+2020/04/18 01:35:25 customer_id=10000063 running_id=1032802 kind=116 resultStatus=0
+2020/04/18 01:35:25 customer_id=10000063 running_id=1032802 kind=280 resultStatus=0
+2020/04/19 03:01:10 customer_id=10000064 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/19 03:01:10 customer_id=10000064 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/19 03:07:26 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 03:07:26 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 04:04:14 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 04:04:14 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 04:04:21 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 04:04:21 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 04:04:25 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 04:04:25 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 04:40:23 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 04:40:23 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 10:34:24 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 10:34:24 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 11:09:16 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 11:09:16 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 11:37:50 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 11:37:50 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/19 11:39:11 customer_id=10000064 running_id=1032854 kind=116 resultStatus=0
+2020/04/19 11:39:11 customer_id=10000064 running_id=1032854 kind=280 resultStatus=0
+2020/04/27 00:32:40 customer_id=10000063 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 00:32:40 customer_id=10000063 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 09:28:28 customer_id=10000065 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 09:28:28 customer_id=10000065 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 09:31:42 customer_id=10000067 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 09:31:42 customer_id=10000067 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 09:35:03 customer_id=10000066 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 09:35:03 customer_id=10000066 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 10:44:12 customer_id=10000068 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:44:12 customer_id=10000068 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 10:46:30 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:46:30 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:47:28 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:47:28 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:47:38 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:47:38 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:47:54 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:47:54 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:48:32 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:48:32 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:48:53 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:48:53 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:49:23 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:49:23 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:49:54 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:49:54 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 10:50:12 customer_id=10000069 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:50:12 customer_id=10000069 running_id=xxxxxxx kind=280 resultStatus=0
+2020/04/27 10:51:00 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/27 10:51:00 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/27 16:58:44 customer_id=10000068 running_id=1032932 kind=116 resultStatus=0
+2020/04/27 16:58:44 customer_id=10000068 running_id=1032932 kind=280 resultStatus=0
+2020/04/28 14:50:47 customer_id=10000066 running_id=1032929 kind=116 resultStatus=0
+2020/04/28 14:50:47 customer_id=10000066 running_id=1032929 kind=280 resultStatus=0
+2020/04/28 16:03:46 customer_id=10000069 running_id=1032933 kind=116 resultStatus=0
+2020/04/28 16:03:46 customer_id=10000069 running_id=1032933 kind=280 resultStatus=0
+2020/04/28 16:05:58 customer_id=10000066 running_id=1032929 kind=116 resultStatus=0
+2020/04/28 16:05:58 customer_id=10000066 running_id=1032929 kind=280 resultStatus=0
+2020/04/28 16:06:14 customer_id=10000069 running_id=1032933 kind=116 resultStatus=0
+2020/04/28 16:06:15 customer_id=10000069 running_id=1032933 kind=280 resultStatus=0
+2020/04/28 16:15:23 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/04/28 16:15:23 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/04/28 16:15:34 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/04/28 16:15:45 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 01:27:48 customer_id=10000070 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 01:27:48 customer_id=10000070 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 11:37:09 customer_id=10000071 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 11:37:09 customer_id=10000071 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 11:39:56 customer_id=10000072 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 11:39:56 customer_id=10000072 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 14:43:35 customer_id=10000073 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 14:43:35 customer_id=10000073 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 14:47:59 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 14:49:40 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 14:49:59 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 14:50:52 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 14:50:57 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 14:56:40 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 15:13:53 customer_id=10000074 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 15:13:53 customer_id=10000074 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 15:16:35 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 15:16:42 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 15:19:02 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 15:20:00 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 15:38:07 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/01 23:13:56 customer_id=10000075 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 23:13:56 customer_id=10000075 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 23:27:25 customer_id=10000076 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 23:27:25 customer_id=10000076 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/01 23:53:04 customer_id=10000077 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/01 23:53:04 customer_id=10000077 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:08:03 customer_id=10000078 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:08:04 customer_id=10000078 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:09:54 customer_id=10000079 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:09:54 customer_id=10000079 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:12:15 customer_id=10000080 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:12:15 customer_id=10000080 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:27:05 customer_id=10000081 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:27:05 customer_id=10000081 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:30:12 customer_id=10000082 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:30:12 customer_id=10000082 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:32:43 customer_id=10000083 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:32:43 customer_id=10000083 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/02 21:44:34 customer_id=10000084 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/02 21:44:35 customer_id=10000084 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/03 19:25:21 customer_id=10000086 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/03 19:25:21 customer_id=10000086 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/03 20:08:35 customer_id=10000087 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/03 20:08:35 customer_id=10000087 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/05 23:35:20 customer_id=10000088 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/05 23:35:20 customer_id=10000088 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/06 00:03:55 customer_id=10000089 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/06 00:03:55 customer_id=10000089 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/06 13:39:00 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/06 13:39:00 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/07 09:27:31 customer_id=10000092 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 09:27:31 customer_id=10000092 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 09:46:54 customer_id=10000093 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 09:46:54 customer_id=10000093 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 10:08:53 customer_id=10000095 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 10:08:53 customer_id=10000095 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 10:16:01 customer_id=10000096 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 10:16:01 customer_id=10000096 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 10:16:58 customer_id=10000097 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 10:16:58 customer_id=10000097 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 12:23:00 customer_id=10000097 running_id=1033042 kind=116 resultStatus=0
+2020/05/07 12:23:00 customer_id=10000097 running_id=1033042 kind=280 resultStatus=0
+2020/05/07 12:23:10 customer_id=10000097 running_id=1033042 kind=116 resultStatus=0
+2020/05/07 12:23:10 customer_id=10000097 running_id=1033042 kind=280 resultStatus=0
+2020/05/07 12:25:30 customer_id=10000097 running_id=1033042 kind=116 resultStatus=0
+2020/05/07 12:25:30 customer_id=10000097 running_id=1033042 kind=280 resultStatus=0
+2020/05/07 12:25:45 customer_id=10000092 running_id=1033038 kind=116 resultStatus=0
+2020/05/07 12:25:45 customer_id=10000092 running_id=1033038 kind=280 resultStatus=0
+2020/05/07 12:34:54 customer_id=10000099 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/07 12:34:54 customer_id=10000099 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/07 12:43:46 customer_id=10000099 running_id=1033057 kind=116 resultStatus=0
+2020/05/07 12:43:46 customer_id=10000099 running_id=1033057 kind=280 resultStatus=0
+2020/05/07 15:01:52 customer_id=10000092 running_id=1033038 kind=116 resultStatus=0
+2020/05/07 15:01:52 customer_id=10000092 running_id=1033038 kind=280 resultStatus=0
+2020/05/07 15:02:02 customer_id=10000097 running_id=1033042 kind=116 resultStatus=0
+2020/05/07 15:02:02 customer_id=10000097 running_id=1033042 kind=280 resultStatus=0
+2020/05/07 15:21:18 customer_id=10000092 running_id=1033038 kind=116 resultStatus=0
+2020/05/07 15:21:18 customer_id=10000092 running_id=1033038 kind=280 resultStatus=0
+2020/05/07 15:54:15 customer_id=10000097 running_id=1033042 kind=116 resultStatus=0
+2020/05/07 15:54:15 customer_id=10000097 running_id=1033042 kind=280 resultStatus=0
+2020/05/07 19:41:29 customer_id=10000061 running_id=1032800 kind=116 resultStatus=0
+2020/05/07 19:41:29 customer_id=10000061 running_id=1032800 kind=280 resultStatus=0
+2020/05/08 01:53:13 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/08 01:53:13 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/08 02:11:15 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/08 02:11:15 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/08 03:01:41 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/08 03:01:41 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/08 09:10:01 customer_id=10000096 running_id=1033041 kind=116 resultStatus=0
+2020/05/08 09:10:02 customer_id=10000096 running_id=1033041 kind=280 resultStatus=0
+2020/05/08 11:57:46 customer_id=10000100 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/08 11:57:46 customer_id=10000100 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/08 14:14:32 customer_id=10000101 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/08 14:14:32 customer_id=10000101 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/08 14:45:40 customer_id=10000101 running_id=1033069 kind=116 resultStatus=0
+2020/05/08 14:45:41 customer_id=10000101 running_id=1033069 kind=280 resultStatus=0
+2020/05/08 14:53:38 customer_id=10000096 running_id=1033041 kind=116 resultStatus=0
+2020/05/08 14:53:39 customer_id=10000096 running_id=1033041 kind=280 resultStatus=0
+2020/05/08 14:53:50 customer_id=10000096 running_id=1033041 kind=116 resultStatus=0
+2020/05/08 14:53:50 customer_id=10000096 running_id=1033041 kind=280 resultStatus=0
+2020/05/08 14:53:58 customer_id=10000096 running_id=1033041 kind=116 resultStatus=0
+2020/05/08 14:53:58 customer_id=10000096 running_id=1033041 kind=280 resultStatus=0
+2020/05/08 15:05:52 customer_id=10000100 running_id=1033068 kind=116 resultStatus=0
+2020/05/08 15:05:52 customer_id=10000100 running_id=1033068 kind=280 resultStatus=0
+2020/05/08 15:38:46 customer_id=10000102 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/08 15:38:46 customer_id=10000102 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/09 21:18:54 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/09 21:18:55 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/10 03:05:29 customer_id=10000103 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/10 03:05:29 customer_id=10000103 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/10 03:26:29 customer_id=10000104 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/10 03:26:29 customer_id=10000104 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 09:26:25 customer_id=10000105 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 09:26:25 customer_id=10000105 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 09:51:16 customer_id=10000107 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 09:51:16 customer_id=10000108 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 09:51:16 customer_id=10000107 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 09:51:16 customer_id=10000108 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 10:05:20 customer_id=10000112 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 10:05:20 customer_id=10000112 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 10:13:42 customer_id=10000113 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 10:13:42 customer_id=10000113 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 10:18:43 customer_id=10000114 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 10:18:43 customer_id=10000114 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 10:47:36 customer_id=10000107 running_id=1033082 kind=116 resultStatus=0
+2020/05/11 10:47:36 customer_id=10000107 running_id=1033082 kind=280 resultStatus=0
+2020/05/11 10:49:02 customer_id=10000107 running_id=1033082 kind=116 resultStatus=0
+2020/05/11 10:49:02 customer_id=10000107 running_id=1033082 kind=280 resultStatus=0
+2020/05/11 10:53:12 customer_id=10000116 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/11 10:53:12 customer_id=10000116 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/11 12:41:56 customer_id=10000107 running_id=1033082 kind=116 resultStatus=0
+2020/05/11 12:41:56 customer_id=10000107 running_id=1033082 kind=280 resultStatus=0
+2020/05/11 14:02:06 customer_id=10000116 running_id=1033090 kind=116 resultStatus=0
+2020/05/11 14:02:06 customer_id=10000116 running_id=1033090 kind=280 resultStatus=0
+2020/05/11 14:03:03 customer_id=10000116 running_id=1033090 kind=116 resultStatus=0
+2020/05/11 14:03:03 customer_id=10000116 running_id=1033090 kind=280 resultStatus=0
+2020/05/11 14:03:06 customer_id=10000116 running_id=1033090 kind=116 resultStatus=0
+2020/05/11 14:03:06 customer_id=10000116 running_id=1033090 kind=280 resultStatus=0
+2020/05/11 14:20:53 customer_id=10000108 running_id=1033083 kind=116 resultStatus=0
+2020/05/11 14:20:53 customer_id=10000108 running_id=1033083 kind=280 resultStatus=0
+2020/05/11 15:07:17 customer_id=10000108 running_id=1033083 kind=116 resultStatus=0
+2020/05/11 15:07:18 customer_id=10000108 running_id=1033083 kind=280 resultStatus=0
+2020/05/11 15:10:03 customer_id=10000113 running_id=1033086 kind=116 resultStatus=0
+2020/05/11 15:10:03 customer_id=10000113 running_id=1033086 kind=280 resultStatus=0
+2020/05/11 15:10:06 customer_id=10000113 running_id=1033086 kind=116 resultStatus=0
+2020/05/11 15:10:06 customer_id=10000113 running_id=1033086 kind=280 resultStatus=0
+2020/05/12 13:41:30 customer_id=10000118 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/12 13:41:30 customer_id=10000118 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/12 13:51:34 customer_id=10000119 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/12 13:51:34 customer_id=10000119 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/12 13:55:03 customer_id=10000120 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/12 13:55:03 customer_id=10000120 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/13 16:52:55 customer_id=10000116 running_id=1033090 kind=116 resultStatus=0
+2020/05/13 16:52:55 customer_id=10000116 running_id=1033090 kind=280 resultStatus=0
+2020/05/14 14:38:09 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/14 14:38:09 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/14 21:35:21 customer_id=10000122 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/14 21:35:21 customer_id=10000122 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/14 23:33:38 customer_id=10000070 running_id=1033004 kind=116 resultStatus=0
+2020/05/14 23:33:38 customer_id=10000070 running_id=1033004 kind=280 resultStatus=0
+2020/05/15 04:25:30 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 05:25:53 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 05:47:47 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 10:08:42 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 11:58:28 customer_id=10000001 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 12:00:46 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/15 12:03:47 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 03:01:48 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 03:05:18 customer_id=10000003 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 03:23:18 customer_id=10000003 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 04:07:47 customer_id=10000001 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 11:11:12 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 11:58:58 customer_id=10000001 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:02:36 customer_id=10000001 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 12:02:36 customer_id=10000001 running_id=xxxxxxx kind=280 resultStatus=
+2020/05/16 12:08:20 customer_id=10000003 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 12:08:20 customer_id=10000003 running_id=xxxxxxx kind=280 resultStatus=
+2020/05/16 12:50:08 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:51:55 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:53:42 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:56:43 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:57:43 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 12:59:03 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 13:00:57 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 13:00:57 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=
+2020/05/16 15:16:42 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 15:16:42 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=
+2020/05/16 15:30:07 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 15:34:19 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 15:35:52 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 15:35:52 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=
+2020/05/16 15:39:59 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 15:40:58 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=
+2020/05/16 15:43:00 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 17:21:04 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 17:50:56 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 17:51:49 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 18:25:50 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 18:40:03 customer_id=10000004 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:10:41 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:29:18 customer_id=10000003 running_id= kind=116 resultStatus=1
+2020/05/16 19:37:28 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:39:00 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:39:39 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:41:57 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:43:09 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 19:43:45 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 22:23:48 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 23:33:05 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/16 23:33:40 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 01:21:02 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 01:21:56 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 01:23:46 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 02:01:18 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 04:46:53 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 11:57:35 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 20:10:30 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/17 20:11:58 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/18 03:25:18 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 03:25:18 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/05/18 03:26:08 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 03:26:08 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/05/18 03:26:31 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 03:26:31 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/05/18 09:03:10 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 09:03:10 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/05/18 09:13:43 customer_id=10000000 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 09:13:43 customer_id=10000000 running_id=xxxxxxx kind=280 resultStatus=1
+2020/05/18 10:29:09 customer_id=10000002 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 10:29:09 customer_id=10000002 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/18 10:48:06 customer_id=10000001 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/18 10:48:06 customer_id=10000001 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/20 13:14:18 customer_id=10000005 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/20 13:14:18 customer_id=10000005 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/20 13:15:59 customer_id=10000007 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/20 13:15:59 customer_id=10000007 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/20 13:17:40 customer_id=10000008 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/20 13:17:40 customer_id=10000008 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/20 15:14:09 customer_id=10000009 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/20 15:14:09 customer_id=10000009 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/20 15:19:57 customer_id=10000010 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/20 15:19:57 customer_id=10000010 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 09:21:45 customer_id=10000011 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 09:21:45 customer_id=10000011 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 09:25:58 customer_id=10000006 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 09:25:58 customer_id=10000006 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 10:10:12 customer_id=10000011 running_id=2666365 kind=116 resultStatus=0
+2020/05/21 10:10:12 customer_id=10000011 running_id=2666365 kind=280 resultStatus=0
+2020/05/21 13:32:08 customer_id=10000006 running_id=2666366 kind=116 resultStatus=0
+2020/05/21 13:32:08 customer_id=10000006 running_id=2666366 kind=280 resultStatus=0
+2020/05/21 13:49:45 customer_id=10000014 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 13:49:45 customer_id=10000014 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 13:55:58 customer_id=10000015 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 13:55:58 customer_id=10000015 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:04:55 customer_id=10000016 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:04:56 customer_id=10000016 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:12:03 customer_id=10000019 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:12:03 customer_id=10000019 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:16:34 customer_id=10000021 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:16:34 customer_id=10000021 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:16:47 customer_id=10000022 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:16:47 customer_id=10000022 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:22:14 customer_id=10000023 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:22:14 customer_id=10000023 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:32:50 customer_id=10000024 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:32:50 customer_id=10000024 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:36:45 customer_id=10000025 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:36:46 customer_id=10000025 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:38:28 customer_id=10000027 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:38:28 customer_id=10000027 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:42:47 customer_id=10000028 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:42:47 customer_id=10000028 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:43:33 customer_id=10000013 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:43:33 customer_id=10000013 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:52:59 customer_id=10000031 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:52:59 customer_id=10000031 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:53:38 customer_id=10000029 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:53:38 customer_id=10000029 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 14:54:32 customer_id=10000032 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 14:54:32 customer_id=10000032 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:16:37 customer_id=10000030 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:16:37 customer_id=10000030 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:17:14 customer_id=10000030 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:17:14 customer_id=10000030 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:27:08 customer_id=10000033 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:27:08 customer_id=10000033 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:32:47 customer_id=10000034 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:32:47 customer_id=10000034 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:34:23 customer_id=10000035 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:34:23 customer_id=10000035 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:38:47 customer_id=10000037 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:38:48 customer_id=10000037 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:40:13 customer_id=10000036 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:40:13 customer_id=10000036 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:41:35 customer_id=10000038 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:41:35 customer_id=10000038 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:46:49 customer_id=10000039 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:46:49 customer_id=10000039 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:48:37 customer_id=10000040 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:48:37 customer_id=10000040 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:56:45 customer_id=10000042 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:56:45 customer_id=10000042 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 15:58:08 customer_id=10000041 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 15:58:08 customer_id=10000041 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 16:01:34 customer_id=10000041 running_id=2666776 kind=116 resultStatus=0
+2020/05/21 16:01:34 customer_id=10000041 running_id=2666776 kind=280 resultStatus=0
+2020/05/21 16:07:28 customer_id=10000043 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 16:07:28 customer_id=10000043 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 16:22:31 customer_id=10000044 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 16:22:32 customer_id=10000044 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 16:39:50 customer_id=10000045 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 16:39:50 customer_id=10000045 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 17:05:31 customer_id=10000046 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 17:05:32 customer_id=10000046 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 17:11:17 customer_id=10000047 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 17:11:17 customer_id=10000047 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 18:05:19 customer_id=10000049 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 18:05:19 customer_id=10000049 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 18:09:52 customer_id=10000050 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 18:09:52 customer_id=10000050 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 18:55:14 customer_id=10000053 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 18:55:14 customer_id=10000053 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 19:37:54 customer_id=10000054 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 19:37:54 customer_id=10000054 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 19:43:05 customer_id=10000052 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 19:43:05 customer_id=10000052 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/21 20:13:33 customer_id=10000055 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/21 20:13:33 customer_id=10000055 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 08:47:49 customer_id=10000056 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 08:47:49 customer_id=10000056 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 09:15:03 customer_id=10000057 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 09:15:03 customer_id=10000057 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 09:21:12 customer_id=10000058 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 09:21:12 customer_id=10000058 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 09:36:03 customer_id=10000058 running_id=2667234 kind=116 resultStatus=0
+2020/05/22 09:36:03 customer_id=10000058 running_id=2667234 kind=280 resultStatus=0
+2020/05/22 09:44:05 customer_id=10000059 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 09:44:05 customer_id=10000059 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 10:34:04 customer_id=10000012 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 10:34:04 customer_id=10000012 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 10:52:10 customer_id=10000061 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 10:52:10 customer_id=10000061 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 13:00:30 customer_id=10000062 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 13:00:30 customer_id=10000062 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 13:02:45 customer_id=10000063 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 13:02:45 customer_id=10000063 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 13:16:04 customer_id=10000064 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 13:16:04 customer_id=10000064 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 13:44:24 customer_id=10000065 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 13:44:24 customer_id=10000065 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 13:57:23 customer_id=10000066 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 13:57:23 customer_id=10000066 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 14:18:31 customer_id=10000067 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 14:18:31 customer_id=10000067 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 14:39:31 customer_id=10000068 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 14:39:31 customer_id=10000068 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 15:05:49 customer_id=10000071 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 15:05:49 customer_id=10000071 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 15:05:51 customer_id=10000070 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 15:05:51 customer_id=10000070 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 15:14:39 customer_id=10000072 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 15:14:39 customer_id=10000072 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 15:28:55 customer_id=10000073 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 15:28:55 customer_id=10000073 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 16:01:21 customer_id=10000074 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 16:01:22 customer_id=10000074 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 17:42:56 customer_id=10000075 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 17:42:56 customer_id=10000075 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 17:55:56 customer_id=10000076 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 17:55:56 customer_id=10000076 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 19:05:16 customer_id=10000077 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 19:05:16 customer_id=10000077 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 19:17:09 customer_id=10000078 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 19:17:09 customer_id=10000078 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 22:26:49 customer_id=10000079 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 22:26:50 customer_id=10000079 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 22:30:13 customer_id=10000080 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 22:30:13 customer_id=10000080 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 23:29:37 customer_id=10000081 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 23:29:37 customer_id=10000081 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 23:40:05 customer_id=10000082 running_id=xxxxxxx kind=025 resultStatus=0
+2020/05/22 23:40:06 customer_id=10000082 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/22 23:49:58 customer_id=10000083 running_id=xxxxxxx kind=025 resultStatus=1
+2020/05/23 00:05:13 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/23 00:07:13 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/23 00:19:51 customer_id=10000084 kind=025 result=1 resultStatus=0
+2020/05/23 00:33:18 customer_id=10000085 kind=025 result=1 resultStatus=0
+2020/05/23 00:33:53 customer_id=10000085 kind=025 result=1 resultStatus=0
+2020/05/23 00:38:55 customer_id=10000085 kind=025 result=1 resultStatus=1
+2020/05/23 00:39:17 customer_id=10000085 kind=025 result=1 resultStatus=1
+2020/05/23 00:57:49 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/23 01:04:50 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/23 01:18:51 customer_id=10000085 kind=025 result=1 resultStatus=0
+2020/05/23 01:21:34 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/23 01:23:34 customer_id=10000083 kind=025 result=1 resultStatus=1
+2020/05/24 08:31:37 customer_id=10000086 kind=025 result=1 resultStatus=1
+2020/05/25 11:53:52 customer_id=10000084 kind=025 result=1 resultStatus=0
+2020/05/25 12:05:15 customer_id=10000096 kind=025 result=1 resultStatus=0
+2020/05/25 12:16:54 customer_id=10000096 kind=025 result=1 resultStatus=0
+2020/05/25 12:25:34 customer_id=10000085 kind=025 result=1 resultStatus=0
+2020/05/25 12:29:58 customer_id=10000084 kind=025 result=1 resultStatus=1
+2020/05/25 12:30:21 customer_id=10000084 kind=025 result=1 resultStatus=0
+2020/05/25 12:30:21 customer_id=10000084 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 13:10:33 customer_id=10000096 kind=025 result=1 resultStatus=0
+2020/05/25 13:10:33 customer_id=10000096 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 13:22:55 customer_id=10000086 kind=025 result=1 resultStatus=1
+2020/05/25 13:32:05 customer_id=10000097 kind=025 result=1 resultStatus=1
+2020/05/25 13:32:40 customer_id=10000097 kind=025 result=1 resultStatus=0
+2020/05/25 13:32:40 customer_id=10000097 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 13:45:05 customer_id=10000018 kind=025 result=1 resultStatus=0
+2020/05/25 13:45:05 customer_id=10000018 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 13:54:22 customer_id=10000097 running_id=2669182 kind=116 resultStatus=0
+2020/05/25 13:54:22 customer_id=10000097 running_id=2669182 kind=280 resultStatus=0
+2020/05/25 13:55:00 customer_id=10000098 kind=025 result=1 resultStatus=1
+2020/05/25 13:55:51 customer_id=10000098 kind=025 result=1 resultStatus=0
+2020/05/25 13:55:51 customer_id=10000098 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 13:56:09 customer_id=10000098 running_id=2669203 kind=116 resultStatus=0
+2020/05/25 13:56:09 customer_id=10000098 running_id=2669203 kind=280 resultStatus=0
+2020/05/25 15:43:38 customer_id=10000099 kind=025 result=1 resultStatus=0
+2020/05/25 15:43:38 customer_id=10000099 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 15:44:33 customer_id=10000100 kind=025 result=1 resultStatus=0
+2020/05/25 15:44:34 customer_id=10000100 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 15:46:26 customer_id=10000101 kind=025 result=1 resultStatus=0
+2020/05/25 15:46:26 customer_id=10000101 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 15:46:59 customer_id=10000088 kind=025 result=1 resultStatus=1
+2020/05/25 15:47:50 customer_id=10000102 kind=025 result=1 resultStatus=0
+2020/05/25 15:47:50 customer_id=10000102 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 15:48:25 customer_id=10000088 kind=025 result=1 resultStatus=1
+2020/05/25 15:49:11 customer_id=10000088 kind=025 result=1 resultStatus=1
+2020/05/25 15:49:33 customer_id=10000103 kind=025 result=1 resultStatus=1
+2020/05/25 16:30:37 customer_id=10000104 kind=025 result=1 resultStatus=0
+2020/05/25 16:30:37 customer_id=10000104 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 16:31:15 customer_id=10000103 kind=025 result=1 resultStatus=0
+2020/05/25 16:31:15 customer_id=10000103 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 16:38:06 customer_id=10000105 kind=025 result=1 resultStatus=1
+2020/05/25 16:38:32 customer_id=10000105 kind=025 result=1 resultStatus=1
+2020/05/25 16:40:12 customer_id=10000105 kind=025 result=1 resultStatus=0
+2020/05/25 16:40:12 customer_id=10000105 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 18:28:41 customer_id=10000107 kind=025 result=1 resultStatus=0
+2020/05/25 18:28:41 customer_id=10000107 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 20:03:57 customer_id=10000109 kind=025 result=1 resultStatus=0
+2020/05/25 20:03:57 customer_id=10000109 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 20:33:20 customer_id=10000110 kind=025 result=1 resultStatus=0
+2020/05/25 20:33:20 customer_id=10000110 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/25 21:07:42 customer_id=10000106 kind=025 result=1 resultStatus=1
+2020/05/25 21:08:04 customer_id=10000106 kind=025 result=1 resultStatus=1
+2020/05/25 21:10:53 customer_id=10000106 kind=025 result=1 resultStatus=1
+2020/05/26 08:02:52 customer_id=10000106 kind=025 result=1 resultStatus=1
+2020/05/26 08:23:14 customer_id=10000111 kind=025 result=1 resultStatus=0
+2020/05/26 08:23:14 customer_id=10000111 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 08:41:45 customer_id=10000112 kind=025 result=1 resultStatus=0
+2020/05/26 08:41:45 customer_id=10000112 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 08:52:57 customer_id=10000113 kind=025 result=1 resultStatus=0
+2020/05/26 08:52:57 customer_id=10000113 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 09:08:35 customer_id=10000114 kind=025 result=1 resultStatus=1
+2020/05/26 09:13:03 customer_id=10000108 kind=025 result=1 resultStatus=0
+2020/05/26 09:13:03 customer_id=10000108 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 09:13:55 customer_id=10000114 kind=025 result=1 resultStatus=0
+2020/05/26 09:13:55 customer_id=10000114 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 09:20:19 customer_id=10000116 kind=025 result=1 resultStatus=0
+2020/05/26 09:20:19 customer_id=10000116 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 09:55:42 customer_id=10000086 kind=025 result=1 resultStatus=0
+2020/05/26 09:55:43 customer_id=10000086 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 10:02:46 customer_id=10000115 kind=025 result=1 resultStatus=0
+2020/05/26 10:02:46 customer_id=10000115 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 12:11:06 customer_id=10000119 kind=025 result=1 resultStatus=0
+2020/05/26 12:11:06 customer_id=10000119 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 13:52:50 customer_id=10000120 kind=025 result=1 resultStatus=1
+2020/05/26 13:54:02 customer_id=10000120 kind=025 result=1 resultStatus=0
+2020/05/26 13:54:02 customer_id=10000120 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 14:03:46 customer_id=10000121 kind=025 result=1 resultStatus=0
+2020/05/26 14:03:46 customer_id=10000121 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 15:34:16 customer_id=10000092 kind=025 result=1 resultStatus=0
+2020/05/26 15:34:16 customer_id=10000092 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/26 18:25:44 customer_id=10000122 kind=025 result=1 resultStatus=1
+2020/05/26 18:27:26 customer_id=10000122 kind=025 result=1 resultStatus=1
+2020/05/26 18:29:23 customer_id=10000122 kind=025 result=1 resultStatus=0
+2020/05/26 18:29:23 customer_id=10000122 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 08:38:21 customer_id=10000124 kind=025 result=1 resultStatus=0
+2020/05/27 08:38:21 customer_id=10000124 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 10:54:04 customer_id=10000069 kind=025 result=1 resultStatus=1
+2020/05/27 15:54:23 customer_id=10000127 kind=025 result=1 resultStatus=0
+2020/05/27 15:54:23 customer_id=10000127 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 15:56:49 customer_id=10000128 kind=025 result=1 resultStatus=0
+2020/05/27 15:56:49 customer_id=10000128 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 15:58:19 customer_id=10000129 kind=025 result=1 resultStatus=0
+2020/05/27 15:58:20 customer_id=10000129 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 15:58:26 customer_id=10000126 kind=025 result=1 resultStatus=0
+2020/05/27 15:58:26 customer_id=10000126 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 17:02:41 customer_id=10000131 kind=025 result=1 resultStatus=0
+2020/05/27 17:02:41 customer_id=10000131 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 18:21:43 customer_id=10000132 kind=025 result=1 resultStatus=0
+2020/05/27 18:21:43 customer_id=10000132 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 18:28:32 customer_id=10000133 kind=025 result=1 resultStatus=0
+2020/05/27 18:28:32 customer_id=10000133 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 18:31:27 customer_id=10000134 kind=025 result=1 resultStatus=0
+2020/05/27 18:31:27 customer_id=10000134 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/27 19:59:23 customer_id=10000135 kind=025 result=1 resultStatus=1
+2020/05/27 20:10:05 customer_id=10000135 kind=025 result=1 resultStatus=1
+2020/05/27 22:47:27 customer_id=10000136 kind=025 result=1 resultStatus=0
+2020/05/27 22:47:27 customer_id=10000136 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/28 09:12:02 customer_id=10000137 kind=025 result=1 resultStatus=0
+2020/05/28 09:12:02 customer_id=10000137 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/28 10:13:31 customer_id=10000138 kind=025 result=1 resultStatus=0
+2020/05/28 10:13:31 customer_id=10000138 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/28 11:22:13 customer_id=10000137 running_id=2670468 kind=116 resultStatus=0
+2020/05/28 11:22:13 customer_id=10000137 running_id=2670468 kind=280 resultStatus=0
+2020/05/28 14:20:46 customer_id=10000139 kind=025 result=1 resultStatus=1
+2020/05/28 14:23:17 customer_id=10000139 kind=025 result=1 resultStatus=1
+2020/05/28 14:27:47 customer_id=10000139 kind=025 result=1 resultStatus=1
+2020/05/28 14:28:56 customer_id=10000139 kind=025 result=1 resultStatus=1
+2020/05/28 14:31:30 customer_id=10000139 kind=025 result=1 resultStatus=1
+2020/05/28 14:31:53 customer_id=10000139 kind=025 result=1 resultStatus=0
+2020/05/28 14:31:53 customer_id=10000139 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/28 14:35:20 customer_id=10000140 kind=025 result=1 resultStatus=0
+2020/05/28 14:35:20 customer_id=10000140 running_id=xxxxxxx kind=280 resultStatus=0
+2020/05/28 17:02:08 customer_id=10000114 running_id=2669561 kind=116 resultStatus=0
+2020/05/28 17:02:08 customer_id=10000114 running_id=2669561 kind=280 resultStatus=0
+2020/05/28 17:05:54 customer_id=10000105 running_id=2669375 kind=116 resultStatus=0
+2020/05/28 17:05:54 customer_id=10000105 running_id=2669375 kind=280 resultStatus=0
+2020/06/01 09:35:59 customer_id=10000141 kind=025 result=1 resultStatus=0
+2020/06/01 09:35:59 customer_id=10000141 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/01 09:36:51 customer_id=10000142 kind=025 result=1 resultStatus=0
+2020/06/01 09:36:51 customer_id=10000142 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/01 09:37:22 customer_id=10000142 running_id=2673453 kind=116 resultStatus=0
+2020/06/01 09:37:23 customer_id=10000142 running_id=2673453 kind=280 resultStatus=0
+2020/06/01 10:00:38 customer_id=10000141 running_id=2673452 kind=116 resultStatus=0
+2020/06/01 10:00:38 customer_id=10000141 running_id=2673452 kind=280 resultStatus=0
+2020/06/01 10:42:50 customer_id=10000143 kind=025 result=1 resultStatus=0
+2020/06/01 10:42:50 customer_id=10000143 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/01 10:43:07 customer_id=10000143 running_id=2673461 kind=116 resultStatus=0
+2020/06/01 10:43:07 customer_id=10000143 running_id=2673461 kind=280 resultStatus=0
+2020/06/01 17:19:50 customer_id=10000144 kind=025 result=1 resultStatus=0
+2020/06/01 17:19:51 customer_id=10000144 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/08 09:13:14 customer_id=10000069 kind=025 result=1 resultStatus=0
+2020/06/08 09:13:14 customer_id=10000069 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/08 09:45:04 customer_id=10000069 running_id=2679142 kind=116 resultStatus=0
+2020/06/08 09:45:04 customer_id=10000069 running_id=2679142 kind=280 resultStatus=0
+2020/06/08 09:49:07 customer_id=10000117 kind=025 result=1 resultStatus=0
+2020/06/08 09:49:07 customer_id=10000117 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/08 10:16:13 customer_id=10000146 kind=025 result=1 resultStatus=0
+2020/06/08 10:16:13 customer_id=10000146 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/09 11:03:08 customer_id=10000069 running_id=2679142 kind=116 resultStatus=0
+2020/06/09 11:03:08 customer_id=10000069 running_id=2679142 kind=280 resultStatus=0
+2020/06/09 11:26:54 customer_id=10000148 kind=025 result=1 resultStatus=0
+2020/06/09 11:26:55 customer_id=10000148 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/09 11:46:02 customer_id=10000149 kind=025 result=1 resultStatus=0
+2020/06/09 11:46:02 customer_id=10000149 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/12 09:52:51 customer_id=10000130 kind=025 result=1 resultStatus=0
+2020/06/12 09:52:51 customer_id=10000130 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/12 10:09:31 customer_id=10000150 kind=025 result=1 resultStatus=0
+2020/06/12 10:09:31 customer_id=10000150 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/15 09:28:03 customer_id=10000151 kind=025 result=1 resultStatus=1
+2020/06/15 09:28:51 customer_id=10000151 kind=025 result=1 resultStatus=0
+2020/06/15 09:28:51 customer_id=10000151 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/15 09:38:59 customer_id=10000152 kind=025 result=1 resultStatus=0
+2020/06/15 09:38:59 customer_id=10000152 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/15 10:27:40 customer_id=10000153 kind=025 result=1 resultStatus=0
+2020/06/15 10:27:40 customer_id=10000153 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/15 11:35:49 customer_id=10000153 running_id=2687076 kind=116 resultStatus=0
+2020/06/15 11:35:49 customer_id=10000153 running_id=2687076 kind=280 resultStatus=0
+2020/06/16 00:38:20 customer_id=10000154 kind=025 result=1 resultStatus=0
+2020/06/16 00:38:20 customer_id=10000154 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/16 10:55:51 customer_id=10000155 kind=025 result=1 resultStatus=0
+2020/06/16 10:55:51 customer_id=10000155 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/16 11:06:07 customer_id=10000156 kind=025 result=1 resultStatus=0
+2020/06/16 11:06:08 customer_id=10000156 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/16 11:08:18 customer_id=10000157 kind=025 result=1 resultStatus=0
+2020/06/16 11:08:18 customer_id=10000157 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/16 11:10:18 customer_id=10000158 kind=025 result=1 resultStatus=0
+2020/06/16 11:10:18 customer_id=10000158 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/17 09:53:52 customer_id=10000159 kind=025 result=1 resultStatus=0
+2020/06/17 09:53:52 customer_id=10000159 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/17 09:58:39 customer_id=10000160 kind=025 result=1 resultStatus=0
+2020/06/17 09:58:40 customer_id=10000160 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/18 10:48:13 customer_id=10000161 kind=025 result=1 resultStatus=0
+2020/06/18 10:48:13 customer_id=10000161 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/22 10:15:00 customer_id=10000163 kind=025 result=1 resultStatus=0
+2020/06/22 10:15:01 customer_id=10000163 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/22 10:17:55 customer_id=10000164 kind=025 result=1 resultStatus=0
+2020/06/22 10:17:55 customer_id=10000164 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/22 10:22:57 customer_id=10000165 kind=025 result=1 resultStatus=0
+2020/06/22 10:22:57 customer_id=10000165 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/22 10:47:03 customer_id=10000166 kind=025 result=1 resultStatus=0
+2020/06/22 10:47:03 customer_id=10000166 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/22 11:56:53 customer_id=10000167 kind=025 result=1 resultStatus=0
+2020/06/22 11:56:53 customer_id=10000167 running_id=xxxxxxx kind=280 resultStatus=0
+2020/06/27 19:04:11 customer_id=10000162 kind=025 result=1 resultStatus=1
+2020/06/27 19:13:06 INDEX u_id=162
+2020/06/27 19:16:13 customer_id=10000162 kind=025 result=1 resultStatus=1
+2020/06/27 19:16:14 INDEX u_id=162
+2020/06/28 10:40:08 customer_id=10000162 kind=025 result=1 resultStatus=0
+2020/06/28 10:40:08 customer_id=10000162 kind=280 resultStatus=0
+2020/06/28 10:50:29 INDEX u_id=162
+2020/06/28 11:14:31 u_id=162 START
+2020/06/28 11:14:31 u_id=162 END to_mail=nakazawa6097@ever.ocn.ne.jp user_name=中澤　富義 user_signup=signup
+2020/06/28 11:18:50 u_id=162 START
+2020/06/28 11:27:08 INDEX u_id=168
+2020/06/28 11:28:01 customer_id=10000168 kind=025 result=1 resultStatus=0
+2020/06/28 11:28:02 customer_id=10000168 kind=280 resultStatus=0
+2020/06/28 11:28:02 u_id=168 START
+2020/06/28 11:28:02 u_id=168 END to_mail=nakazawa6097@ever.ocn.ne.jp user_name=中澤　富義 user_signup=
+2020/06/28 11:39:52 INDEX u_id=169
+2020/06/28 11:40:41 customer_id=10000169 kind=025 result=1 resultStatus=0
+2020/06/28 11:40:41 customer_id=10000169 kind=280 resultStatus=0
+2020/06/28 11:40:41 u_id=169 START
+2020/06/28 11:40:41 u_id=169 END to_mail=nakanaka777jp@yahoo.co.jp user_name=株式会社AMBIENCE user_signup=signup
+2020/06/29 09:18:58 INDEX u_id=170
+2020/06/29 09:35:41 INDEX u_id=171
+2020/06/29 09:38:13 INDEX u_id=172
+2020/06/29 09:38:53 customer_id=10000172 kind=025 result=1 resultStatus=0
+2020/06/29 09:38:53 customer_id=10000172 kind=280 resultStatus=0
+2020/06/29 09:38:53 u_id=172 START
+2020/06/29 09:38:53 u_id=172 END to_mail=kakitami.0208@gmail.com user_name=柿田美帆 user_signup=signup
+2020/06/29 09:48:13 customer_id=10000171 kind=025 result=1 resultStatus=0
+2020/06/29 09:48:13 customer_id=10000171 kind=280 resultStatus=0
+2020/06/29 09:48:13 u_id=171 START
+2020/06/29 09:48:13 u_id=171 END to_mail=sushi58280@gmail.com user_name=ゆゆ user_signup=
+2020/06/29 10:06:56 INDEX u_id=173
+2020/06/29 10:07:17 customer_id=10000173 kind=025 result=1 resultStatus=0
+2020/06/29 10:07:17 customer_id=10000173 kind=280 resultStatus=0
+2020/06/29 10:07:21 u_id=173 START
+2020/06/29 10:07:21 u_id=173 END to_mail=tei@rmtrust.co.jp user_name=susie cheang user_signup=signup
+2020/06/29 10:40:08 INDEX u_id=174
+2020/06/29 10:40:51 customer_id=10000174 kind=025 result=1 resultStatus=0
+2020/06/29 10:40:51 customer_id=10000174 kind=280 resultStatus=0
+2020/06/29 10:40:51 u_id=174 START
+2020/06/29 10:40:52 u_id=174 END to_mail=minachi.misono@docomo.ne.jp user_name=御園　未奈子 user_signup=
+2020/07/01 12:18:20 INDEX u_id=175
+2020/07/01 12:19:02 customer_id=10000175 kind=025 result=1 resultStatus=0
+2020/07/01 12:19:02 customer_id=10000175 kind=280 resultStatus=0
+2020/07/01 12:19:03 u_id=175 START
+2020/07/01 12:19:03 u_id=175 END to_mail=kakita@rmtrust.co.jp user_name=柿田美帆 user_signup=signup
+2020/07/01 12:22:45 INDEX u_id=176
+2020/07/01 12:23:07 customer_id=10000176 kind=025 result=1 resultStatus=1
+2020/07/01 12:23:07 INDEX u_id=176
+2020/07/01 12:23:43 customer_id=10000176 kind=025 result=1 resultStatus=0
+2020/07/01 12:23:44 customer_id=10000176 kind=280 resultStatus=0
+2020/07/01 12:23:44 u_id=176 START
+2020/07/01 12:23:44 u_id=176 END to_mail=u2minknow@yahoo.ne.jp user_name=株式会社ジャニーズ事務所 user_signup=signup
+2020/07/01 14:01:00 INDEX u_id=177
+2020/07/01 14:07:06 customer_id=10000177 kind=025 result=1 resultStatus=0
+2020/07/01 14:07:07 customer_id=10000177 kind=280 resultStatus=0
+2020/07/01 14:07:07 u_id=177 START
+2020/07/01 14:07:07 u_id=177 END to_mail=wgz19921228@yahoo.co.jp user_name=daigo user_signup=signup
+2020/07/01 14:11:12 INDEX u_id=178
+2020/07/01 14:11:45 customer_id=10000178 kind=025 result=1 resultStatus=1
+2020/07/01 14:11:45 INDEX u_id=178
+2020/07/01 14:12:17 customer_id=10000178 kind=025 result=1 resultStatus=0
+2020/07/01 14:12:17 customer_id=10000178 kind=280 resultStatus=0
+2020/07/01 14:12:17 u_id=178 START
+2020/07/01 14:12:17 u_id=178 END to_mail=wzg19921228@yahoo.co.jp user_name=daigo user_signup=signup
+2020/07/01 14:24:58 customer_id=10000178 running_id=2703814 kind=116 resultStatus=0
+2020/07/01 14:24:58 customer_id=10000178 running_id=2703814 kind=280 resultStatus=0
+2020/07/01 14:25:20 customer_id=10000178 running_id=2703814 kind=116 resultStatus=0
+2020/07/01 14:25:20 customer_id=10000178 running_id=2703814 kind=280 resultStatus=0
+2020/07/01 14:32:48 INDEX u_id=179
+2020/07/01 14:33:41 customer_id=10000179 kind=025 result=1 resultStatus=0
+2020/07/01 14:33:41 customer_id=10000179 kind=280 resultStatus=0
+2020/07/01 14:33:41 u_id=179 START
+2020/07/01 14:33:41 u_id=179 END to_mail=minachi.misono@docomo.ne.jp user_name=御園　みなこ user_signup=signup
+2020/07/01 14:34:36 INDEX u_id=180
+2020/07/01 14:35:01 customer_id=10000180 kind=025 result=1 resultStatus=0
+2020/07/01 14:35:02 customer_id=10000180 kind=280 resultStatus=0
+2020/07/01 14:35:02 u_id=180 START
+2020/07/01 14:35:02 u_id=180 END to_mail=wzg19921228@yahoo.co.jp user_name=あああ user_signup=signup
+2020/07/01 16:47:40 customer_id=10000179 running_id=2703859 kind=116 resultStatus=0
+2020/07/01 16:47:40 customer_id=10000179 running_id=2703859 kind=280 resultStatus=0
+2020/07/01 20:47:28 INDEX u_id=
+2020/07/01 21:04:27 INDEX u_id=
+2020/07/01 21:06:33 INDEX u_id=
+2020/07/01 21:10:32 INDEX u_id=
+2020/07/01 21:20:13 INDEX u_id=
+2020/07/01 21:39:29 INDEX u_id=
+2020/07/01 23:45:32 INDEX u_id=
+2020/07/02 00:03:29 INDEX u_id=
+2020/07/03 09:31:19 INDEX u_id=181
+2020/07/03 09:32:46 customer_id=10000181 kind=025 result=1 resultStatus=0
+2020/07/03 09:32:46 customer_id=10000181 kind=280 resultStatus=0
+2020/07/03 09:32:46 u_id=181 START
+2020/07/03 09:32:46 u_id=181 END to_mail=minachi.misono@docomo.ne.jp user_name=御園　みなこ user_signup=
+2020/07/03 09:49:53 INDEX u_id=182
+2020/07/03 09:50:24 customer_id=10000182 kind=025 result=1 resultStatus=0
+2020/07/03 09:50:24 customer_id=10000182 kind=280 resultStatus=0
+2020/07/03 09:50:24 u_id=182 START
+2020/07/03 09:50:24 u_id=182 END to_mail=kakita@rmtrust.co.jp user_name=柿田美帆 user_signup=
+2020/07/03 09:55:49 INDEX u_id=183
+2020/07/03 10:27:30 INDEX u_id=184
+2020/07/03 10:28:09 customer_id=10000184 kind=025 result=1 resultStatus=0
+2020/07/03 10:28:09 customer_id=10000184 kind=280 resultStatus=0
+2020/07/03 10:28:09 u_id=184 START
+2020/07/03 10:28:09 u_id=184 END to_mail=misono@rmtrust.co.jp user_name=マイケルコース user_signup=
+2020/07/03 10:33:50 INDEX u_id=185
+2020/07/03 10:34:32 customer_id=10000185 kind=025 result=1 resultStatus=0
+2020/07/03 10:34:32 customer_id=10000185 kind=280 resultStatus=0
+2020/07/03 10:34:32 u_id=185 START
+2020/07/03 10:34:32 u_id=185 END to_mail=u2minknow@yahoo.ne.jp user_name=株式会社うさまるうさまーる user_signup=
+2020/07/03 10:35:50 customer_id=10000185 running_id=2705929 kind=116 resultStatus=0
+2020/07/03 10:35:51 customer_id=10000185 running_id=2705929 kind=280 resultStatus=0
+2020/07/04 13:05:04 INDEX u_id=
+2020/07/04 13:05:39 INDEX u_id=
+2020/07/04 13:17:13 INDEX u_id=
+2020/07/04 18:39:19 INDEX u_id=
+2020/07/06 09:17:28 INDEX u_id=186
+2020/07/06 09:28:43 INDEX u_id=187
+2020/07/06 09:30:28 INDEX u_id=188
+2020/07/06 09:31:16 INDEX u_id=
+2020/07/06 09:37:12 INDEX u_id=189
+2020/07/06 09:37:50 customer_id=10000189 kind=025 result=1 resultStatus=0
+2020/07/06 09:37:50 customer_id=10000189 kind=280 resultStatus=0
+2020/07/06 09:37:50 u_id=189 START
+2020/07/06 09:37:50 u_id=189 END to_mail=narita@rmtrust.co.jp user_name=クマノプーさん株式会社 user_signup=
+2020/07/06 09:46:02 INDEX u_id=186
+2020/07/06 09:52:43 INDEX u_id=186
+2020/07/06 09:53:20 customer_id=10000186 kind=025 result=1 resultStatus=0
+2020/07/06 09:53:20 customer_id=10000186 kind=280 resultStatus=0
+2020/07/06 09:53:20 u_id=186 START
+2020/07/06 09:53:20 u_id=186 END to_mail=kakita@rmtrust.co.jp user_name=柿田美帆 user_signup=
+2020/07/06 09:55:37 u_id= START
+2020/07/06 09:55:37 INDEX u_id=
+2020/07/06 13:06:57 INDEX u_id=
+2020/07/07 13:55:19 INDEX u_id=
+2020/07/07 14:05:39 INDEX u_id=
+2020/07/09 11:07:27 INDEX u_id=190
+2020/07/09 11:09:13 customer_id=10000190 kind=025 result=1 resultStatus=1
+2020/07/09 11:09:14 INDEX u_id=190
+2020/07/09 11:10:57 INDEX u_id=190
+2020/07/09 11:27:31 INDEX u_id=190
+2020/07/09 12:10:50 INDEX u_id=191
+2020/07/09 12:12:42 customer_id=10000191 kind=025 result=1 resultStatus=1
+2020/07/09 12:12:42 INDEX u_id=191
+2020/07/09 12:13:12 customer_id=10000191 kind=025 result=1 resultStatus=0
+2020/07/09 12:13:12 customer_id=10000191 kind=280 resultStatus=0
+2020/07/09 12:13:12 u_id=191 START
+2020/07/09 12:13:12 u_id=191 END to_mail=brt9911@hotmail.com user_name=増田昌徳 user_signup=signup
+2020/07/10 15:57:05 INDEX u_id=17
+2020/07/10 15:59:14 INDEX u_id=17
+2020/07/10 16:41:18 INDEX u_id=192
+2020/07/10 16:42:03 customer_id=10000192 kind=025 result=1 resultStatus=1
+2020/07/10 16:42:03 INDEX u_id=192
+2020/07/10 16:42:44 customer_id=10000192 kind=025 result=1 resultStatus=0
+2020/07/10 16:42:44 customer_id=10000192 kind=280 resultStatus=0
+2020/07/10 16:42:44 u_id=192 START
+2020/07/10 16:42:44 u_id=192 END to_mail=otsuka@rmtrust.co.jp user_name=大塚陽介 user_signup=
+2020/07/10 17:06:37 customer_id=10000192 running_id=2713181 kind=116 resultStatus=0
+2020/07/10 17:06:37 customer_id=10000192 running_id=2713181 kind=280 resultStatus=0
+2020/07/10 17:06:46 customer_id=10000192 running_id=2713181 kind=116 resultStatus=0
+2020/07/10 17:06:46 customer_id=10000192 running_id=2713181 kind=280 resultStatus=0
+2020/07/10 17:06:50 customer_id=10000192 running_id=2713181 kind=116 resultStatus=0
+2020/07/10 17:06:50 customer_id=10000192 running_id=2713181 kind=280 resultStatus=0
+2020/07/13 08:53:46 INDEX u_id=193
+2020/07/13 08:55:55 customer_id=10000193 kind=025 result=1 resultStatus=0
+2020/07/13 08:55:55 customer_id=10000193 kind=280 resultStatus=0
+2020/07/13 08:55:55 u_id=193 START
+2020/07/13 08:55:55 u_id=193 END to_mail=akaba@fits-rm.jp user_name=赤羽　楓 user_signup=
+2020/07/13 09:14:09 customer_id=10000193 running_id=2715796 kind=116 resultStatus=0
+2020/07/13 09:14:09 customer_id=10000193 running_id=2715796 kind=280 resultStatus=0
+2020/07/14 11:47:57 INDEX u_id=194
+2020/07/15 11:10:23 customer_id=10000184 running_id=2705927 kind=116 resultStatus=0
+2020/07/15 11:10:24 customer_id=10000184 running_id=2705927 kind=280 resultStatus=0
+2020/07/15 11:10:32 customer_id=10000184 running_id=2705927 kind=116 resultStatus=0
+2020/07/15 11:10:32 customer_id=10000184 running_id=2705927 kind=280 resultStatus=0
+2020/07/15 15:28:59 INDEX u_id=195
+2020/07/15 15:29:54 customer_id=10000195 kind=025 result=1 resultStatus=0
+2020/07/15 15:29:54 customer_id=10000195 kind=280 resultStatus=0
+2020/07/15 15:29:55 u_id=195 START
+2020/07/15 15:29:55 u_id=195 END to_mail=masuda-cpa@tcn-catv.ne.jp user_name=増田昌徳 user_signup=signup
+2020/07/15 16:24:04 customer_id=10000191 running_id=2712352 kind=116 resultStatus=0
+2020/07/15 16:24:04 customer_id=10000191 running_id=2712352 kind=280 resultStatus=0
+2020/07/17 16:37:08 INDEX u_id=
+2020/07/18 23:45:10 INDEX u_id=
+2020/08/03 10:56:47 INDEX u_id=95
+2020/08/03 10:57:36 customer_id=10000095 kind=025 result=1 resultStatus=0
+2020/08/03 10:57:36 customer_id=10000095 kind=280 resultStatus=0
+2020/08/03 10:57:36 u_id=95 START
+2020/08/03 10:57:36 u_id=95 END to_mail=aoike@rmtrust.co.jp user_name=アールエムトラスト株式会社 user_signup=signup
+2020/08/03 14:28:07 INDEX u_id=196
+2020/08/03 14:30:53 customer_id=10000196 kind=025 result=1 resultStatus=0
+2020/08/03 14:30:53 customer_id=10000196 kind=280 resultStatus=0
+2020/08/03 14:30:53 u_id=196 START
+2020/08/03 14:30:53 u_id=196 END to_mail=minachi.misono@i.softbank.jp user_name=御園　未奈子 user_signup=signup
+2020/08/04 12:20:36 INDEX u_id=197
+2020/08/04 12:21:37 customer_id=10000197 kind=025 result=1 resultStatus=0
+2020/08/04 12:21:37 customer_id=10000197 kind=280 resultStatus=0
+2020/08/04 12:21:37 u_id=197 START
+2020/08/04 12:21:37 u_id=197 END to_mail=wangmaggie87@gmail.com user_name=ポケモン user_signup=signup
+2020/08/18 16:44:06 customer_id=10000196 running_id=2734355 kind=116 resultStatus=0
+2020/08/18 16:44:06 customer_id=10000196 running_id=2734355 kind=280 resultStatus=0
+2020/08/18 16:44:11 customer_id=10000172 running_id=2701978 kind=116 resultStatus=0
+2020/08/18 16:44:11 customer_id=10000172 running_id=2701978 kind=280 resultStatus=0
+2020/08/18 16:44:44 customer_id=10000180 running_id=2703865 kind=116 resultStatus=0
+2020/08/18 16:44:44 customer_id=10000180 running_id=2703865 kind=280 resultStatus=0
+2020/08/20 10:10:39 customer_id=10000196 running_id=2734355 kind=116 resultStatus=0
+2020/08/20 10:10:39 customer_id=10000196 running_id=2734355 kind=280 resultStatus=0
+2020/08/20 14:47:31 INDEX u_id=
+2020/08/26 16:09:40 customer_id=10000172 running_id=2701978 kind=116 resultStatus=0
+2020/08/26 16:09:40 customer_id=10000172 running_id=2701978 kind=280 resultStatus=0
+2020/09/23 09:57:08 INDEX u_id=198
+2020/09/23 09:58:56 customer_id=10000198 kind=025 result=1 resultStatus=0
+2020/09/23 09:58:56 customer_id=10000198 kind=280 resultStatus=0
+2020/09/23 09:58:57 u_id=198 START
+2020/09/23 09:58:57 u_id=198 END to_mail=omata@rmtrust.co.jp user_name=小俣　昌万 user_signup=
+2020/09/25 10:40:41 INDEX u_id=
+2020/09/25 10:43:26 INDEX u_id=
+2020/10/02 09:35:52 INDEX u_id=199
+2020/10/02 09:37:34 customer_id=10000199 kind=025 result=1 resultStatus=0
+2020/10/02 09:37:34 customer_id=10000199 kind=280 resultStatus=0
+2020/10/02 09:37:34 u_id=199 START
+2020/10/02 09:37:34 u_id=199 END to_mail=masa.1690@gmail.com user_name=小俣昌万 user_signup=signup
+2020/10/02 11:02:43 customer_id=10000199 running_id=2789415 kind=116 resultStatus=0
+2020/10/02 11:02:43 customer_id=10000199 running_id=2789415 kind=280 resultStatus=0
+2020/10/05 11:14:59 INDEX u_id=200
+2020/10/05 11:15:44 customer_id=10000200 kind=025 result=1 resultStatus=0
+2020/10/05 11:15:44 customer_id=10000200 kind=280 resultStatus=0
+2020/10/05 11:15:45 u_id=200 START
+2020/10/05 11:15:45 u_id=200 END to_mail=omata@rmtrust.co.jp user_name=小俣昌万 user_signup=
+2020/10/07 12:20:46 INDEX u_id=201
+2020/10/07 12:21:56 customer_id=10000201 kind=025 result=1 resultStatus=0
+2020/10/07 12:21:56 customer_id=10000201 kind=280 resultStatus=0
+2020/10/07 12:21:56 u_id=201 START
+2020/10/07 12:21:56 u_id=201 END to_mail=kakita@rmtrust.co.jp user_name=柿田美帆 user_signup=
+2020/10/07 12:23:05 customer_id=10000201 running_id=2792351 kind=116 resultStatus=0
+2020/10/07 12:23:06 customer_id=10000201 running_id=2792351 kind=280 resultStatus=0
+2020/10/07 12:23:09 customer_id=10000201 running_id=2792351 kind=116 resultStatus=0
+2020/10/07 12:23:09 customer_id=10000201 running_id=2792351 kind=280 resultStatus=0
+2020/10/07 14:28:58 INDEX u_id=202
+2020/10/07 14:29:50 customer_id=10000202 kind=025 result=1 resultStatus=0
+2020/10/07 14:29:50 customer_id=10000202 kind=280 resultStatus=0
+2020/10/07 14:29:50 u_id=202 START
+2020/10/07 14:29:50 u_id=202 END to_mail=kakita@rmtrust.co.jp user_name=柿田　美帆 user_signup=
+2020/10/09 14:57:53 INDEX u_id=203
+2020/10/09 15:00:58 customer_id=10000203 kind=025 result=1 resultStatus=1
+2020/10/09 15:00:58 INDEX u_id=203
+2020/10/09 15:01:37 customer_id=10000203 kind=025 result=1 resultStatus=1
+2020/10/09 15:01:37 INDEX u_id=203
+2020/10/09 15:02:11 customer_id=10000203 kind=025 result=1 resultStatus=0
+2020/10/09 15:02:11 customer_id=10000203 kind=280 resultStatus=0
+2020/10/09 15:02:11 u_id=203 START
+2020/10/09 15:02:11 u_id=203 END to_mail=kgpgh94367@yahoo.co.jp user_name=鄭少施 user_signup=signup
+2020/11/02 09:25:25 INDEX u_id=204
+2020/11/02 09:27:06 customer_id=10000204 kind=025 result=1 resultStatus=0
+2020/11/02 09:27:06 customer_id=10000204 kind=280 resultStatus=0
+2020/11/02 09:27:06 u_id=204 START
+2020/11/02 09:27:06 u_id=204 END to_mail=omata@rmtrust.co.jp user_name=小俣昌万 user_signup=
+2021/03/12 17:57:34 INDEX u_id=48
+2021/03/12 17:58:08 customer_id=10000048 kind=025 result=1 resultStatus=1
+2021/03/12 17:58:09 INDEX u_id=48
+2021/03/12 18:01:03 customer_id=10000048 kind=025 result=1 resultStatus=1
+2021/03/12 18:01:03 INDEX u_id=48
+2021/03/12 18:03:02 INDEX u_id=205
+2021/03/12 18:07:58 customer_id=10000205 kind=025 result=1 resultStatus=0
+2021/03/12 18:07:58 customer_id=10000205 kind=280 resultStatus=0
+2021/03/12 18:07:58 u_id=205 START
+2021/03/12 18:07:58 u_id=205 END to_mail=karima@rmtrust.co.jp user_name=刈間さくら user_signup=signup
+2021/07/09 13:35:03 INDEX u_id=206
+2021/07/09 13:59:36 INDEX u_id=206
+2021/07/09 15:24:36 INDEX u_id=206
+2021/07/09 15:45:07 INDEX u_id=207
+2021/07/09 15:46:18 customer_id=10000207 kind=025 result=1 resultStatus=0
+2021/07/09 15:46:18 customer_id=10000207 kind=280 resultStatus=0
+2021/07/09 15:46:18 u_id=207 START
+2021/07/09 15:46:18 u_id=207 END to_mail=karima@rmtrust.co.jp user_name=アールエムトラスト user_signup=
+2021/07/12 09:57:45 INDEX u_id=206
+2021/08/25 12:04:13 INDEX u_id=208
+2021/10/27 01:47:43 INDEX u_id=1
+2021/10/27 01:50:24 INDEX u_id=1
+2021/10/27 01:54:12 INDEX u_id=1
+2021/10/27 02:13:49 INDEX u_id=1
+2021/10/27 02:15:26 INDEX u_id=1
+2021/10/27 02:19:45 INDEX u_id=1
+2021/10/27 07:48:33 INDEX u_id=1
+2021/10/31 13:00:06 INDEX u_id=1
+2021/11/01 09:39:52 INDEX u_id=2
+2021/11/04 12:20:58 INDEX u_id=1
+2021/11/04 12:22:46 INDEX u_id=1
+2021/11/29 08:00:07 INDEX u_id=1
+2021/11/29 08:00:59 INDEX u_id=1
+2021/11/29 08:03:37 INDEX u_id=1
+2021/11/29 08:03:39 INDEX u_id=1
+2021/11/29 08:08:16 INDEX u_id=1
+2021/11/29 08:12:46 INDEX u_id=1
+2021/11/29 08:38:55 customer_id=10000001 kind=025 result=E02004 resultStatus=
+2021/11/29 08:38:55 INDEX u_id=1
+2021/11/29 08:40:07 customer_id=10000001 kind=025 result=E02004 resultStatus=
+2021/11/29 08:40:08 customer_id=10000001 kind=025 result=E02004 resultStatus=
+2021/11/29 08:40:08 INDEX u_id=1
+2021/11/29 08:40:31 customer_id=10000001 kind=025 result=E02004 resultStatus=
+2021/11/29 08:40:31 INDEX u_id=1
+2021/11/29 08:41:07 INDEX u_id=1
+2021/11/29 08:43:02 customer_id=10000001 kind=025 result=E02004 resultStatus=0
+2021/11/29 08:43:02 INDEX u_id=1
+2021/11/29 08:43:39 INDEX u_id=1
+2021/11/29 08:43:55 customer_id=10000001 kind=025 result=E02004 resultStatus=0
+2021/11/29 08:43:55 INDEX u_id=1
+2021/11/29 08:44:47 customer_id=10000001 kind=025 result=E02004 resultStatus=0
+2021/11/29 08:44:47 INDEX u_id=1
+2021/11/29 08:46:53 INDEX u_id=1
+2021/11/29 08:48:00 customer_id=10000001 kind=025 result=E02004 resultStatus=0
+2021/11/29 08:48:00 INDEX u_id=1
+2021/11/30 07:48:20 INDEX u_id=208
+2021/11/30 07:49:17 customer_id=10000208 kind=025 result=E02004 resultStatus=
+2021/11/30 07:49:17 INDEX u_id=208
+2021/11/30 11:44:04 INDEX u_id=208
+2021/11/30 11:44:14 INDEX u_id=208
+2021/11/30 11:46:43 customer_id=10000208 kind=025 result=E02004 resultStatus=
+2021/11/30 11:46:43 INDEX u_id=208
+2021/11/30 13:04:54 INDEX u_id=1
+2021/11/30 13:34:35 INDEX u_id=1
+2021/11/30 14:52:21 INDEX u_id=1
+2021/12/01 01:49:09 INDEX u_id=1

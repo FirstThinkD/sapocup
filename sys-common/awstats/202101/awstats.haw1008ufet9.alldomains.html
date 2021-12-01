@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang='jp'>
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="expires" content="Sun Jan 31 19:47:29 2021" />
+<meta http-equiv="description" content="Awstats - Advanced Web Statistics for sapocup.jp" />
+<title>統計対象サイト sapocup.jp</title>
+<style type="text/css">
+<!--
+body { font: 11px verdana, arial, helvetica, sans-serif; background-color: #FFFFFF; margin-top: 0; margin-bottom: 0; }
+.aws_bodyl  { }
+.aws_border { background-color: #CCCCDD; padding: 1px 1px 1px 1px; margin-top: 0; margin-bottom: 0; }
+.aws_title  { font: 13px verdana, arial, helvetica, sans-serif; font-weight: bold; background-color: #CCCCDD; text-align: center; margin-top: 0; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_blank  { font: 13px verdana, arial, helvetica, sans-serif; background-color: #CCCCDD; text-align: center; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_data {
+	background-color: #FFFFFF;
+	border-top-width: 1px;   
+	border-left-width: 0px;  
+	border-right-width: 0px; 
+	border-bottom-width: 0px;
+}
+.aws_formfield { font: 13px verdana, arial, helvetica; }
+.aws_button {
+	font-family: arial,verdana,helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #ccd7e0;
+	background-image : url(/sys-common/awstats/icon/other/button.gif);
+}
+th		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+th.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font-size: 13px; font-weight: bold; }
+td		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+td.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+td.awsm	{ border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px 0px 0px 0px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+b { font-weight: bold; }
+a { font: 11px verdana, arial, helvetica, sans-serif; }
+a:link    { color: #0011BB; text-decoration: none; }
+a:visited { color: #0011BB; text-decoration: none; }
+a:hover   { color: #605040; text-decoration: underline; }
+div { font: 12px 'Arial','Verdana','Helvetica', sans-serif; text-align: justify; }
+.CTooltip { position:absolute; top: 0px; left: 0px; z-index: 2; width: 380px; visibility:hidden; font: 8pt 'MS Comic Sans','Arial',sans-serif; background-color: #FFFFE6; padding: 8px; border: 1px solid black; }
+//-->
+</style>
+</head>
+
+<body style="margin-top: 0px">
+<a name="top">&nbsp;</a>
+
+
+
+
+<script language="javascript" type="text/javascript">
+function ShowTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		var tooltipLft = (document.body.offsetWidth?document.body.offsetWidth:document.body.style.pixelWidth) - (tooltipOBJ.offsetWidth?tooltipOBJ.offsetWidth:(tooltipOBJ.style.pixelWidth?tooltipOBJ.style.pixelWidth:380)) - 30;
+		var tooltipTop = 10;
+		if (navigator.appName == 'Netscape') {
+			if (parseFloat(navigator.appVersion) >= 5) { tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10); }
+			tooltipOBJ.style.left = tooltipLft; tooltipOBJ.style.top = tooltipTop;
+		}
+		else {
+			tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10);
+			if ((event.clientX > tooltipLft) && (event.clientY < (tooltipOBJ.scrollHeight?tooltipOBJ.scrollHeight:tooltipOBJ.style.pixelHeight) + 10)) {
+				tooltipTop = (document.body.scrollTop?document.body.scrollTop:document.body.offsetTop) + event.clientY + 20;
+			}
+			tooltipOBJ.style.pixelLeft = tooltipLft; tooltipOBJ.style.pixelTop = tooltipTop;
+		}
+		tooltipOBJ.style.visibility = "visible";
+	}
+}
+function HideTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		tooltipOBJ.style.visibility = "hidden";
+	}
+}
+</script>
+
+<a name="menu">&nbsp;</a>
+<form name="FormDateFilter" action="/cgi-bin/awstats.pl?config=haw1008ufet9&staticlinks&diricons=/sys-common/awstats/icon&output=alldomains" style="padding: 0px 0px 0px 0px; margin-top: 0">
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td>
+<table class="aws_data" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td class="aws" valign="middle"><b>統計対象サイト:</b>&nbsp;</td><td class="aws"><span style="font-size: 14px;">sapocup.jp</span></td><td align="right" rowspan="3"><a href="http://awstats.sourceforge.net" target="awstatshome"><img src="/sys-common/awstats/icon/other/awstats_logo6.png" border="0" alt='Awstats Web Site' title='Awstats Web Site' /></a></td></tr>
+<tr valign="middle"><td class="aws" valign="middle" width="150"><b>最後の更新:</b>&nbsp;</td><td class="aws" valign="middle"><span style="font-size: 12px;">2021年 2月 01日 - 00:33</span></td></tr>
+<tr><td class="aws" valign="middle"><b>Reported period:</b></td><td class="aws" valign="middle"><span style="font-size: 14px;">月 1月 2021</span></td></tr>
+</table>
+</td></tr></table>
+</form>
+
+<table>
+<tr><td class="aws"><a href="javascript:parent.window.close();">このウインドゥを閉じる</a></td></tr>
+</table>
+
+<a name="domains">&nbsp;</a><br />
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td class="aws_title" width="70%" onmouseover="ShowTip(19);" onmouseout="HideTip(19);">訪問者のドメイン/国名 </td><td class="aws_blank">&nbsp;</td></tr>
+<tr><td colspan="2">
+<table class="aws_data domains" border="2" bordercolor="#ECECEC" cellpadding="2" cellspacing="0" width="100%">
+<tr bgcolor="#ECECEC"><th width="32">&nbsp;</th><th colspan="2">ドメイン/国名</th><th bgcolor="#4477DD" width="80">ページ</th><th bgcolor="#66F0FF" width="80">ヒット</th><th bgcolor="#2EA495" width="80">バイト</th><th>&nbsp;</th></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/com.png" height="14" alt='com' title='com' /></td><td class="aws">Commercial</td><td>com</td><td>443</td><td>522</td><td>9.82 MB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="221" height="5" alt='ページ: 443' title='ページ: 443' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="261" height="5" alt='ヒット: 522' title='ヒット: 522' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="148" height="5" alt='バイト: 9.82 MB' title='バイト: 9.82 MB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>ip</td><td>231</td><td>244</td><td>2.46 MB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="116" height="5" alt='ページ: 231' title='ページ: 231' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="122" height="5" alt='ヒット: 244' title='ヒット: 244' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="38" height="5" alt='バイト: 2.46 MB' title='バイト: 2.46 MB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/org.png" height="14" alt='org' title='org' /></td><td class="aws">非営利団体</td><td>org</td><td>141</td><td>141</td><td>503.89 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="71" height="5" alt='ページ: 141' title='ページ: 141' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="71" height="5" alt='ヒット: 141' title='ヒット: 141' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="8" height="5" alt='バイト: 503.89 KB' title='バイト: 503.89 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/jp.png" height="14" alt='jp' title='jp' /></td><td class="aws">日本</td><td>jp</td><td>126</td><td>331</td><td>17.26 MB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="63" height="5" alt='ページ: 126' title='ページ: 126' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="165" height="5" alt='ヒット: 331' title='ヒット: 331' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="261" height="5" alt='バイト: 17.26 MB' title='バイト: 17.26 MB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/net.png" height="14" alt='net' title='net' /></td><td class="aws">Network</td><td>net</td><td>56</td><td>83</td><td>2.82 MB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="28" height="5" alt='ページ: 56' title='ページ: 56' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="42" height="5" alt='ヒット: 83' title='ヒット: 83' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="43" height="5" alt='バイト: 2.82 MB' title='バイト: 2.82 MB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>eu</td><td>22</td><td>22</td><td>135.03 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="11" height="5" alt='ページ: 22' title='ページ: 22' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="11" height="5" alt='ヒット: 22' title='ヒット: 22' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 135.03 KB' title='バイト: 135.03 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/de.png" height="14" alt='de' title='de' /></td><td class="aws">ドイツ</td><td>de</td><td>14</td><td>14</td><td>0</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="7" height="5" alt='ページ: 14' title='ページ: 14' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="7" height="5" alt='ヒット: 14' title='ヒット: 14' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="1" height="5" alt='バイト: 0' title='バイト: 0' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ru.png" height="14" alt='ru' title='ru' /></td><td class="aws">ロシア</td><td>ru</td><td>14</td><td>14</td><td>79.39 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="7" height="5" alt='ページ: 14' title='ページ: 14' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="7" height="5" alt='ヒット: 14' title='ヒット: 14' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 79.39 KB' title='バイト: 79.39 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/pl.png" height="14" alt='pl' title='pl' /></td><td class="aws">ポーランド</td><td>pl</td><td>11</td><td>11</td><td>37.54 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="6" height="5" alt='ページ: 11' title='ページ: 11' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="6" height="5" alt='ヒット: 11' title='ヒット: 11' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 37.54 KB' title='バイト: 37.54 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/by.png" height="14" alt='by' title='by' /></td><td class="aws">ベラルーシ</td><td>by</td><td>10</td><td>10</td><td>64.87 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="5" height="5" alt='ページ: 10' title='ページ: 10' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="5" height="5" alt='ヒット: 10' title='ヒット: 10' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 64.87 KB' title='バイト: 64.87 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/io.png" height="14" alt='io' title='io' /></td><td class="aws">イギリス領インド洋植民地</td><td>io</td><td>8</td><td>8</td><td>87.70 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="4" height="5" alt='ページ: 8' title='ページ: 8' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="4" height="5" alt='ヒット: 8' title='ヒット: 8' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 87.70 KB' title='バイト: 87.70 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/br.png" height="14" alt='br' title='br' /></td><td class="aws">ブラジル</td><td>br</td><td>5</td><td>5</td><td>28.42 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="3" height="5" alt='ページ: 5' title='ページ: 5' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="3" height="5" alt='ヒット: 5' title='ヒット: 5' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 28.42 KB' title='バイト: 28.42 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>cloud</td><td>4</td><td>4</td><td>43.85 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 4' title='ページ: 4' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 4' title='ヒット: 4' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 43.85 KB' title='バイト: 43.85 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>tech</td><td>3</td><td>3</td><td>10.24 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 3' title='ページ: 3' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 3' title='ヒット: 3' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 10.24 KB' title='バイト: 10.24 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ro.png" height="14" alt='ro' title='ro' /></td><td class="aws">ルーマニア</td><td>ro</td><td>3</td><td>3</td><td>23.34 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 3' title='ページ: 3' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 3' title='ヒット: 3' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 23.34 KB' title='バイト: 23.34 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>ninja</td><td>2</td><td>2</td><td>6.83 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 2' title='ページ: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 2' title='ヒット: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 6.83 KB' title='バイト: 6.83 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/in.png" height="14" alt='in' title='in' /></td><td class="aws">インド</td><td>in</td><td>2</td><td>2</td><td>6.83 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 2' title='ページ: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 2' title='ヒット: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 6.83 KB' title='バイト: 6.83 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>host</td><td>2</td><td>2</td><td>6.83 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 2' title='ページ: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 2' title='ヒット: 2' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 6.83 KB' title='バイト: 6.83 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/it.png" height="14" alt='it' title='it' /></td><td class="aws">イタリア</td><td>it</td><td>1</td><td>1</td><td>10.96 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 1' title='ページ: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 1' title='ヒット: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 10.96 KB' title='バイト: 10.96 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>space</td><td>1</td><td>1</td><td>3.41 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 1' title='ページ: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 1' title='ヒット: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 3.41 KB' title='バイト: 3.41 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>dev</td><td>1</td><td>1</td><td>3.41 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 1' title='ページ: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 1' title='ヒット: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 3.41 KB' title='バイト: 3.41 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/arpa.png" height="14" alt='arpa' title='arpa' /></td><td class="aws">アーパネット</td><td>arpa</td><td>1</td><td>1</td><td>10.96 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 1' title='ページ: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 1' title='ヒット: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 10.96 KB' title='バイト: 10.96 KB' /></td></tr>
+<tr><td width="32"><img src="/sys-common/awstats/icon/flags/ip.png" height="14" alt='不明' title='不明' /></td><td class="aws">不明</td><td>shop</td><td>1</td><td>1</td><td>3.41 KB</td><td style="text-align:left; font-size:4px;"><img src="/sys-common/awstats/icon/other/hp.png" width="2" height="5" alt='ページ: 1' title='ページ: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hh.png" width="2" height="5" alt='ヒット: 1' title='ヒット: 1' /><br />
+<img src="/sys-common/awstats/icon/other/hk.png" width="2" height="5" alt='バイト: 3.41 KB' title='バイト: 3.41 KB' /></td></tr>
+</table></td></tr></table><br />
+
+<br /><br />
+<span dir="ltr" style="font: 11px verdana, arial, helvetica; color: #000000;"><b>Advanced Web Statistics 6.0 (build 1.696)</b> - <a href="http://awstats.sourceforge.net" target="awstatshome">Created by awstats (with plugin decodeutfkeys, tooltips)</a></span><br />
+
+<br />
+</body>
+</html>

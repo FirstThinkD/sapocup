@@ -1,0 +1,196 @@
+<?php
+session_start();
+require_once('../../common/dbconnect.php');
+
+if ($_SESSION['loginID'] == "") {
+	header("Location:/");
+	exit();
+}
+
+$sql = sprintf('SELECT * FROM `quotation` WHERE u_id="%d" AND delFlag=0',
+	mysqli_real_escape_string($db, $_SESSION['loginID'])
+);
+$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+$ix = 0;
+while ($row0 = mysqli_fetch_assoc($record)) {
+	$qu_id[$ix]            = $row0['qu_id'];
+	$in_id[$ix]            = $row0['in_id'];
+	$c_id[$ix]             = $row0['c_id'];
+	$qu_bunrui[$ix]        = $row0['qu_bunrui'];
+	$qu_custom_name[$ix]   = $row0['qu_custom_name'];
+	$qu_custom_no[$ix]     = $row0['qu_custom_no'];
+	$qu_name[$ix]          = $row0['qu_name'];
+	$qu_location[$ix]      = $row0['qu_location'];
+	$qu_paymentDate[$ix]   = date('Y年m月d日', strtotime($row0['qu_paymentDate']));
+	$qu_deliveryDate[$ix]  = date('Y年m月d日', strtotime($row0['qu_deliveryDate']));
+	$qu_deposit[$ix]       = $row0['qu_deposit'];
+	$qu_commission[$ix]    = $row0['qu_commission'];
+	$qu_initPayAmount[$ix] = $row0['qu_initPayAmount'];
+	$qu_installments[$ix]  = $row0['qu_installments'];
+	$qu_startDate[$ix]     = $row0['qu_startDate'];
+	$qu_endDate[$ix]       = $row0['qu_endDate'];
+	$qu_note[$ix]          = $row0['qu_note'];
+	// $qu_pdf[$ix]           = $row0['qu_pdf'];
+	// $qu_dir[$ix]           = $row0['qu_dir'];
+	$qu_date[$ix]          = $row0['qu_date'];
+	$qu_number[$ix]        = $row0['qu_number'];
+	$qu_place[$ix]         = $row0['qu_place'];
+	$q_subtotal[$ix]       = $row0['q_subtotal'];
+	$q_cost[$ix]           = $row0['q_cost'];
+	$q_alltotal[$ix]       = number_format($row0['q_alltotal']);
+	$in_companyName[$ix]   = $row0['in_companyName'];
+	$in_postal[$ix]        = $row0['in_postal'];
+	$in_address1[$ix]      = $row0['in_address1'];
+	$in_address2[$ix]      = $row0['in_address2'];
+	$in_address3[$ix]      = $row0['in_address3'];
+	$in_tel[$ix]           = $row0['in_tel'];
+	$in_email[$ix]         = $row0['in_email'];
+	$in_contactName[$ix]   = $row0['in_contactName'];
+
+	$customer_id[$ix]      = 10000000 + $c_id[$ix];
+	$ix++;
+}
+$qu_count = $ix;
+
+$sql = sprintf('SELECT * FROM `customer` WHERE u_id="%d" AND delFlag=0',
+	mysqli_real_escape_string($db, $_SESSION['loginID'])
+);
+$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+$ix = 0;
+while($row0 = mysqli_fetch_assoc($record)) {
+	$c_id[$ix]   = $row0['c_id'];
+
+	for($iy=0; $iy<$qu_count; $iy++) {
+		if ($c_id[$ix] == $qu_custom_name[$iy]) {
+			$qu_custom_name[$iy] = $row0['c_name'];
+		}
+	}
+	$ix++;
+}
+?>
+<?php require_once('../common/head.php'); ?>
+<?php require_once('../common/header.php'); ?>
+	<main>
+		<div class="main_wrap">
+			<div class="main_wrap_inner">
+				<div class="main_title">
+					<div class="container table_field">
+						<div class="main_title_headline">
+							<h1>見積書一覧</h1>
+						</div>
+						<div class="main_title_link">
+							<ul class="cf">
+								<li><a class="create_link" href="/manage/estimates/new/">新規見積書作成</a></li>
+								<li><a class="list_link" href="">リスト出力</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main_content">
+					<div class="container">
+						<div class="main_content_inner">
+							<table class="common_table">
+								<thead>
+									<tr>
+										<th></th>
+										<th>見積書番号</th>
+										<th>工事名称</th>
+										<th>請求先</th>
+										<th>支払日</th>
+										<th>受渡期日</th>
+										<th>総金額</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php for($ix=0; $ix<$qu_count; $ix++) { ?>
+									<tr>
+										<td><input type="checkbox" name="chkbox<?php echo $ix; ?>"></td>
+										<td><?php echo $customer_id[$ix]; ?></td>
+										<td><a href="/manage/estimates/detail/"><?php echo $qu_name[$ix]; ?></a></td>
+										<td><?php echo $qu_custom_name[$ix]; ?></td>
+										<td><?php echo $qu_paymentDate[$ix]; ?></td>
+										<td><?php echo $qu_deliveryDate[$ix]; ?></td>
+										<td><?php echo $q_alltotal[$ix]; ?>円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/?id=<?php echo $qu_id[$ix]; ?>">編集</a>
+											<a class="table_link simulation" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<?php } ?>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice disable" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation disable" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice disable" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation disable" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script>
+		// aタブ無効
+		$(function(){
+			$('a.disable').click(function(){
+				return false;
+			})
+		});
+	</script>
+</body>
+</html>

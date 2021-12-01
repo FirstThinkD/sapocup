@@ -1,0 +1,175 @@
+11
+11
+2
+11
+2
+2
+2
+2
+2
+2
+1
+ix=0 q1_count2 q2_count=2
+ix=1 q1_count2 q2_count=1
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000047
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000048
+da_count=2 q2_count=2
+ix=0 q1_count=2 q2_count=2
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000047
+da_count=2 q2_count=1
+ix=1 q1_count=2 q2_count=1
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000048
+da_count=2 q2_count=2
+ix=0 q1_count=2 q2_count=2
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000047
+da_count=2 q2_count=1
+ix=1 q1_count=2 q2_count=1
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000048
+da_count=2 q2_count=2
+ix=0 q1_count=2 q2_count=2
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000047
+da_count=2 q2_count=1
+ix=1 q1_count=2 q2_count=1
+qu_no[0]=10000047 qu_no[1]=10000048 contract_num=10000048
+ix=0 q1_count=2 q2_count=2da_count=2 q2_count=2 contract_num=10000047
+ix=1 q1_count=2 q2_count=1da_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+ix=0 da_count=2 q1_count=2 q2_count=2 contract_num=10000047
+ix=1 da_count=2 q1_count=2 q2_count=1 contract_num=10000048
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=31
+q2_count=31
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=11
+q2_count=31
+q2_count=31
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=31
+q2_count=31
+q2_count=11
+q2_count=11
+q2_count=31
+q2_count=31
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=12
+q2_count=12
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11
+q2_count=11

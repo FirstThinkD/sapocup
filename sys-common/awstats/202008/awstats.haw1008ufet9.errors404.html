@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang='jp'>
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="expires" content="Mon Aug 31 19:47:59 2020" />
+<meta http-equiv="description" content="Awstats - Advanced Web Statistics for sapocup.jp" />
+<title>統計対象サイト sapocup.jp</title>
+<style type="text/css">
+<!--
+body { font: 11px verdana, arial, helvetica, sans-serif; background-color: #FFFFFF; margin-top: 0; margin-bottom: 0; }
+.aws_bodyl  { }
+.aws_border { background-color: #CCCCDD; padding: 1px 1px 1px 1px; margin-top: 0; margin-bottom: 0; }
+.aws_title  { font: 13px verdana, arial, helvetica, sans-serif; font-weight: bold; background-color: #CCCCDD; text-align: center; margin-top: 0; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_blank  { font: 13px verdana, arial, helvetica, sans-serif; background-color: #CCCCDD; text-align: center; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_data {
+	background-color: #FFFFFF;
+	border-top-width: 1px;   
+	border-left-width: 0px;  
+	border-right-width: 0px; 
+	border-bottom-width: 0px;
+}
+.aws_formfield { font: 13px verdana, arial, helvetica; }
+.aws_button {
+	font-family: arial,verdana,helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #ccd7e0;
+	background-image : url(/sys-common/awstats/icon/other/button.gif);
+}
+th		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+th.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font-size: 13px; font-weight: bold; }
+td		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+td.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+td.awsm	{ border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px 0px 0px 0px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+b { font-weight: bold; }
+a { font: 11px verdana, arial, helvetica, sans-serif; }
+a:link    { color: #0011BB; text-decoration: none; }
+a:visited { color: #0011BB; text-decoration: none; }
+a:hover   { color: #605040; text-decoration: underline; }
+div { font: 12px 'Arial','Verdana','Helvetica', sans-serif; text-align: justify; }
+.CTooltip { position:absolute; top: 0px; left: 0px; z-index: 2; width: 380px; visibility:hidden; font: 8pt 'MS Comic Sans','Arial',sans-serif; background-color: #FFFFE6; padding: 8px; border: 1px solid black; }
+//-->
+</style>
+</head>
+
+<body style="margin-top: 0px">
+<a name="top">&nbsp;</a>
+
+
+
+
+<script language="javascript" type="text/javascript">
+function ShowTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		var tooltipLft = (document.body.offsetWidth?document.body.offsetWidth:document.body.style.pixelWidth) - (tooltipOBJ.offsetWidth?tooltipOBJ.offsetWidth:(tooltipOBJ.style.pixelWidth?tooltipOBJ.style.pixelWidth:380)) - 30;
+		var tooltipTop = 10;
+		if (navigator.appName == 'Netscape') {
+			if (parseFloat(navigator.appVersion) >= 5) { tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10); }
+			tooltipOBJ.style.left = tooltipLft; tooltipOBJ.style.top = tooltipTop;
+		}
+		else {
+			tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10);
+			if ((event.clientX > tooltipLft) && (event.clientY < (tooltipOBJ.scrollHeight?tooltipOBJ.scrollHeight:tooltipOBJ.style.pixelHeight) + 10)) {
+				tooltipTop = (document.body.scrollTop?document.body.scrollTop:document.body.offsetTop) + event.clientY + 20;
+			}
+			tooltipOBJ.style.pixelLeft = tooltipLft; tooltipOBJ.style.pixelTop = tooltipTop;
+		}
+		tooltipOBJ.style.visibility = "visible";
+	}
+}
+function HideTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		tooltipOBJ.style.visibility = "hidden";
+	}
+}
+</script>
+
+<a name="menu">&nbsp;</a>
+<form name="FormDateFilter" action="/cgi-bin/awstats.pl?config=haw1008ufet9&staticlinks&diricons=/sys-common/awstats/icon&output=errors404" style="padding: 0px 0px 0px 0px; margin-top: 0">
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td>
+<table class="aws_data" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td class="aws" valign="middle"><b>統計対象サイト:</b>&nbsp;</td><td class="aws"><span style="font-size: 14px;">sapocup.jp</span></td><td align="right" rowspan="3"><a href="http://awstats.sourceforge.net" target="awstatshome"><img src="/sys-common/awstats/icon/other/awstats_logo6.png" border="0" alt='Awstats Web Site' title='Awstats Web Site' /></a></td></tr>
+<tr valign="middle"><td class="aws" valign="middle" width="150"><b>最後の更新:</b>&nbsp;</td><td class="aws" valign="middle"><span style="font-size: 12px;">2020年 9月 01日 - 00:32</span></td></tr>
+<tr><td class="aws" valign="middle"><b>Reported period:</b></td><td class="aws" valign="middle"><span style="font-size: 14px;">月 8月 2020</span></td></tr>
+</table>
+</td></tr></table>
+</form>
+
+<table>
+<tr><td class="aws"><a href="javascript:parent.window.close();">このウインドゥを閉じる</a></td></tr>
+</table>
+
+<a name="errors404">&nbsp;</a><br />
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td class="aws_title" width="70%" onmouseover="ShowTip(19);" onmouseout="HideTip(19);">要求されたが存在しなかったURL(HTTPエラーコード404) </td><td class="aws_blank">&nbsp;</td></tr>
+<tr><td colspan="2">
+<table class="aws_data errors404" border="2" bordercolor="#ECECEC" cellpadding="2" cellspacing="0" width="100%">
+<tr bgcolor="#ECECEC"><th>URL (353)</th><th bgcolor="#66F0FF">エラー ヒット</th><th>参照元</th></tr>
+<tr><td class="aws">/robots.txt</td><td>132</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/css/other.css.map</td><td>28</td><td class="aws">-</td></tr>
+<tr><td class="aws">/TP/index.php</td><td>26</td><td class="aws">http://150.60.231.106/TP/index.php</td></tr>
+<tr><td class="aws">/TP/public/index.php</td><td>26</td><td class="aws">http://150.60.231.106/TP/public/index.php</td></tr>
+<tr><td class="aws">/html/public/index.php</td><td>25</td><td class="aws">http://150.60.231.106/html/public/index.php</td></tr>
+<tr><td class="aws">/thinkphp/html/public/index.php</td><td>25</td><td class="aws">http://150.60.231.106/thinkphp/html/public/index.php</td></tr>
+<tr><td class="aws">/elrekt.php</td><td>24</td><td class="aws">http://150.60.231.106/elrekt.php</td></tr>
+<tr><td class="aws">/public/index.php</td><td>24</td><td class="aws">http://150.60.231.106/public/index.php</td></tr>
+<tr><td class="aws">/TP/html/public/index.php</td><td>24</td><td class="aws">http://150.60.231.106/TP/html/public/index.php</td></tr>
+<tr><td class="aws">/wp-login.php</td><td>17</td><td class="aws">http://sapocup.jp/wp-login.php</td></tr>
+<tr><td class="aws">/owa/auth/logon.aspx</td><td>13</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.git/HEAD</td><td>12</td><td class="aws">-</td></tr>
+<tr><td class="aws">/apple-touch-icon-precomposed.png</td><td>11</td><td class="aws">-</td></tr>
+<tr><td class="aws">/apple-touch-icon.png</td><td>11</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.well-known/assetlinks.json</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/webfig/</td><td>7</td><td class="aws">http://150.60.231.106/webfig/</td></tr>
+<tr><td class="aws">/sitemap.xml</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/js/yubinbango-core.js.map</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/axis2/axis2-admin/login</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dns-query</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ajax</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.well-known/security.txt</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/Telerik.Web.UI.WebResource.axd</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/</td><td>4</td><td class="aws">http://sapocup.jp/admin/</td></tr>
+<tr><td class="aws">/vendor/phpunit/phpunit/phpunit.xsd</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup/</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/solr/</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/demo/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.swp</td><td>2</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/sitemap.xml.gz</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/2018/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/bk/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/img/signup_2.png</td><td>2</td><td class="aws">https://sapocup.jp/signup.php</td></tr>
+<tr><td class="aws">/cdn-cgi/trace</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/atom.xml</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api/v1/pods</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dev/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/img/signup_3.png</td><td>2</td><td class="aws">https://sapocup.jp/signup.php</td></tr>
+<tr><td class="aws">/cgi-bin/config.exp</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp2/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/v1/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/web/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/2020/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/old-wp/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/img/signup_1.png</td><td>2</td><td class="aws">https://sapocup.jp/signup.php</td></tr>
+<tr><td class="aws">/2019/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/old-site/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/new/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemap_index.xml</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/old/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/temp/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/tmp/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/site/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/index/index.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/test/test4.php%E3%81%A7%E4%BB%96%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%9B%E6%83%85%E5%A0%B1%E3%81%8C%E6%AC%B2%E3%81%97%E3%81%84</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp1/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.1</td><td>2</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/home/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.disabled</td><td>2</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/main/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/web/cgi-bin/hi3510/param.cgi</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.bak</td><td>2</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/bak/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/blog/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/v2/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemaps.xml</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/zdm/login_xdm_uc.jsp</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cms/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/data.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/logs/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/blog/xmlrpc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/datenbanken.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php_</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/dump.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbbackup/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.backup</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/mariadb/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payment.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_dumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup(1).sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldump.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/webproc</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/sql.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/datenbanken.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db1.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pma/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/main.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shop.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login.htm</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/wordpress.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/creditcard.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.old</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/mysql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/tersm.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.tgz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup(1).sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/por/login_psw.csp</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.new</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress/xmlrpc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/blog.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/bitcoin/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.tar.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payment.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payment.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/users.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/datenbanken.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.save</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/saved/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.phporiginal</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/base.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/server.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/www.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/orders.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backups.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbbackups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql_backup/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wwwroot.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.tar.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/translate.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/datenbanken.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config-good</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/security.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/localhost.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/info.cgi</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/adminer-4.2.5.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db1.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php~</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/wwwroot.sql.tar.tgz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/latest.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpminiadmin.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup(1).sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/password.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hudson</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/xmlrpc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/authLogin.cgi</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql/backup/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payments.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql_dump/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_dump/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/translate.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/users.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db1.tar.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wwwroot.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pma/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/vendor/phpunit/phpunit/phpunit.xml</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/adminer.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/blog/wp-login.php</td><td>1</td><td class="aws">http://sapocup.jp/blog/wp-login.php</td></tr>
+<tr><td class="aws">/creditcards.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db1.tgz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/passwords.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cards.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/data.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup/backup.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql_backups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/www.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/login.cgi</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php-original</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/_adminer.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/adminer-4.2.4.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/order.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/secret.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/test/wp-login.php</td><td>1</td><td class="aws">http://sapocup.jp/test/wp-login.php</td></tr>
+<tr><td class="aws">/cgi-bin/p2p.cgi</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/dbdump.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/adminer-4.6.2.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqlbackups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/data.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wwwroot.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/webaccess/index.php</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/translate.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/current_config/passwd</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/sql.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/index.asp</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/payments.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.good</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/www.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ws</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/data.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.git/config</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/store.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pmadumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shop.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldump.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/main.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pass.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shop.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/currentsetting.htm</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/main.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/install/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/test.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php_orig</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/temp.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/credit_cards.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/site.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/credit_card.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/main.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shop.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/card.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/host.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/bag2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/new-site/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldump/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/includes/database/mysql/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/public_html.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hosting.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php.orig</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/orders.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php_original</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/sql.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/stssys.htm</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/dump.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldump.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dana-na/nc/nc_gina_ver.txt</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ads.txt</td><td>1</td><td class="aws">http://sapocup.jp/ads.txt</td></tr>
+<tr><td class="aws">/db.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqldump.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/demo/wp-login.php</td><td>1</td><td class="aws">http://sapocup.jp/demo/wp-login.php</td></tr>
+<tr><td class="aws">/dump.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db.tar.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/database.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysqlbackup/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/scgi-bin/platform.cgi</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/bd.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/HNAP1/</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+<tr><td class="aws">/.env</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/migration.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/users.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/users.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/order.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backups.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ui/login.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wwwroot.sql.tar.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hosting.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dump.sql.tgz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/_backup.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config_good</td><td>1</td><td class="aws">sapocup.jp</td></tr>
+<tr><td class="aws">/sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/store.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql.tgz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/www.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api/v1</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/localhost.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/password.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/5Gjw</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/log/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql/sql/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/site.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql_dumps/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/order.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/translate.sql.xz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backup/bitcoin/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/temp.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/site.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/portal/redlion</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/blog.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbdump.sql.rar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/localhost.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wallet/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql/backups/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/latest.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/temp.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backups.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payments.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_backup/db_backup.sql</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/save/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/store.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wwwroot.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/site.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/includes/database/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/temp.sql.bz2</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/backups.sql.zip</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/localhost.sql.gz</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/password.sql.tar</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/FHFactoryCheck.html</td><td>1</td><td class="aws">https://150.60.231.106:443/</td></tr>
+</table></td></tr></table><br />
+
+<br /><br />
+<span dir="ltr" style="font: 11px verdana, arial, helvetica; color: #000000;"><b>Advanced Web Statistics 6.0 (build 1.696)</b> - <a href="http://awstats.sourceforge.net" target="awstatshome">Created by awstats (with plugin decodeutfkeys, tooltips)</a></span><br />
+
+<br />
+</body>
+</html>

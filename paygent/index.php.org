@@ -1,0 +1,68 @@
+<?php
+session_start();
+echo "start<br>";
+// echo __DIR__. "<br>";
+exit();
+// ① 接続モジュールの利用準備 {接続モジュールのインストールディレクトリ}/vendor/autoload.phpを指定します。
+require(__DIR__. "/vendor/autoload.php");
+use PaygentModule\System\PaygentB2BModule;
+
+// ② 接続モジュールのインスタンス取得 (コンストラクタ)と初期化
+$p = new PaygentB2BModule();
+$p->init();
+
+// ③ ペイジェントへの要求をセット※電文に必要な要求情報を設定
+//（要求に必要となるパラメータをハッシュにして設定 ）
+$p->reqPut("merchant_id",      "40011");		//  1 マーチャントID
+$p->reqPut("connect_id",       "test40011");		//  2 接続ID
+$p->reqPut("connect_password", "4QBSjhRyNLAQv");	//  3 接続パスワード
+$p->reqPut("telegram_kind",    "");			//  4 電文種別ID
+$p->reqPut("telegram_version", "1.0");			//  5 電文バージョン番号
+// $p->reqPut("trading_id",    "010");			//  6 マーチャント取引ID
+$p->reqPut("payment_id",       "");			//  7 決済ID
+
+$p->reqPut("customer_id",      "10005");		//  8 顧客ID
+$p->reqPut("card_number",      "4900000000000000");	//  9 カード番号
+$p->reqPut("card_valid_term",  "3010");			// 10 カード有効期限
+
+// 電文種別ID：200（ファイル決済要求）の場合は、送信ファイルパスをセット
+$p->setSendFilePath("");
+
+// ④ ペイジェントへ要求を送信
+$result = $p->post();
+
+// ⑤ 要求送信結果を確認
+if(!($result === true)) {
+	# エラーコード取得
+	$errorcode = $result
+	# エラー処理
+}
+
+print_r($result);
+echo "<br>";
+echo "resultStatus=". $resultStatus. "<br>";
+echo "responseCode=". $responseCode. "<br>";
+echo "responseDetail=". $responseDetail. "<br>";
+print_r($p);
+exit();
+
+// ⑥ 要求結果を取得
+$resultStatus = $p->getResultStatus();	// 処理結果 0=正常終了, 1=異常終了
+$responseCode = $p->getResponseCode();	// 異常終了時、レスポンスコードが取得できる
+$responseDetail = $p->getResponseDetail(); // 異常終了時、レスポンス詳細が取得できる
+
+// ・1件取得の場合
+if($p->hasResNext()) {
+	// # データが存在
+	$res_array = $p->resNext(); // # 要求結果取得
+	$payment_id = $res_array["payment_id"]; // # 決済ID取得
+	// # 他、応答情報を取得
+}
+// ・複数件取得の場合
+while($p->hasResNext()) {
+	// # データが存在する限り、取得
+	$res_array = $p->resNext(); // # 要求結果取得
+	$payment_id = $res_array["payment_id"]; // # 決済ID取得
+	// # 他、応答情報を取得
+}
+?>

@@ -1,0 +1,424 @@
+<?php
+session_start();
+require_once(__DIR__ . '/../../../common/dbconnect.php');
+require_once(__DIR__ . '/../../common/functions.php');
+require_once(__DIR__ . '/../../estimates/simulation/sim_func.php');
+
+if (empty($_SESSION['loginID'])) {
+	header("Location:/");
+	exit();
+}
+
+if (empty($_SESSION['sim_err'])) {
+	$_SESSION['sim_err'] = "";
+}
+
+if (empty($_GET['id'])) {
+	header("Location:/");
+	exit();
+} else {
+	$qu_id = $_GET['id'];
+}
+
+$sql = sprintf('SELECT * FROM `user` WHERE u_id="%d" AND delFlag=0',
+	mysqli_real_escape_string($db, $_SESSION['loginID'])
+);
+$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+$row8 = mysqli_fetch_assoc($record);
+
+$sql = sprintf('SELECT * FROM `quotation` WHERE qu_id="%d" AND delFlag=0',
+	mysqli_real_escape_string($db, $qu_id)
+);
+$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+$row9 = mysqli_fetch_assoc($record);
+
+$q_alltotal     = $row9['q_alltotal'];
+$erase_money    = $row9['erase_money'];
+$erase_money_mi = $row9['erase_money_mi'];
+
+if ($erase_money =="0" && $erase_money_mi =="0") {
+	$erase_money_mi = $q_alltotal;
+}
+$erase_money = $q_alltotal - $erase_money;
+$q_alltotal  = $q_alltotal - $erase_money;
+
+$pt1_out[0][5] = 5;
+$pt1_out[0][0] = "1";
+$pt1_out[0][1] = "2020年08月01日";
+$pt1_out[0][2] = "10,000";
+$pt1_out[0][3] = "";
+$pt1_out[1][0] = "2";
+$pt1_out[1][1] = "2020年08月02日";
+$pt1_out[1][2] = "20,000";
+$pt1_out[1][3] = "2020年08月02日";
+$pt1_out[2][0] = "3";
+$pt1_out[2][1] = "2020年08月03日";
+$pt1_out[2][2] = "30,000";
+$pt1_out[2][3] = "";
+$pt1_out[3][0] = "4";
+$pt1_out[3][1] = "2020年08月04日";
+$pt1_out[3][2] = "40,000";
+$pt1_out[3][3] = "2020年08月04日";
+$pt1_out[4][0] = "5";
+$pt1_out[4][1] = "2020年08月05日";
+$pt1_out[4][2] = "50,000";
+$pt1_out[4][3] = "2020年08月05日";
+?>
+<?php require_once(__DIR__ . '/../../common/header.php'); ?>
+	<style>
+		.simulation_sub_info2 {
+		  width: 100%;
+		  height: 60px;
+		  margin: auto 30px 30px;
+		}
+		.simulation_sub_info3 {
+		  width: 100%;
+		  margin: auto 670px 30px;
+		}
+		.simulation_sub_info4 {
+		  /* display: inline-block; */
+		  width: 100%;
+		  margin: 30px 30px 50px;
+		}
+		.simulation_sub_info5 {
+		  /* display: inline-block; */
+		  width: 100%;
+		  /* margin: 30px 30px 50px; */
+		  margin: 30px 670px 50px 600px;
+		}
+		@media screen and (min-width: 896px) {
+		  .simulation_sub_info2 {
+		    width: 600px;
+		  }
+		  .simulation_sub_info3 {
+		    width: 300px;
+		  }
+		  .simulation_sub_info4 {
+		    width: 600px;
+		  }
+		  .simulation_sub_info5 {
+		    width: 300px;
+		  }
+		}
+		/*
+		.simulation_sub_info4 table,
+		.simulation_sub_info2 table {
+  		
+		}
+		*/
+		.simulation_sub_info5 table th,
+		.simulation_sub_info5 table td,
+		.simulation_sub_info4 table th,
+		.simulation_sub_info4 table td,
+		.simulation_sub_info3 table th,
+		.simulation_sub_info3 table td,
+		.simulation_sub_info2 table th,
+		.simulation_sub_info2 table td {
+		  border: 1px solid #e0e0e0;
+		  padding: 10px;
+		}
+		@media screen and (max-width: 479px) {
+		  .simulation_sub_info5 table th,
+		  .simulation_sub_info5 table td,
+		  .simulation_sub_info4 table th,
+		  .simulation_sub_info4 table td,
+		  .simulation_sub_info3 table th,
+		  .simulation_sub_info3 table td,
+		  .simulation_sub_info2 table th,
+		  .simulation_sub_info2 table td {
+		    display: block;
+		    width: 50%;
+		    float: left;
+		  }
+		}
+		.simulation_sub_info5 table th,
+		.simulation_sub_info4 table th,
+		.simulation_sub_info3 table th,
+		.simulation_sub_info2 table th {
+		  background: #eee;
+		}
+		.simulation_sub_info5 table td,
+		.simulation_sub_info4 table td,
+		.simulation_sub_info3 table td,
+		.simulation_sub_info2 table td {
+		  text-align: right;
+		}
+		.main_title_bottom2 {
+		  text-align: center;
+		  margin-top: 20px;
+		}
+		.main_title_bottom2.position_right2 {
+		  margin-top: 0;
+		}
+		@media screen and (min-width: 896px) {
+		  /* .simulation_sub_info5.position_right2, */
+		  .main_title_bottom2.position_right2 {
+		    position: absolute;
+		    right: 25%;
+		    top: 49%;  /* 39% */
+		    /* transform: translateY(-61%); */
+		  }
+		}
+		@media screen and (max-width: 895px) {
+		  .main_title_bottom2.position_right2 .position_right_inner {
+		    text-align: center;
+		  }
+		  .main_title_bottom2.position_right2 .position_right_inner ul {
+		    display: inline-block;
+		  }
+		}
+		@media screen and (min-width: 896px) {
+		  .main_title_bottom2 ul li input {
+		    color:#fff;
+		    padding: 15px 45px;
+		    border-radius: 3px;
+		    background-color:#87CEEB;
+		  }
+		}
+		table.common_table thead.common_table_thead2 {
+		  border-bottom: 1px solid #EAEAEA;
+		}
+		table.common_table thead.common_table_thead2 tr th {
+		  line-height: 1.3;
+		  padding: 10px 0px;
+		  color: #9A9A9A;
+		  font-size: 12px;
+		}
+		@media screen and (min-width: 896px) {
+		  table.common_table thead.common_table_thead2 tr th {
+		    /* text-align: center; */
+		    padding-left: 20px;
+		}
+
+		.inline-block {
+		  display: inline-block;	/* インラインブロック要素にする */
+		  background-color: #ccc;	/* 背景色指定 */
+		  padding: 20px;		/* 余白指定 */
+		  /* height: 100px;		/* 高さ指定 */
+		  /* width: 600px;		/* 幅指定 */
+		}
+		.flex_test-box {
+		  background-color: #eee;	/* 背景色指定 */
+		  padding: 10px;		/* 余白指定 */
+		  display: flex;		/* フレックスボックスにする */
+		}
+		.flex_test-item {
+		  padding: 10px;
+		  color: #fff;			/* 文字色 */
+		  margin: 10px;			/* 外側の余白 */
+		  border-radius: 5px;		/* 角丸指定 */
+		  font-size: 30px;		/* 文字サイズ指定 */
+		  text-align: center;		/* 文字中央揃え */
+		}
+		.flex_test-item:nth-child(1) {
+		  background-color: #2196F3;	/* 背景色指定 */
+		  /* flex:2 1 100px; */		/* 幅指定 */
+		  /* flex-basis: 600px; */	/* 幅指定 */
+		}
+		.flex_test-item:nth-child(2) {
+		  background-color: #4CAF50;	/* 背景色指定 */
+		  /* flex:1 3 100px; */		/* 幅指定 */
+		  /* flex-basis: 300px; */	/* 幅指定 */
+		}
+	</style>
+	<main class="customer_data">
+		<div class="main_inner">
+			<?php require_once(__DIR__ . '/../../common/grobal-menu.php'); ?>
+			<div class="main_wrap">
+				<div class="main_title">
+					<div class="all_wrapper sp_all">
+						<div class="main_pankuzu">
+							<ul>
+								<li><span><a href="/manage/deposit/" class="text_link">入金消込</a></span></li>
+								<li><span>入金消込一覧</span></li>
+							</ul>
+						</div>
+						<div class="main_title_inner">
+							<div class="main_title_top">
+								<p class="title" style="font-size:28px;">入　金　消　込　一　覧</p>
+							</div>
+							<?php if ($_SESSION['sim_err'] == "UPOK") { ?>
+								<p class="error_message">※見積書を更新しました。</p>
+								<?php $_SESSION['sim_err'] = ""; ?>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="main_title_top">
+					<span id="delete_box"><a href="" onClick="del_qu(<?php echo $qu_id; ?>);return false;"><img src="/manage/img/icon_dust_gray.png" alt="ゴミ箱のアイコン"></a></span>
+				</div> -->
+				<div class="main_content simulation_content">
+					<div class="all_wrapper">
+						<div id="simulation_one" class="simulation_field open_field">
+							<div class="main_content_inner">
+								<div class="main_content_wrap">
+									<!-- <div class="simulate_system pc">
+										<div class="simulate_system_inner">
+											<ul class="cf">
+												<?php if ($row8['exeFlag'] == 0) { ?>
+												<li><a href="/manage/estimates/simulation/sim_up.php?id=1&qu_id=<?php echo $qu_id; ?>">見積書へ反映</a></li>
+												<?php } else { ?>
+												<li><a class="disable">見積書へ反映</a></li>
+												<?php } ?>
+												<li><a href="javascript:void(0)" id="print_pattern_one" onclick="newwinprint(1, <?php echo $qu_id; ?>);">印刷</a></li>
+											</ul>
+										</div>
+									</div> -->
+									<div class="simulation_sub_info2">
+										<table>
+											<tbody>
+												<tr class="cf">
+													<th style="white-space: nowrap">返済予定開始日</th>
+													<td><?php echo date('Y年m月d日',  strtotime($row9['qu_startDate'])); ?></td>
+													<th>初回お支払額</th>
+													<td>¥<?php echo number_format($row9['qu_initPayAmount']); ?></td>
+												</tr>
+												<tr class="cf">
+													<th>ご利用予定金額</th>
+													<td>¥<?php echo number_format($row9['qu_price']); ?></td>
+													<th>月々お支払額</th>
+													<td>¥<?php echo number_format($row9['qu_amount_pay']); ?></td>
+												</tr>
+												<tr class="cf">
+													<th>頭金</th>
+													<td>¥<?php echo number_format($row9['qu_deposit']); ?></td>
+													<th style="white-space: nowrap">割賦手数料総額</th>
+													<td>¥<?php echo number_format($row9['qu_commit']); ?></td>
+												</tr>
+												<tr class="cf">
+													<th>分割回数</th>
+													<td><?php echo $row9['qu_installments']; ?>回</td>
+													<th class="total">総支払額</th>
+													<td class="total">¥<?php echo number_format($row9['q_alltotal']); ?></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="simulation_sub_info3">
+										<table>
+											<tbody>
+												<tr class="cf">
+													<th style="white-space: nowrap; background-color:#D0B0FF;">総入金金額</th>
+													<td>¥<?php echo number_format($erase_money); ?></td>
+												</tr>
+												<tr class="cf">
+													<th style="white-space: nowrap; background-color:#D0B0FF;">入金消込後残高</th>
+													<td>¥<?php echo number_format($q_alltotal); ?></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div  style="border-bottom: 1px solid #EAEAEA;"></div>
+									<form action="" method="post">
+										<div class="simulation_sub_info4">
+											<table>
+												<tr>
+													<th style="white-space: nowrap; background-color:#D0B0FF; width:20%; text-align: center;">入金日付</th>
+													<th style="white-space: nowrap; background-color:#D0B0FF; width:20%; text-align: center;">入金金額</th>
+													<th style="white-space: nowrap; background-color:#D0B0FF; text-align: center;">備考</th>
+												</tr>
+												<tr>
+													<td><input type="date" style="border:solid 0px; width:100%; box-sizing:border-box;" name="yymmdd" value="" required></td>
+													<td><input type="text" style="border:solid 0px; width:100%; box-sizing:border-box;" name="ymd" value="" maxlength="10" required></td>
+													<td><input type="text" style="border:solid 0px; width:100%; box-sizing:border-box;" name="ymd" value="" required></td>
+												</tr>
+											</table>
+										<!-- </div>
+										<div class="simulation_sub_info5"> -->
+											<div class="main_title_bottom2 position_right2">
+												<div class="position_right_inner">
+													<ul class="cf">
+														<?php if ($row9['exeFlag'] == 0) { ?>
+															<li><input type="submit" name="" value="更新"></li>
+														<?php } else { ?>
+															<li><a class="disable">更新</a></li>
+														<?php } ?>
+													</ul>
+												</div>
+											</div>
+										</div>
+									<div  style="border-bottom: 1px solid #EAEAEA;"></div>
+<div class="inline-block">
+ブロック要素だけど、インラインブロック要素になったよ
+</div>
+<span class="inline-block">
+インライン要素だけど、インラインブロック要素になったよ
+</span>
+									</form>
+									<p class="text-right simulate_sub">（単位：円）</p>
+									<table class="common_table simulatoin_table">
+										<thead class="common_table_thead2">
+											<tr class="common_table_tr">
+												<th>入金回数</th>
+												<th>入金日付</th>
+												<th>入金金額</th>
+												<th>備考</th>
+											</tr>
+										</thead>
+										<tbody class="common_table_tbody">
+											<?php for($ix=0; $ix<$pt1_out[0][5]; $ix++) { ?>
+												<tr class="common_table_tr">
+													<td class="common_table_cell"><?php echo $pt1_out[$ix][0]; ?></td>
+													<td class="common_table_cell"><?php echo $pt1_out[$ix][1]; ?></td>
+													<td class="common_table_cell"><?php echo $pt1_out[$ix][2]; ?></td>
+													<td class="common_table_cell"><?php echo $pt1_out[$ix][3]; ?></td>
+												</tr>
+											<?php } ?>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/manage/common/js/customer-data.js"></script>
+	<script>
+		// シミュレーションフィールドタブ機能
+		$(function(){
+			$('.simulation_tab').click(function(){
+				$('.active').removeClass('active');
+				$(this).addClass('active');
+				if($("#tab_one").hasClass('active')) {
+					$("#simulation_one").addClass("open_field");
+					$("#simulation_two").removeClass("open_field");
+					$("#simulation_three").removeClass("open_field");
+				};
+				if($("#tab_two").hasClass('active')) {
+					$("#simulation_two").addClass("open_field");
+					$("#simulation_one").removeClass("open_field");
+					$("#simulation_three").removeClass("open_field");
+				};
+				if($("#tab_three").hasClass('active')) {
+					$("#simulation_three").addClass("open_field");
+					$("#simulation_one").removeClass("open_field");
+					$("#simulation_two").removeClass("open_field");
+				};
+			});
+		});
+		function newwinprint(ptn, qu_id){
+			window.open("/manage/estimates/simulation/sim_pdf.php?id=" + ptn + "&qu_id=" + qu_id);
+		}
+	</script>
+	<script>
+		function del_qu(qu_id) {
+			if (window.confirm("シミュレーションデータを削除します。\n宜しいですか？")) {
+				location.href = "/manage/estimates/simulation/func_del.php?id=" + qu_id;
+			}
+		}
+	</script>
+	<script>
+		// sinclo
+		$(function() {
+			$('#chatButton').on('click', function(){
+				$('#sincloBox').toggleClass('chatOpen');
+				$('#sincloBox').data('true');
+			});
+		});
+	</script>
+	<script src='https://ws1.sinclo.jp/client/5e7812fdb5a66.js'></script>
+</body>
+</html>

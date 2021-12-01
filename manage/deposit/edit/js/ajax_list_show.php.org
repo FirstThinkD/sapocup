@@ -1,0 +1,33 @@
+<?php
+// GETメソッドでリクエストした値を取得
+$id = $_GET['id'];
+
+$host = '127.0.0.1';
+$dbname = 'haw1008ufet9_spcp01';
+$dbuser = 'haw1008ufet9';
+$dbpass = 'LcifXbRp';
+
+// データベース接続クラスPDOのインスタンス$dbhを作成する
+try {
+	$dbh = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8mb4", $dbuser, $dbpass);
+} catch (PDOException $e) {
+	var_dump($e->getMessage());
+	exit;
+}
+
+$sql = "SELECT * FROM dep_list WHERE delFlag=0 AND dl_id=". $id;
+$stmt = $dbh->prepare($sql);
+$stmt->execute(array($id));
+$productList = array();
+
+while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	$productList[] = array(
+		'dl_id'      => $row['dl_id'],
+		'dl_yymmdd'  => date('Y-m-d', strtotime($row['dl_yymmdd'])),
+		'dl_money'   => $row['dl_money'],
+		'dl_comment' => $row['dl_comment']
+	);
+}
+
+header('Content-type: application/json');
+echo json_encode($productList);

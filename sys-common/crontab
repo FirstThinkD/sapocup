@@ -1,0 +1,2 @@
+30	4	*	*	*	'/usr/home/haw1008ufet9/html/cron/mysql_backup.sh' > /dev/null 2>&1
+30	9	1	*	*	/usr/local/bin/php-cgi-7.1 '/usr/home/haw1008ufet9/html/cron/deposit.php' > /dev/null 2>&1

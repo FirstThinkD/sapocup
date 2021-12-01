@@ -1,0 +1,280 @@
+
+<?php require_once('../../common/head.php'); ?>
+<?php require_once('../../common/header.php'); ?>
+	<main>
+		<div class="main_wrap">
+			<div class="main_wrap_inner">
+				<div class="pankuzu">
+					<div class="container">
+						<ul>
+							<li><a href="/manage/estimates/"><span>見積書一覧</span></a></li>
+							<!-- <li><a href="/manage/estimates/detail/"><span>見積書</span></a></li> -->
+							<li><span>シミュレーション</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main_title">
+					<div class="container">
+						<div class="main_title_headline">
+							<h1>お支払いシミュレーション</h1>
+						</div>
+					</div>
+				</div>
+				<div class="main_content input_area simulation_data">
+					<div class="container">
+						<div class="main_content_inner simulation_data_inner">
+							<div class="simulation_data_comparison">
+								<div class="simulation_data_comparison_inner">
+									<table>
+										<thead>
+											<tr>
+												<th>
+													<span class="name">工事 / 商品価格</span>
+													<span class="number">¥3,000,000</span>(税込)
+												</th>
+												<th>パターン1</th>
+												<th>パターン2</th>
+												<th>パターン3</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>頭金</th>
+												<td>¥0</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th>事務管理手数料率</th>
+												<td>5.00%</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th>初回お支払額</th>
+												<td>¥131,250</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th>月々お支払額</th>
+												<td>¥131,250</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th>分割回数</th>
+												<td>24</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<th>総支払額</th>
+												<td>¥3,150,000</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="submit_button"><a href="/manage/estimates/simulation/edit/">パターン編集</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_title pb-none">
+					<div class="container">
+						<div class="main_title_headline">
+							<h1>お支払いスケジュール</h1>
+						</div>
+						<div class="simulation_data_tab">
+							<div class="simulation_data_tab_inner cf">
+								<div id="tab_one" class="data_tab_box selectTab">パターン1</div>
+								<div id="tab_two" class="data_tab_box">パターン2</div>
+								<div id="tab_three" class="data_tab_box">パターン3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_content input_area simulation_data">
+					<div class="container">
+						<div class="main_content_inner simulation_data_inner">
+							<div class="simulation_data_panel">
+								<div class="simulation_data_panel_inner">
+									<div id="panel_one" class="data_panel_box openPanel">
+										<div class="main_title_link">
+											<ul class="cf">
+												<li><a class="list_link" href="/manage/edit/">見積書へ反映</a></li>
+												<li><a class="list_link" href="">印刷</a></li>
+											</ul>
+										</div>
+										<div class="data_info_box">
+											<div class="data_info_box_inner">
+												<table>
+													<tbody>
+														<tr>
+															<th>実行日</th>
+															<td>2020年2月28日</td>
+															<th>月々お支払額</th>
+															<td>¥131,250</td>
+														</tr>
+														<tr>
+															<th>ご利用予定金額</th>
+															<td>¥3,000,000</td>
+															<th>分割回数</th>
+															<td>24</td>
+														</tr>
+														<tr>
+															<th>頭金</th>
+															<td>¥0</td>
+															<th>事務管理手数料総額</th>
+															<td>¥150,000</td>
+														</tr>
+														<tr>
+															<th>事務管理手数料率</th>
+															<td>5.00%</td>
+															<th>総支払額</th>
+															<td>¥3,150,000</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="simulation_data_panel_table">
+											<p class="table_supplement">（単位：円）</p>
+											<table class="common_table">
+												<thead>
+													<tr>
+														<th class="text-center">回数</th>
+														<th class="text-center">返済日</th>
+														<th class="text-center">ご利用金額</th>
+														<th class="text-center">月々お支払額</th>
+														<th class="text-center">お支払い残高</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right">3,000,000</td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+													<tr>
+														<td class="text-center">1</td>
+														<td>2020年1月24日</td>
+														<td class="text-right"></td>
+														<td class="text-right">131,614</td>
+														<td class="text-right">2,880,886</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div id="panel_two" class="data_panel_box">
+										<div class="none">
+											<p>まだ登録がありません。</p>
+											<div class="submit_button">
+												<a href="/manage/estimates/simulation/edit/">パターン登録</a>
+											</div>
+										</div>
+									</div>
+									<div id="panel_three" class="data_panel_box">
+										<div class="none">
+											<p>まだ登録がありません。</p>
+											<div class="submit_button">
+												<a href="/manage/estimates/simulation/edit/">パターン登録</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		// タブとパネル
+		$(function(){
+			$('.data_tab_box').click(function(){
+				$('.selectTab').removeClass('selectTab');
+				$(this).addClass('selectTab');
+				if($("#tab_one").hasClass('selectTab')) {
+					$("#panel_one").addClass("openPanel");
+					$("#panel_two").removeClass("openPanel");
+					$("#panel_three").removeClass("openPanel");
+				};
+				if($("#tab_two").hasClass('selectTab')) {
+					$("#panel_two").addClass("openPanel");
+					$("#panel_one").removeClass("openPanel");
+					$("#panel_three").removeClass("openPanel");
+				};
+				if($("#tab_three").hasClass('selectTab')) {
+					$("#panel_three").addClass("openPanel");
+					$("#panel_one").removeClass("openPanel");
+					$("#panel_two").removeClass("openPanel");
+				};
+			});
+		});
+	</script>
+</body>
+</html>

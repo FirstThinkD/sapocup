@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang='jp'>
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="expires" content="Mon Nov 30 19:47:53 2020" />
+<meta http-equiv="description" content="Awstats - Advanced Web Statistics for sapocup.jp" />
+<title>統計対象サイト sapocup.jp</title>
+<style type="text/css">
+<!--
+body { font: 11px verdana, arial, helvetica, sans-serif; background-color: #FFFFFF; margin-top: 0; margin-bottom: 0; }
+.aws_bodyl  { }
+.aws_border { background-color: #CCCCDD; padding: 1px 1px 1px 1px; margin-top: 0; margin-bottom: 0; }
+.aws_title  { font: 13px verdana, arial, helvetica, sans-serif; font-weight: bold; background-color: #CCCCDD; text-align: center; margin-top: 0; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_blank  { font: 13px verdana, arial, helvetica, sans-serif; background-color: #CCCCDD; text-align: center; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_data {
+	background-color: #FFFFFF;
+	border-top-width: 1px;   
+	border-left-width: 0px;  
+	border-right-width: 0px; 
+	border-bottom-width: 0px;
+}
+.aws_formfield { font: 13px verdana, arial, helvetica; }
+.aws_button {
+	font-family: arial,verdana,helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #ccd7e0;
+	background-image : url(/sys-common/awstats/icon/other/button.gif);
+}
+th		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+th.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font-size: 13px; font-weight: bold; }
+td		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+td.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+td.awsm	{ border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px 0px 0px 0px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+b { font-weight: bold; }
+a { font: 11px verdana, arial, helvetica, sans-serif; }
+a:link    { color: #0011BB; text-decoration: none; }
+a:visited { color: #0011BB; text-decoration: none; }
+a:hover   { color: #605040; text-decoration: underline; }
+div { font: 12px 'Arial','Verdana','Helvetica', sans-serif; text-align: justify; }
+.CTooltip { position:absolute; top: 0px; left: 0px; z-index: 2; width: 380px; visibility:hidden; font: 8pt 'MS Comic Sans','Arial',sans-serif; background-color: #FFFFE6; padding: 8px; border: 1px solid black; }
+//-->
+</style>
+</head>
+
+<body style="margin-top: 0px">
+<a name="top">&nbsp;</a>
+
+
+
+
+<script language="javascript" type="text/javascript">
+function ShowTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		var tooltipLft = (document.body.offsetWidth?document.body.offsetWidth:document.body.style.pixelWidth) - (tooltipOBJ.offsetWidth?tooltipOBJ.offsetWidth:(tooltipOBJ.style.pixelWidth?tooltipOBJ.style.pixelWidth:380)) - 30;
+		var tooltipTop = 10;
+		if (navigator.appName == 'Netscape') {
+			if (parseFloat(navigator.appVersion) >= 5) { tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10); }
+			tooltipOBJ.style.left = tooltipLft; tooltipOBJ.style.top = tooltipTop;
+		}
+		else {
+			tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10);
+			if ((event.clientX > tooltipLft) && (event.clientY < (tooltipOBJ.scrollHeight?tooltipOBJ.scrollHeight:tooltipOBJ.style.pixelHeight) + 10)) {
+				tooltipTop = (document.body.scrollTop?document.body.scrollTop:document.body.offsetTop) + event.clientY + 20;
+			}
+			tooltipOBJ.style.pixelLeft = tooltipLft; tooltipOBJ.style.pixelTop = tooltipTop;
+		}
+		tooltipOBJ.style.visibility = "visible";
+	}
+}
+function HideTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		tooltipOBJ.style.visibility = "hidden";
+	}
+}
+</script>
+
+<a name="menu">&nbsp;</a>
+<form name="FormDateFilter" action="/cgi-bin/awstats.pl?config=haw1008ufet9&staticlinks&diricons=/sys-common/awstats/icon&output=unknownip" style="padding: 0px 0px 0px 0px; margin-top: 0">
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td>
+<table class="aws_data" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td class="aws" valign="middle"><b>統計対象サイト:</b>&nbsp;</td><td class="aws"><span style="font-size: 14px;">sapocup.jp</span></td><td align="right" rowspan="3"><a href="http://awstats.sourceforge.net" target="awstatshome"><img src="/sys-common/awstats/icon/other/awstats_logo6.png" border="0" alt='Awstats Web Site' title='Awstats Web Site' /></a></td></tr>
+<tr valign="middle"><td class="aws" valign="middle" width="150"><b>最後の更新:</b>&nbsp;</td><td class="aws" valign="middle"><span style="font-size: 12px;">2020年 12月 01日 - 00:38</span></td></tr>
+<tr><td class="aws" valign="middle"><b>Reported period:</b></td><td class="aws" valign="middle"><span style="font-size: 14px;">月 11月 2020</span></td></tr>
+</table>
+</td></tr></table>
+</form>
+
+<table>
+<tr><td class="aws"><a href="javascript:parent.window.close();">このウインドゥを閉じる</a></td></tr>
+</table>
+
+<a name="unknownip">&nbsp;</a><br />
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td class="aws_title" width="70%" onmouseover="ShowTip(19);" onmouseout="HideTip(19);">名前解決できないIPアドレス </td><td class="aws_blank">&nbsp;</td></tr>
+<tr><td colspan="2">
+<table class="aws_data unknownwip" border="2" bordercolor="#ECECEC" cellpadding="2" cellspacing="0" width="100%">
+<tr bgcolor="#ECECEC"><th>100 不明(名前解決できないIPアドレス)</th><th bgcolor="#4477DD" width="80">ページ</th><th bgcolor="#66F0FF" width="80">ヒット</th><th bgcolor="#2EA495" width="80">バイト</th><th width="120">最後の訪問</th></tr>
+<tr><td class="aws">31.6.30.125</td><td>13</td><td>13</td><td>44.37 KB</td><td>2020年 11月 03日 - 23:30</td></tr>
+<tr><td class="aws">45.146.165.166</td><td>10</td><td>10</td><td>64.87 KB</td><td>2020年 11月 26日 - 02:06</td></tr>
+<tr><td class="aws">164.52.24.162</td><td>5</td><td>5</td><td>54.81 KB</td><td>2020年 11月 25日 - 20:00</td></tr>
+<tr><td class="aws">111.231.63.191</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 02日 - 10:05</td></tr>
+<tr><td class="aws">116.62.176.10</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 17日 - 10:38</td></tr>
+<tr><td class="aws">111.231.94.161</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 05日 - 04:01</td></tr>
+<tr><td class="aws">119.27.160.85</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 14日 - 20:43</td></tr>
+<tr><td class="aws">81.70.12.46</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 15日 - 15:57</td></tr>
+<tr><td class="aws">193.122.57.202</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 19日 - 22:07</td></tr>
+<tr><td class="aws">219.127.145.211</td><td>4</td><td>18</td><td>1.30 MB</td><td>2020年 11月 18日 - 09:29</td></tr>
+<tr><td class="aws">47.115.166.149</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 18日 - 08:06</td></tr>
+<tr><td class="aws">106.53.240.171</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 19日 - 12:48</td></tr>
+<tr><td class="aws">118.25.122.245</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 10日 - 20:42</td></tr>
+<tr><td class="aws">82.223.139.223</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 17日 - 08:16</td></tr>
+<tr><td class="aws">106.14.199.121</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 13日 - 08:34</td></tr>
+<tr><td class="aws">129.226.63.90</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 08日 - 03:48</td></tr>
+<tr><td class="aws">146.56.219.98</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 16日 - 07:42</td></tr>
+<tr><td class="aws">206.189.212.191</td><td>4</td><td>4</td><td>11.30 KB</td><td>2020年 11月 02日 - 01:25</td></tr>
+<tr><td class="aws">37.46.150.207</td><td>4</td><td>4</td><td>43.85 KB</td><td>2020年 11月 19日 - 02:41</td></tr>
+<tr><td class="aws">120.78.2.189</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 29日 - 06:33</td></tr>
+<tr><td class="aws">71.6.232.7</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 24日 - 16:35</td></tr>
+<tr><td class="aws">139.155.55.182</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 13日 - 11:38</td></tr>
+<tr><td class="aws">106.13.148.240</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 23日 - 16:18</td></tr>
+<tr><td class="aws">106.15.34.199</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 18日 - 13:30</td></tr>
+<tr><td class="aws">81.68.98.12</td><td>4</td><td>4</td><td>13.65 KB</td><td>2020年 11月 22日 - 10:04</td></tr>
+<tr><td class="aws">139.28.217.202</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 11日 - 16:38</td></tr>
+<tr><td class="aws">31.171.152.134</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 28日 - 02:40</td></tr>
+<tr><td class="aws">194.110.115.234</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 10日 - 19:51</td></tr>
+<tr><td class="aws">139.28.217.201</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 30日 - 05:18</td></tr>
+<tr><td class="aws">194.110.115.221</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 11日 - 11:42</td></tr>
+<tr><td class="aws">143.244.39.143</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 17日 - 09:30</td></tr>
+<tr><td class="aws">180.163.220.67</td><td>3</td><td>12</td><td>1.21 MB</td><td>2020年 11月 21日 - 16:20</td></tr>
+<tr><td class="aws">194.110.115.198</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 19日 - 12:04</td></tr>
+<tr><td class="aws">91.132.136.206</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 14日 - 06:29</td></tr>
+<tr><td class="aws">84.247.48.27</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 29日 - 13:20</td></tr>
+<tr><td class="aws">143.244.39.168</td><td>3</td><td>3</td><td>23.34 KB</td><td>2020年 11月 30日 - 08:05</td></tr>
+<tr><td class="aws">213.217.0.184</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 30日 - 09:02</td></tr>
+<tr><td class="aws">45.153.203.175</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 30日 - 23:22</td></tr>
+<tr><td class="aws">103.145.13.129</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 27日 - 12:40</td></tr>
+<tr><td class="aws">194.127.178.207</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 30日 - 10:56</td></tr>
+<tr><td class="aws">114.86.9.243</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 06日 - 01:14</td></tr>
+<tr><td class="aws">112.124.46.131</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 23日 - 03:08</td></tr>
+<tr><td class="aws">40.87.106.92</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 09日 - 16:05</td></tr>
+<tr><td class="aws">51.75.95.58</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 20日 - 16:49</td></tr>
+<tr><td class="aws">91.241.19.84</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 12日 - 01:31</td></tr>
+<tr><td class="aws">51.124.44.138</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 08日 - 07:01</td></tr>
+<tr><td class="aws">8.210.7.103</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 26日 - 19:13</td></tr>
+<tr><td class="aws">39.106.19.133</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 18日 - 01:32</td></tr>
+<tr><td class="aws">161.35.94.149</td><td>2</td><td>2</td><td>6.83 KB</td><td>2020年 11月 27日 - 03:14</td></tr>
+<tr><td class="aws">185.239.242.45</td><td>2</td><td>2</td><td>21.92 KB</td><td>2020年 11月 13日 - 08:09</td></tr>
+<tr><td class="aws">40.88.21.235</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 20日 - 01:31</td></tr>
+<tr><td class="aws">185.191.171.39</td><td>1</td><td>1</td><td>1.87 KB</td><td>2020年 11月 01日 - 13:40</td></tr>
+<tr><td class="aws">47.100.27.114</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 10日 - 04:02</td></tr>
+<tr><td class="aws">185.191.171.33</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 05日 - 12:36</td></tr>
+<tr><td class="aws">175.44.42.33</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 06日 - 18:19</td></tr>
+<tr><td class="aws">119.254.155.104</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 30日 - 04:00</td></tr>
+<tr><td class="aws">101.200.204.115</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 01日 - 16:02</td></tr>
+<tr><td class="aws">157.230.103.80</td><td>1</td><td>1</td><td>10.96 KB</td><td>2020年 11月 01日 - 23:17</td></tr>
+<tr><td class="aws">194.127.178.241</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 10日 - 02:38</td></tr>
+<tr><td class="aws">23.90.145.40</td><td>1</td><td>1</td><td>10.96 KB</td><td>2020年 11月 02日 - 23:59</td></tr>
+<tr><td class="aws">51.255.3.19</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 23日 - 16:36</td></tr>
+<tr><td class="aws">39.96.139.173</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 24日 - 17:30</td></tr>
+<tr><td class="aws">68.183.188.250</td><td>1</td><td>1</td><td>10.96 KB</td><td>2020年 11月 18日 - 01:56</td></tr>
+<tr><td class="aws">175.44.42.30</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 15日 - 01:42</td></tr>
+<tr><td class="aws">192.144.148.220</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 02日 - 14:58</td></tr>
+<tr><td class="aws">180.163.220.3</td><td>1</td><td>10</td><td>1.20 MB</td><td>2020年 11月 14日 - 06:58</td></tr>
+<tr><td class="aws">49.234.64.188</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 01日 - 06:11</td></tr>
+<tr><td class="aws">47.98.102.8</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 10日 - 15:57</td></tr>
+<tr><td class="aws">195.54.160.99</td><td>1</td><td>1</td><td>10.96 KB</td><td>2020年 11月 14日 - 02:49</td></tr>
+<tr><td class="aws">42.81.142.99</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 09日 - 22:05</td></tr>
+<tr><td class="aws">77.67.20.139</td><td>1</td><td>1</td><td>10.96 KB</td><td>2020年 11月 23日 - 05:05</td></tr>
+<tr><td class="aws">45.83.64.252</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 11日 - 21:41</td></tr>
+<tr><td class="aws">176.119.1.87</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 22日 - 11:14</td></tr>
+<tr><td class="aws">199.244.88.132</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 01日 - 10:44</td></tr>
+<tr><td class="aws">45.83.67.245</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 26日 - 04:28</td></tr>
+<tr><td class="aws">161.35.173.84</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 15日 - 02:59</td></tr>
+<tr><td class="aws">180.149.125.164</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 03日 - 01:39</td></tr>
+<tr><td class="aws">47.101.214.42</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 29日 - 04:38</td></tr>
+<tr><td class="aws">49.235.217.253</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 29日 - 16:50</td></tr>
+<tr><td class="aws">180.163.220.5</td><td>1</td><td>19</td><td>2.41 MB</td><td>2020年 11月 14日 - 06:57</td></tr>
+<tr><td class="aws">37.9.13.156</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 24日 - 17:38</td></tr>
+<tr><td class="aws">51.103.31.232</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 14日 - 03:50</td></tr>
+<tr><td class="aws">180.163.220.68</td><td>1</td><td>19</td><td>2.41 MB</td><td>2020年 11月 21日 - 17:12</td></tr>
+<tr><td class="aws">13.67.227.108</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 21日 - 07:28</td></tr>
+<tr><td class="aws">47.254.68.12</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 24日 - 10:41</td></tr>
+<tr><td class="aws">52.114.6.38</td><td>1</td><td>1</td><td>2.24 KB</td><td>2020年 11月 06日 - 09:41</td></tr>
+<tr><td class="aws">45.146.164.159</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 10日 - 05:56</td></tr>
+<tr><td class="aws">220.249.112.170</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 26日 - 16:18</td></tr>
+<tr><td class="aws">49.232.194.80</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 12日 - 00:44</td></tr>
+<tr><td class="aws">206.189.94.119</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 06日 - 02:10</td></tr>
+<tr><td class="aws">111.229.250.139</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 09日 - 20:36</td></tr>
+<tr><td class="aws">59.52.100.219</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 19日 - 12:54</td></tr>
+<tr><td class="aws">161.35.124.51</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 03日 - 21:42</td></tr>
+<tr><td class="aws">180.163.220.4</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 21日 - 17:12</td></tr>
+<tr><td class="aws">49.142.35.90</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 11日 - 21:51</td></tr>
+<tr><td class="aws">134.209.178.231</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 05日 - 22:31</td></tr>
+<tr><td class="aws">45.141.59.138</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 23日 - 03:34</td></tr>
+<tr><td class="aws">47.115.0.57</td><td>1</td><td>1</td><td>3.41 KB</td><td>2020年 11月 29日 - 11:44</td></tr>
+<tr><td class="aws">40.77.202.157</td><td>&nbsp;</td><td>2</td><td>4.83 KB</td><td>-</td></tr>
+<tr><td class="aws">40.77.202.49</td><td>&nbsp;</td><td>1</td><td>2.59 KB</td><td>-</td></tr>
+<tr><td class="aws"><span style="color: #666688">既知</span></td><td>2885</td><td>6821</td><td>99.79 MB</td><td>&nbsp;</td></tr>
+</table></td></tr></table><br />
+
+<br /><br />
+<span dir="ltr" style="font: 11px verdana, arial, helvetica; color: #000000;"><b>Advanced Web Statistics 6.0 (build 1.696)</b> - <a href="http://awstats.sourceforge.net" target="awstatshome">Created by awstats (with plugin tooltips, decodeutfkeys)</a></span><br />
+
+<br />
+</body>
+</html>

@@ -1,0 +1,7 @@
+AuthUserFile /usr/local/www/admin/common/.htpasswd
+AuthGroupFile /dev/null
+AuthName "ControlPanel"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>

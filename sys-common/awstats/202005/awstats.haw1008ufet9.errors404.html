@@ -1,0 +1,492 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang='jp'>
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="expires" content="Sun May 31 19:48:04 2020" />
+<meta http-equiv="description" content="Awstats - Advanced Web Statistics for sapocup.jp" />
+<title>統計対象サイト sapocup.jp</title>
+<style type="text/css">
+<!--
+body { font: 11px verdana, arial, helvetica, sans-serif; background-color: #FFFFFF; margin-top: 0; margin-bottom: 0; }
+.aws_bodyl  { }
+.aws_border { background-color: #CCCCDD; padding: 1px 1px 1px 1px; margin-top: 0; margin-bottom: 0; }
+.aws_title  { font: 13px verdana, arial, helvetica, sans-serif; font-weight: bold; background-color: #CCCCDD; text-align: center; margin-top: 0; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_blank  { font: 13px verdana, arial, helvetica, sans-serif; background-color: #CCCCDD; text-align: center; margin-bottom: 0; padding: 1px 1px 1px 1px; }
+.aws_data {
+	background-color: #FFFFFF;
+	border-top-width: 1px;   
+	border-left-width: 0px;  
+	border-right-width: 0px; 
+	border-bottom-width: 0px;
+}
+.aws_formfield { font: 13px verdana, arial, helvetica; }
+.aws_button {
+	font-family: arial,verdana,helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #ccd7e0;
+	background-image : url(/sys-common/awstats/icon/other/button.gif);
+}
+th		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+th.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 2px 1px 1px; font-size: 13px; font-weight: bold; }
+td		{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:center; color: #000000; }
+td.aws	{ border-color: #ECECEC; border-left-width: 0px; border-right-width: 1px; border-top-width: 0px; border-bottom-width: 1px; padding: 1px 1px 1px 1px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+td.awsm	{ border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px 0px 0px 0px; font: 11px verdana, arial, helvetica, sans-serif; text-align:left; color: #000000; }
+b { font-weight: bold; }
+a { font: 11px verdana, arial, helvetica, sans-serif; }
+a:link    { color: #0011BB; text-decoration: none; }
+a:visited { color: #0011BB; text-decoration: none; }
+a:hover   { color: #605040; text-decoration: underline; }
+div { font: 12px 'Arial','Verdana','Helvetica', sans-serif; text-align: justify; }
+.CTooltip { position:absolute; top: 0px; left: 0px; z-index: 2; width: 380px; visibility:hidden; font: 8pt 'MS Comic Sans','Arial',sans-serif; background-color: #FFFFE6; padding: 8px; border: 1px solid black; }
+//-->
+</style>
+</head>
+
+<body style="margin-top: 0px">
+<a name="top">&nbsp;</a>
+
+
+
+
+<script language="javascript" type="text/javascript">
+function ShowTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		var tooltipLft = (document.body.offsetWidth?document.body.offsetWidth:document.body.style.pixelWidth) - (tooltipOBJ.offsetWidth?tooltipOBJ.offsetWidth:(tooltipOBJ.style.pixelWidth?tooltipOBJ.style.pixelWidth:380)) - 30;
+		var tooltipTop = 10;
+		if (navigator.appName == 'Netscape') {
+			if (parseFloat(navigator.appVersion) >= 5) { tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10); }
+			tooltipOBJ.style.left = tooltipLft; tooltipOBJ.style.top = tooltipTop;
+		}
+		else {
+			tooltipTop = (document.body.scrollTop>=0?document.body.scrollTop+10:event.clientY+10);
+			if ((event.clientX > tooltipLft) && (event.clientY < (tooltipOBJ.scrollHeight?tooltipOBJ.scrollHeight:tooltipOBJ.style.pixelHeight) + 10)) {
+				tooltipTop = (document.body.scrollTop?document.body.scrollTop:document.body.offsetTop) + event.clientY + 20;
+			}
+			tooltipOBJ.style.pixelLeft = tooltipLft; tooltipOBJ.style.pixelTop = tooltipTop;
+		}
+		tooltipOBJ.style.visibility = "visible";
+	}
+}
+function HideTip(fArg)
+{
+	var tooltipOBJ = (document.getElementById) ? document.getElementById('tt' + fArg) : eval("document.all['tt" + fArg + "']");
+	if (tooltipOBJ != null) {
+		tooltipOBJ.style.visibility = "hidden";
+	}
+}
+</script>
+
+<a name="menu">&nbsp;</a>
+<form name="FormDateFilter" action="/cgi-bin/awstats.pl?config=haw1008ufet9&staticlinks&diricons=/sys-common/awstats/icon&output=errors404" style="padding: 0px 0px 0px 0px; margin-top: 0">
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td>
+<table class="aws_data" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td class="aws" valign="middle"><b>統計対象サイト:</b>&nbsp;</td><td class="aws"><span style="font-size: 14px;">sapocup.jp</span></td><td align="right" rowspan="3"><a href="http://awstats.sourceforge.net" target="awstatshome"><img src="/sys-common/awstats/icon/other/awstats_logo6.png" border="0" alt='Awstats Web Site' title='Awstats Web Site' /></a></td></tr>
+<tr valign="middle"><td class="aws" valign="middle" width="150"><b>最後の更新:</b>&nbsp;</td><td class="aws" valign="middle"><span style="font-size: 12px;">2020年 6月 01日 - 00:13</span></td></tr>
+<tr><td class="aws" valign="middle"><b>Reported period:</b></td><td class="aws" valign="middle"><span style="font-size: 14px;">月 5月 2020</span></td></tr>
+</table>
+</td></tr></table>
+</form>
+
+<table>
+<tr><td class="aws"><a href="javascript:parent.window.close();">このウインドゥを閉じる</a></td></tr>
+</table>
+
+<a name="errors404">&nbsp;</a><br />
+<table class="aws_border" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td class="aws_title" width="70%" onmouseover="ShowTip(19);" onmouseout="HideTip(19);">要求されたが存在しなかったURL(HTTPエラーコード404) </td><td class="aws_blank">&nbsp;</td></tr>
+<tr><td colspan="2">
+<table class="aws_data errors404" border="2" bordercolor="#ECECEC" cellpadding="2" cellspacing="0" width="100%">
+<tr bgcolor="#ECECEC"><th>URL (380)</th><th bgcolor="#66F0FF">エラー ヒット</th><th>参照元</th></tr>
+<tr><td class="aws">/manage/estimates/edit/jquery-1.12.4.min.js</td><td>689</td><td class="aws">https://sapocup.jp/manage/estimates/edit/</td></tr>
+<tr><td class="aws">/paygent/img/sapocupLogo.jpg</td><td>594</td><td class="aws">https://sapocup.jp/paygent/</td></tr>
+<tr><td class="aws">/manage/estimates/new/jquery-1.12.4.min.js</td><td>587</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/common/js/yubinbango-core.js.map</td><td>274</td><td class="aws">-</td></tr>
+<tr><td class="aws">/reregistration/img/sapocupLogo.jpg</td><td>197</td><td class="aws">https://sapocup.jp/reregistration/personal-signup.php</td></tr>
+<tr><td class="aws">/manage/clients/new/jquery-1.12.4.min.js</td><td>169</td><td class="aws">https://sapocup.jp/manage/clients/new/</td></tr>
+<tr><td class="aws">/robots.txt</td><td>132</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/mainfunction.cgi</td><td>45</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/new/ajax_test_show.php</td><td>33</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php</td><td>23</td><td class="aws">-</td></tr>
+<tr><td class="aws">/thinkphp/html/public/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/TP/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/elrekt.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/TP/html/public/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api/jsonws/invoke</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/html/public/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/TP/public/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/public/index.php</td><td>21</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-login.php</td><td>19</td><td class="aws">-</td></tr>
+<tr><td class="aws">/solr/admin/info/system</td><td>17</td><td class="aws">-</td></tr>
+<tr><td class="aws">/owa/auth/logon.aspx</td><td>16</td><td class="aws">-</td></tr>
+<tr><td class="aws">/portal/redlion</td><td>14</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hudson</td><td>12</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/img/arrowDown.png</td><td>11</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/common/img/searchIcon.png</td><td>11</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/remote/login</td><td>10</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login</td><td>10</td><td class="aws">-</td></tr>
+<tr><td class="aws">/adv,/cgi-bin/weblogin.cgi</td><td>10</td><td class="aws">-</td></tr>
+<tr><td class="aws">/doLogin</td><td>9</td><td class="aws">-</td></tr>
+<tr><td class="aws">/operator/basic.shtml</td><td>9</td><td class="aws">-</td></tr>
+<tr><td class="aws">/htmlV/welcomeMain.htm</td><td>9</td><td class="aws">-</td></tr>
+<tr><td class="aws">/index.asp</td><td>9</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dana-na/auth/url_default/welcome.cgi</td><td>9</td><td class="aws">-</td></tr>
+<tr><td class="aws">/apple-touch-icon.png</td><td>8</td><td class="aws">-</td></tr>
+<tr><td class="aws">/console</td><td>8</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/test-cgi</td><td>8</td><td class="aws">-</td></tr>
+<tr><td class="aws">/apple-touch-icon-precomposed.png</td><td>8</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cgi-bin/luci</td><td>8</td><td class="aws">-</td></tr>
+<tr><td class="aws">/home.asp</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login/do_login</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/new/ajax_test_show_all.php</td><td>7</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/vpn/index.html</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/horde/imp/test.php</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">//a2billing/customer/templates/default/footer.tpl</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login.action</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login.cgi</td><td>7</td><td class="aws">-</td></tr>
+<tr><td class="aws">/myjsp.jsp</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manager/html</td><td>6</td><td class="aws">-</td></tr>
+<tr><td class="aws">/tersm.php</td><td>5</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemap_index.xml</td><td>5</td><td class="aws">-</td></tr>
+<tr><td class="aws">/data.php</td><td>5</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/new/ajax/ajax-test.js</td><td>4</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/manage/estimates/new/ajax-test.js</td><td>4</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/apple-touch-icon-120x120-precomposed.png</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/Telerik.Web.UI.WebResource.axd</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemap.xml</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemap.xml.gz</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/login.html</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/test/img/sapocupLogo.jpg</td><td>4</td><td class="aws">http://sapocup.jp/test/.login.php</td></tr>
+<tr><td class="aws">/apple-touch-icon-120x120.png</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/atom.xml</td><td>4</td><td class="aws">-</td></tr>
+<tr><td class="aws">/editBlackAndWhiteList</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ma/common/img/searchIcon.png</td><td>3</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/common/css/img/searchIcon.png</td><td>3</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/cgi-bin/config.exp</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/reregistration/singup.php</td><td>3</td><td class="aws">https://sapocup.jp/manage/estimates/</td></tr>
+<tr><td class="aws">/img/searchIcon.png</td><td>3</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/news.php</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/solr/</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/etc/passwd</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/co/img/searchIcon.png</td><td>3</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/w00tw00t.at.blackhats.romanian.anti-sec:)</td><td>3</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api/v1/pod</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api/v1</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/maban/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/muhstik.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sitemaps.xml</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/man/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/m/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/streaming/clients_live.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/izom.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/c/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/test.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/coo/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/dns-query</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/paygent/basic/html/top/linkMenu1.html</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/google78217bd1364930f0.html</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cdn-cgi/trace</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mana/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/ab2g</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/payload.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/maba/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/manag/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/0bef</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mab/common/img/searchIcon.png</td><td>2</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/google07bf176e7a0d1af7.html</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ReportServer</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin/</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin/index.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shell</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin/index.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">http://163.172.88.110:41298/pass</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shell.php</td><td>2</td><td class="aws">-</td></tr>
+<tr><td class="aws">/goform/webLogin</td><td>2</td><td class="aws">http://127.0.0.1/login_inter.asp</td></tr>
+<tr><td class="aws">/phpmyadmin3333/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmy/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sane.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/comon/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/kk.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/undx.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/up.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/commo/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/plugins/weathermap/editor.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.4/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdm1n/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1ts.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/onvif/device_service</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/help-e.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/woshimengmei.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/xsser.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/text.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/css/img/arrowDown.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/mysql/sqlmanager/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/personal.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/coonig.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql/dbadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/WWW/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadm1n/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/baidoubi.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/muhstik2.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin._2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/java.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin1/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/Joomla/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-config.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/con/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/mysql/admin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pma/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/usr/home/haw1008ufet9/html/download</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hue2.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/composers.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin-old/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/weaver/bsh.servlet.BshServlet</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cmv.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/%69%73%70%69%72%69%74/%69%6D/%75%70%6C%6F%61%64%2E%70%68%70</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/web/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/vuln.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/python.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/%62%61%73%65/%70%6F%73%74%2E%70%68%70</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_pma.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cmdd.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql_admin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpiMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin1/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/xampp/phpmyadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/log.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/PMA/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/tools/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/streaming/rzmf2t6x.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin2222/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hhhhhh.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/administrator/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ws_utc/config.do</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/program/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/php2MyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/phpmyadmin2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/composer.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/personal-singnyo.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/PMA/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/99.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/b.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/claroline/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/_query.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/new/simulation/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/coom/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/mysqladmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/huoshan.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/download/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/com/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/personal-singup.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/v/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/yuyang.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin/phpmyadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin_111/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/xiaoxia.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shaAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/shopdb/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/personal-signup.php%E3%81%AE%E9%83%B5%E4%BE%BF%E7%95%AA%E5%8F%B7%E3%81%AFxxx</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pma-old/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/appserv.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sql/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/pma/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdminhf/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cacti/plugins/weathermap/editor.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/icons/apache_pb.gif</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/lala.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/cron/deposit.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dbadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/s</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pmamy/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.0/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/haiyan.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.bak</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdminold/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sbb/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/paygent/test</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/yu.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/.well-known/assetlinks.json</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/comm/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/weathermap/editor.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/file_handler/file.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/z.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/m/calendar/Calendar.html</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mabang/common/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/zzz.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/function.inc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmina/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmion/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/zz.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common//img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/__phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/+</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmins/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin.old/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/new/payment.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/htdocs.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/secure/ContactAdministrators!default.jspa</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/mysql/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/1x.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/f476e216084bf44497ed24a3478574d0.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/lala-dpr.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/root.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/Temporary_Listen_Addresses/SMSSERVICE</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/coon/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/phpdm.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wordpress/wp-login.php</td><td>1</td><td class="aws">http://150.60.231.106/wordpress/wp-login.php</td></tr>
+<tr><td class="aws">/mysql/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ajax</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wpo.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/common/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/knal.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manage/estimates/detail/func_del.php110</td><td>1</td><td class="aws">http://sapocup.jp/manage/estimates/detail/</td></tr>
+<tr><td class="aws">/D02776EE997B7342C0F2D7F92AED5EF0.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/manager/text/list</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin123/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/vpn/../vpns/cfg/smb.conf</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/vPRE</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/typo3/phpmyadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/index.html</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/myadmin2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ajax/ajax_test_show.php</td><td>1</td><td class="aws">https://sapocup.jp/manage/estimates/new/</td></tr>
+<tr><td class="aws">/phpMyAdmin._/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/MyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/stories/filemga.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/www/phpMyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hell.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/doudou.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/smb_scheduler/cdr.htm</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/system_api.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/goip/cron.htm</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/a2billing/admin/Public/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phppma/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin+++---/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin_ai/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/personal-help.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/websql/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/x.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin333/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/123131/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/version</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.5/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/lang.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyadmi/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/no1.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/stalker_portal/c/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dc27ceef31f7d60e0f6ded157b0551dd.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/axis2/axis2-admin/login</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/laravel.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp/wp-login.php</td><td>1</td><td class="aws">http://150.60.231.106/wp/wp-login.php</td></tr>
+<tr><td class="aws">/blog</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/floaw.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/%73%65%65%79%6F%6E/%68%74%6D%6C%6F%66%66%69%63%65%73%65%72%76%6C%65%74</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/MySQLAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/rxr.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/css/%E3%80%82/common/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/pmd_online.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/up.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/streaming</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMydmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/PSIA/index</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.3/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmln/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/321/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/webdav/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/muhstik-dpr.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">///wp-login.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/personal-singnup.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/cmd.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/lol.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/muhstiks.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/lLVO</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/joomla/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ftmabc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/photo/p/api/album.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hs.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pmd/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/client_area/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/s/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/reregistration/singup.php</td><td>1</td><td class="aws">http://sapocup.jp/manage/estimates/</td></tr>
+<tr><td class="aws">/xiaxia.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin4.8.1/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/SQL/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/attari.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/l.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sqladmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpinfo.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/db_cts.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/t6nv.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mjx.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/Drupal.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pmamy2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/mysql2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/PMA2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/pwd/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/reregistraion/company-signup.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/home.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/stalker_portal/c/version.js</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/reregiistraion/company-signup.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/root11.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/connection/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/d7.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyadmin_bak/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/phpmyadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdminn/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/stories/cmd.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/new_license.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/admin/</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/indea.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin0/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/common/css/c/img/searchIcon.png</td><td>1</td><td class="aws">https://sapocup.jp/common/css/other.css</td></tr>
+<tr><td class="aws">/phpMyAdmin-4.4.0/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/license.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/a</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/ak.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/images/!.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/desktop.ini.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/api.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/%75%73%65%72%2e%70%68%70</td><td>1</td><td class="aws">554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:2:\"id\"</td></tr>
+<tr><td class="aws">/images/jsspwneed.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/xiu.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/taisui.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/meijianxue.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAbmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/dp.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/5678.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/uploader.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/spider.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/sample.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/logon.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/myadmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpmyadmin2/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/mysql/mysqlmanager/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpNyAdmin/index.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/wpc.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/hd.php</td><td>1</td><td class="aws">-</td></tr>
+<tr><td class="aws">/phpMyAdmin__/index.php</td><td>1</td><td class="aws">-</td></tr>
+</table></td></tr></table><br />
+
+<br /><br />
+<span dir="ltr" style="font: 11px verdana, arial, helvetica; color: #000000;"><b>Advanced Web Statistics 6.0 (build 1.696)</b> - <a href="http://awstats.sourceforge.net" target="awstatshome">Created by awstats (with plugin decodeutfkeys, tooltips)</a></span><br />
+
+<br />
+</body>
+</html>

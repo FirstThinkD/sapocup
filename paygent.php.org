@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><title>フォームテスト</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store">
+</head>
+<body>
+	<form method="POST" action="'https://sandbox.paygent.co.jp/v/request">
+		<input type="hidden" name="trading_id" value="12345" />
+		<input type="hidden" name="payment_type" value="01,02,03,05" />
+		<input type="hidden" name="id" value="1000" />
+		<input type="hidden" name="seq_merchant_id" value="3001" />
+		<input type="hidden" name="merchant_name" value="テスト加盟店" />
+		<input type="hidden" name="payment_detail" value="決済内容" />
+		<input type="hidden" name="payment_detail_kana" value="ｹｯｻｲﾅｲﾖｳｶﾅ" />
+		<input type="hidden" name="banner_url" value="http://123.234.123.200/common/header_logo.gif" />
+		<input type="hidden" name="free_memo" value="自由メモ" />
+		<input type="hidden" name="return_url" value="http://www.paygent.co.jp/" />
+		<input type="hidden" name="customer_family_name" value="ペイジェント" />
+		<input type="hidden" name="customer_name" value="太郎" />
+		<input type="hidden" name="customer_family_name_kana" value="ﾍﾟｲｼﾞｪﾝﾄ" />
+		<input type="hidden" name="customer_name_kana" value="ﾀﾛｳ" />
+		<input type="hidden" name="hc" value="598cb604562769ca84bc42fb9e6ce95fa70172a7f0694677cbd59c245ba156c71b2bcb42" /> <!-- 改ざん防止用のハッシュ値 -->
+		<input type="submit" value="申し込み" />
+	</form>
+</body>
+</html>

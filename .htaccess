@@ -1,0 +1,6 @@
+SetEnv MY_DOMAIN sapocup.jp
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)?$ https://sapocup.jp/$1 [L,R]
+php_value display_errors off

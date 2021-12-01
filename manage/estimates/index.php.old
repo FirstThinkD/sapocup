@@ -1,0 +1,135 @@
+<?php
+session_start();
+require_once('../../common/dbconnect.php');
+
+if ($_SESSION['loginID'] == "") {
+	header("Location:/");
+	exit();
+}
+
+$sql = sprintf('SELECT * FROM `user` WHERE u_id="%d" AND delFlag=0',
+	mysqli_real_escape_string($db, $_SESSION['loginID'])
+);
+$record = mysqli_query($db, $sql) or die(mysqli_error($db));
+if ($row0 = mysqli_fetch_assoc($record)) {
+	// OK
+	if ($row0['u_type'] == "法人") {
+		$userName = $row0['u_company'];
+	} else {
+		$userName = $row0['p_name'];
+	}
+} else {
+	header("Location:/");
+	exit();
+}
+?>
+<?php require_once('../common/head.php'); ?>
+<?php require_once('../common/header.php'); ?>
+	<main>
+		<div class="main_wrap">
+			<div class="main_wrap_inner">
+				<div class="main_title">
+					<div class="container">
+						<div class="main_title_headline">
+							<h1>見積書一覧</h1>
+						</div>
+						<div class="main_title_link">
+							<ul class="cf">
+								<li><a class="create_link" href="/manage/estimates/new/">新規見積書作成</a></li>
+								<li><a class="list_link" href="">リスト出力</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="main_content">
+					<div class="container">
+						<div class="main_content_inner">
+							<table class="common_table">
+								<thead>
+									<tr>
+										<th></th>
+										<th>見積書番号</th>
+										<th>工事名称</th>
+										<th>請求先</th>
+										<th>支払日</th>
+										<th>受渡期日</th>
+										<th>総金額</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice disable" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation disable" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice disable" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name=""></td>
+										<td>00001</td>
+										<td><a href="/manage/estimates/detail/">リフォーム</a></td>
+										<td>株式会社アールエムトラスト</td>
+										<td>2020年2月2日</td>
+										<td>2021年1月31日</td>
+										<td>719,667円</td>
+										<td class="button_link">
+											<a class="table_link edit" href="/manage/estimates/edit/">編集</a>
+											<a class="table_link simulation disable" href="/manage/simulation/">シミュレーション</a>
+											<a class="table_link invoice" href="/manage/invoice/">請求書</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script>
+		// aタブ無効
+		$(function(){
+			$('a.disable').click(function(){
+				return false;
+			})
+		});
+	</script>
+</body>
+</html>
